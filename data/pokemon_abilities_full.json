@@ -1,0 +1,4264 @@
+{
+    "Bulbizarre": {
+        "id": 1,
+        "nom_api": "bulbasaur",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Chlorophylle",
+                "description": "Double la Vitesse sous le soleil intense.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Salamèche": {
+        "id": 4,
+        "nom_api": "charmander",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Force Soleil",
+                "description": "Augmente l'Attaque Spéciale de 1.5× mais coûte 1/8 des PV max après chaque tour sous soleil intense.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Carapuce": {
+        "id": 7,
+        "nom_api": "squirtle",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Cuvette",
+                "description": "Soigne 1/16 des PV max après chaque tour sous la pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Germignon": {
+        "id": 152,
+        "nom_api": "chikorita",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Feuille Garde",
+                "description": "Protège contre les altérations majeures de statut sous soleil intense.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Héricendre": {
+        "id": 155,
+        "nom_api": "cyndaquil",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Torche",
+                "description": "Protège contre les capacités fire.  Une fois qu'une a été bloquée, les propres attaques Feu du Pokémon infligent 50% de dégats supplémentaires jusqu'à ce qu'il quitte le combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Kaiminus": {
+        "id": 158,
+        "nom_api": "totodile",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Arcko": {
+        "id": 252,
+        "nom_api": "treecko",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Délestage",
+                "description": "Double la Vitesse en utilisant ou perdant un objet tenu.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Poussifeu": {
+        "id": 255,
+        "nom_api": "torchic",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Turbo",
+                "description": "Augmente la Vitesse d'un niveau après chaque tour.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Gobou": {
+        "id": 258,
+        "nom_api": "mudkip",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Moiteur",
+                "description": "Empêche self destruct, explosion, et aftermath de s'activer tant que le Pokémon est au combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tortipouss": {
+        "id": 387,
+        "nom_api": "turtwig",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Coque Armure",
+                "description": "Protège contre les coups critiques.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ouisticram": {
+        "id": 390,
+        "nom_api": "chimchar",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Poing de Fer",
+                "description": "Renforce les capacités à base de coups de poings d'1.2× leur puissance.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tiplouf": {
+        "id": 393,
+        "nom_api": "piplup",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Battant",
+                "description": "Augmente l'Attaque Spéciale de deux niveaux quand n'importe quelle stat est diminuée.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Vipélierre": {
+        "id": 495,
+        "nom_api": "snivy",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Contestation",
+                "description": "Inverse les changements de stat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Gruikui": {
+        "id": 498,
+        "nom_api": "tepig",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Isograisse",
+                "description": "Divise par deux les dommages des capacités fire et ice.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Moustillon": {
+        "id": 501,
+        "nom_api": "oshawott",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Coque Armure",
+                "description": "Protège contre les coups critiques.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Marisson": {
+        "id": 650,
+        "nom_api": "chespin",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Pare-Balles",
+                "description": "Protège contre les projectiles, balles, et capacités à base de bombe.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Feunnec": {
+        "id": 653,
+        "nom_api": "fennekin",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Magicien",
+                "description": "Vole l'objet tenu de la cible quand le porteur utilise une capacité offensive.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Grenousse": {
+        "id": 656,
+        "nom_api": "froakie",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Protéen",
+                "description": "Change le type du porteur pour correspondre à chaque capacité qu'il utilise.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Brindibou": {
+        "id": 722,
+        "nom_api": "rowlet",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Longue Portée",
+                "description": "Les capacités de ce Pokémon ne réalisent pas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Flamiaou": {
+        "id": 725,
+        "nom_api": "litten",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Intimidation",
+                "description": "Diminue l'Attaque des adversaires d'un niveau en entrant au combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Otaquin": {
+        "id": 728,
+        "nom_api": "popplio",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Hydrata-Son",
+                "description": "Les capacités basées sur le son deviennent de type Eau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ouistempo": {
+        "id": 810,
+        "nom_api": "grookey",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Créa-Herbe",
+                "description": "Quand ce Pokémon entre au combat, il change le terrain en Champ Herbu.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Flambino": {
+        "id": 813,
+        "nom_api": "scorbunny",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Libéro",
+                "description": "Libéro change le type du Pokémon en celui de sa dernière attaque utilisée.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Larméléon": {
+        "id": 816,
+        "nom_api": "sobble",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Sniper",
+                "description": "Renforce les coups critiques pour infliger 3× les dégâts plutôt que 2×.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Poussacha": {
+        "id": 906,
+        "nom_api": "sprigatito",
+        "talents": [
+            {
+                "nom": "Engrais",
+                "description": "Renforce les capacités grass pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Protéen",
+                "description": "Change le type du porteur pour correspondre à chaque capacité qu'il utilise.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Chochodile": {
+        "id": 909,
+        "nom_api": "fuecoco",
+        "talents": [
+            {
+                "nom": "Brasier",
+                "description": "Renforce les capacités fire pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Inconscient",
+                "description": "Ignore les modifications de stat des autres Pokémon pour le calcul des dégâts et précision.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Coiffeton": {
+        "id": 912,
+        "nom_api": "quaxly",
+        "talents": [
+            {
+                "nom": "Torrent",
+                "description": "Renforce les capacités water pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Impudence",
+                "description": "Augmente l'Attaque d'un niveau en mettant un Pokémon KO.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Aegislash-shield": {
+        "id": 681,
+        "nom_api": "aegislash-shield",
+        "talents": [
+            {
+                "nom": "Déclic Tactique",
+                "description": "Change aegislash en Forme Assaut avant d'utiliser une capacité offensive, ou en Forme Parade avant d'utiliser kings shield.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Tarsal": {
+        "id": 280,
+        "nom_api": "ralts",
+        "talents": [
+            {
+                "nom": "Synchro",
+                "description": "Copie la brûlure, la paralysie, et le poison reçus au Pokémon qui les a infligés.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Calque",
+                "description": "Copie le talent d'un adversaire en entrant au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Télépathe",
+                "description": "Protège contre les capacités offensives des Pokémon alliés.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Monaflèmit": {
+        "id": 289,
+        "nom_api": "slaking",
+        "talents": [
+            {
+                "nom": "Absentéisme",
+                "description": "Passe tous les seconds tours.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Ectoplasma": {
+        "id": 94,
+        "nom_api": "gengar",
+        "talents": [
+            {
+                "nom": "Corps Maudit",
+                "description": "A 30% de chances d'Entraver n'importe quelle capacité qui frappe le Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Lucario": {
+        "id": 448,
+        "nom_api": "lucario",
+        "talents": [
+            {
+                "nom": "Impassible",
+                "description": "Augmente la Vitesse d'un niveau lors d'un apeurement.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cœur Noble",
+                "description": "Augmente l'Attaque d'un niveau en subissant des dégâts d'une capacité dark.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Absol": {
+        "id": 359,
+        "nom_api": "absol",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Chanceux",
+                "description": "Augmente les taux de coups critiques des capacités d'un niveau.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cœur Noble",
+                "description": "Augmente l'Attaque d'un niveau en subissant des dégâts d'une capacité dark.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Scalpion": {
+        "id": 624,
+        "nom_api": "pawniard",
+        "talents": [
+            {
+                "nom": "Acharné",
+                "description": "Augmente l'Attaque de deux niveaux en ayant n'importe quelle stat baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Métalosse": {
+        "id": 376,
+        "nom_api": "metagross",
+        "talents": [
+            {
+                "nom": "Corps Sain",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Light Metal",
+                "description": "Divise par deux le poids du Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tyranocif": {
+        "id": 248,
+        "nom_api": "tyranitar",
+        "talents": [
+            {
+                "nom": "Sable Volant",
+                "description": "Déclenche une tempête de sable qui dure indéfiniment en entrant sur le terrain.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Cizayox": {
+        "id": 212,
+        "nom_api": "scizor",
+        "talents": [
+            {
+                "nom": "Essaim",
+                "description": "Renforce les capacités bug pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Technicien",
+                "description": "Renforce les capacités à 60 de puissance de base ou moins d'1.5× leur puissance.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Light Metal",
+                "description": "Divise par deux le poids du Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Chenipan": {
+        "id": 10,
+        "nom_api": "caterpie",
+        "talents": [
+            {
+                "nom": "Écran Poudre",
+                "description": "Protège contre les effets additionnels des capacités subies.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Chenipotte": {
+        "id": 265,
+        "nom_api": "wurmple",
+        "talents": [
+            {
+                "nom": "Écran Poudre",
+                "description": "Protège contre les effets additionnels des capacités subies.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Stalgamin": {
+        "id": 361,
+        "nom_api": "snorunt",
+        "talents": [
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Lunatique",
+                "description": "Augmente une stat aléatoire de deux niveaux et baisse une autre d'un niveau après chaque tour.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Airmure": {
+        "id": 227,
+        "nom_api": "skarmory",
+        "talents": [
+            {
+                "nom": "Regard Vif",
+                "description": "Empêche la précision d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurouillée",
+                "description": "Augmente la Vitesse et diminue la Défense d'un niveau chacune après être touché par une capacité physique.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Draby": {
+        "id": 371,
+        "nom_api": "bagon",
+        "talents": [
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Archéodong": {
+        "id": 437,
+        "nom_api": "bronzong",
+        "talents": [
+            {
+                "nom": "Lévitation",
+                "description": "Évite les capacités ground.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Ignifugé",
+                "description": "Divise par deux les dégâts des capacités fire et brûlures.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Heavy Metal",
+                "description": "Double le poids du Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ptéra": {
+        "id": 142,
+        "nom_api": "aerodactyl",
+        "talents": [
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Racaillou": {
+        "id": 74,
+        "nom_api": "geodude",
+        "talents": [
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Voile Sable",
+                "description": "Augmente l'esquive de 25% pendant une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Nodulithe": {
+        "id": 524,
+        "nom_api": "roggenrola",
+        "talents": [
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurouillée",
+                "description": "Augmente la Vitesse et diminue la Défense d'un niveau chacune après être touché par une capacité physique.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Force Sable",
+                "description": "Renforce les capacités rock, ground, et steel d'1.3× leur puissance sous une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Némélios": {
+        "id": 668,
+        "nom_api": "pyroar",
+        "talents": [
+            {
+                "nom": "Rivalité",
+                "description": "Augmente les dégâts infligés de 1.25× contre les Pokémon du même genre, mais diminue les dégâts de 0.75× contre ceux du genre opposé.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impudence",
+                "description": "Augmente l'Attaque d'un niveau en mettant un Pokémon KO.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Coxy": {
+        "id": 165,
+        "nom_api": "ledyba",
+        "talents": [
+            {
+                "nom": "Essaim",
+                "description": "Renforce les capacités bug pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Matinal",
+                "description": "Fait passer le sommeil deux fois plus rapidement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Phobique",
+                "description": "Augmente la Vitesse d'un niveau en étant frappé par une capacité dark, ghost, ou bug.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Smogo": {
+        "id": 109,
+        "nom_api": "koffing",
+        "talents": [
+            {
+                "nom": "Lévitation",
+                "description": "Évite les capacités ground.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gaz Inhibiteur",
+                "description": "Neutralise les talents de tous les Pokémon au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Puanteur",
+                "description": "A 10% de chances d'apeurer) le Pokémon cible à chaque coup.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Gloupti": {
+        "id": 316,
+        "nom_api": "gulpin",
+        "talents": [
+            {
+                "nom": "Suintement",
+                "description": "Inflige des dégâts aux adversaires qui utilisent des capacités drainantes d'autant qu'elles soigneraient.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Glu",
+                "description": "Empêche un objet tenu d'être retiré par un autre Pokémon.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gloutonnerie",
+                "description": "Fait manger au Pokémon n'importe quelle Baie tenue déclenchée par des PV bas sous la moitié de ses PV max.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Dynavolt": {
+        "id": 309,
+        "nom_api": "electrike",
+        "talents": [
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Paratonnerre",
+                "description": "Redirige les capacités electric à cible unique sur ce Pokémon quand c'est possible.  Absorbe les capacités Électrik, augmentant l'Attaque Spéciale d'un niveau.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Moins",
+                "description": "Augmente l'Attaque Spéciale d'1.5× quand un Pokémon allié a plus ou minus.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Élekid": {
+        "id": 239,
+        "nom_api": "elekid",
+        "talents": [
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Magby": {
+        "id": 240,
+        "nom_api": "magby",
+        "talents": [
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Voltorbe": {
+        "id": 100,
+        "nom_api": "voltorb",
+        "talents": [
+            {
+                "nom": "Anti-Bruit",
+                "description": "Protège contre les capacités basées sur le son.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Boom Final",
+                "description": "Inflige des dégâts à l'attaquant d'1/4 de ses PV max quand mis KO par une capacité à contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Séviper": {
+        "id": 336,
+        "nom_api": "seviper",
+        "talents": [
+            {
+                "nom": "Mue",
+                "description": "A 33% de chances de soigner n'importe quelle altération majeure de statut après chaque tour.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Infiltration",
+                "description": "Outrepasse light screen, reflect, et safeguard.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Mangriff": {
+        "id": 335,
+        "nom_api": "zangoose",
+        "talents": [
+            {
+                "nom": "Vaccin",
+                "description": "Empêche le poison.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Rage Poison",
+                "description": "Augmente l'Attaque d'1.5× quand empoisonné.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Abo": {
+        "id": 23,
+        "nom_api": "ekans",
+        "talents": [
+            {
+                "nom": "Intimidation",
+                "description": "Diminue l'Attaque des adversaires d'un niveau en entrant au combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Mue",
+                "description": "A 33% de chances de soigner n'importe quelle altération majeure de statut après chaque tour.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Medhyèna": {
+        "id": 261,
+        "nom_api": "poochyena",
+        "talents": [
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pied Véloce",
+                "description": "Augmente la Vitesse de 1.5× avec une altération majeure de statut.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Phobique",
+                "description": "Augmente la Vitesse d'un niveau en étant frappé par une capacité dark, ghost, ou bug.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Zigzaton": {
+        "id": 10174,
+        "nom_api": "zigzagoon-galar",
+        "talents": [
+            {
+                "nom": "Ramassage",
+                "description": "Ramasse les objets tenus utilisés par d'autres Pokémon et lancés.  Peut aussi ramasser un objet après un combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gloutonnerie",
+                "description": "Fait manger au Pokémon n'importe quelle Baie tenue déclenchée par des PV bas sous la moitié de ses PV max.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pied Véloce",
+                "description": "Augmente la Vitesse de 1.5× avec une altération majeure de statut.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Limonde": {
+        "id": 10180,
+        "nom_api": "stunfisk-galar",
+        "talents": [
+            {
+                "nom": "Mimétisme",
+                "description": "Change de type selon le terrain.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Ponyta": {
+        "id": 10162,
+        "nom_api": "ponyta-galar",
+        "talents": [
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Voile Pastel",
+                "description": "Empêche le Pokémon et ses alliés d’être empoisonnés.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Anticipation",
+                "description": "Notifie tous les dresseurs en entrant au combat si un adversaire a une capacité super efficace, self destruct, explosion, ou une capacité OHKO.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Scrutella": {
+        "id": 574,
+        "nom_api": "gothita",
+        "talents": [
+            {
+                "nom": "Fouille",
+                "description": "Révèle un objet tenu de l'adversaire en entrant au combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Battant",
+                "description": "Augmente l'Attaque Spéciale de deux niveaux quand n'importe quelle stat est diminuée.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Marque Ombre",
+                "description": "Empêche l'adversaire de fuir ou de se retirer.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Abra": {
+        "id": 63,
+        "nom_api": "abra",
+        "talents": [
+            {
+                "nom": "Synchro",
+                "description": "Copie la brûlure, la paralysie, et le poison reçus au Pokémon qui les a infligés.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Garde Magik",
+                "description": "Protège contre les dégâts non directement causés par une capacité.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Chartor": {
+        "id": 324,
+        "nom_api": "torkoal",
+        "talents": [
+            {
+                "nom": "Écran Fumée",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sécheresse",
+                "description": "Invoque le soleil intense qui dure indéfiniment en entrant au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Coque Armure",
+                "description": "Protège contre les coups critiques.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Magnéti": {
+        "id": 81,
+        "nom_api": "magnemite",
+        "talents": [
+            {
+                "nom": "Magnépiège",
+                "description": "Empêche les adversaires steel de fuir ou se retirer.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Analyste",
+                "description": "Renforce les capacités de 1.3× leur puissance en agissant en dernier.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Kabuto": {
+        "id": 140,
+        "nom_api": "kabuto",
+        "talents": [
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurbaston",
+                "description": "Protège contre les coups critiques.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurouillée",
+                "description": "Augmente la Vitesse et diminue la Défense d'un niveau chacune après être touché par une capacité physique.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Grindur": {
+        "id": 597,
+        "nom_api": "ferroseed",
+        "talents": [
+            {
+                "nom": "Épine de Fer",
+                "description": "Inflige des dégâts au Pokémon attaquant d'1/8 de ses PV max en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Steelix": {
+        "id": 208,
+        "nom_api": "steelix",
+        "talents": [
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Amonita": {
+        "id": 138,
+        "nom_api": "omanyte",
+        "talents": [
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Coque Armure",
+                "description": "Protège contre les coups critiques.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurouillée",
+                "description": "Augmente la Vitesse et diminue la Défense d'un niveau chacune après être touché par une capacité physique.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Pichu": {
+        "id": 172,
+        "nom_api": "pichu",
+        "talents": [
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Paratonnerre",
+                "description": "Redirige les capacités electric à cible unique sur ce Pokémon quand c'est possible.  Absorbe les capacités Électrik, augmentant l'Attaque Spéciale d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Magicarpe": {
+        "id": 129,
+        "nom_api": "magikarp",
+        "talents": [
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Phobique",
+                "description": "Augmente la Vitesse d'un niveau en étant frappé par une capacité dark, ghost, ou bug.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Grainipiot": {
+        "id": 273,
+        "nom_api": "seedot",
+        "talents": [
+            {
+                "nom": "Chlorophylle",
+                "description": "Double la Vitesse sous le soleil intense.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Matinal",
+                "description": "Fait passer le sommeil deux fois plus rapidement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pickpocket",
+                "description": "Vole les objets tenus des Pokémon attaquants en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Rattata": {
+        "id": 19,
+        "nom_api": "rattata",
+        "talents": [
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Carapagos": {
+        "id": 564,
+        "nom_api": "tirtouga",
+        "talents": [
+            {
+                "nom": "Solide Roc",
+                "description": "Diminue les dégâts subis des capacités super efficaces de 1/4.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Flabébé": {
+        "id": 669,
+        "nom_api": "flabebe",
+        "talents": [
+            {
+                "nom": "Flora-Voile",
+                "description": "Protège les Pokémon grass alliés d'avoir leurs stats baissées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Symbiose",
+                "description": "Transmet l’objet tenu du porteur à un allié quand l’allié utilise son objet.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Arkéapti": {
+        "id": 566,
+        "nom_api": "archen",
+        "talents": [
+            {
+                "nom": "Défaitiste",
+                "description": "Divise par deux l'Attaque et Attaque spéciale à 50% des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Goupix": {
+        "id": 10103,
+        "nom_api": "vulpix-alola",
+        "talents": [
+            {
+                "nom": "Rideau Neige",
+                "description": "Augmente l'esquive de 1.25× sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Alerte Neige",
+                "description": "Invoque une grêle qui dure indéfiniment en entrant sur le terrain.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Draïeul": {
+        "id": 780,
+        "nom_api": "drampa",
+        "talents": [
+            {
+                "nom": "Folle Furie",
+                "description": "Augmente l'Attaque Spéciale de ce Pokémon d'un niveau à chaque fois que ses PV tombent sous la moitié.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Herbivore",
+                "description": "Absorbe les capacités grass, augmentant l'Attaque d'un niveau.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Ciel Gris",
+                "description": "Annule tous les effets de la météo, mais n'empêche pas la météo elle-même.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Parecool": {
+        "id": 287,
+        "nom_api": "slakoth",
+        "talents": [
+            {
+                "nom": "Absentéisme",
+                "description": "Passe tous les seconds tours.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Vorastérie": {
+        "id": 747,
+        "nom_api": "mareanie",
+        "talents": [
+            {
+                "nom": "Cruauté",
+                "description": "Les capacités de ce Pokémon réalisent des coups critiques contre les cibles empoisonnées.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Échauffement",
+                "description": "Empêche la paralysie.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Régé-Force",
+                "description": "Soigne 1/3 des PV max en se retirant.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Sabelette": {
+        "id": 10101,
+        "nom_api": "sandshrew-alola",
+        "talents": [
+            {
+                "nom": "Rideau Neige",
+                "description": "Augmente l'esquive de 1.25× sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Chasse-Neige",
+                "description": "Sous Grêle, ce Pokémon a une Vitesse double.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Pikachu": {
+        "id": 25,
+        "nom_api": "pikachu",
+        "talents": [
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Paratonnerre",
+                "description": "Redirige les capacités electric à cible unique sur ce Pokémon quand c'est possible.  Absorbe les capacités Électrik, augmentant l'Attaque Spéciale d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tiboudet": {
+        "id": 749,
+        "nom_api": "mudbray",
+        "talents": [
+            {
+                "nom": "Tempo Perso",
+                "description": "Empêche la confusion.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Endurance",
+                "description": "Augmente la Défense de ce Pokémon d'un niveaux quand il subit des dégâts d'une capacité.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Garde-de-Fer": {
+        "id": 1006,
+        "nom_api": "iron-valiant",
+        "talents": [
+            {
+                "nom": "Charge Quantique",
+                "description": "Augmente la stat la plus élevée sous un Champ Électrifié, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Darumarond": {
+        "id": 554,
+        "nom_api": "darumaka",
+        "talents": [
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Passerouge": {
+        "id": 661,
+        "nom_api": "fletchling",
+        "talents": [
+            {
+                "nom": "Cœur de Coq",
+                "description": "Protège contre les baisses de Défense.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Ailes Bourrasque",
+                "description": "Augmente la priorité des capacités flying d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tadmorv": {
+        "id": 10112,
+        "nom_api": "grimer-alola",
+        "talents": [
+            {
+                "nom": "Toxitouche",
+                "description": "A 30% de chances d'empoisonner le Pokémon cible lors d'un contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gloutonnerie",
+                "description": "Fait manger au Pokémon n'importe quelle Baie tenue déclenchée par des PV bas sous la moitié de ses PV max.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Osmose",
+                "description": "Quand un allié est mis KO, ce Pokémon gagne son Talent.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Zorua": {
+        "id": 10238,
+        "nom_api": "zorua-hisui",
+        "talents": [
+            {
+                "nom": "Illusion",
+                "description": "Prend l'apparence du dernier Pokémon conscient de l'équipe en étant envoyé au combat jusqu'à être frappé par une capacité offensive.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Roue-de-Fer": {
+        "id": 990,
+        "nom_api": "iron-treads",
+        "talents": [
+            {
+                "nom": "Charge Quantique",
+                "description": "Augmente la stat la plus élevée sous un Champ Électrifié, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Forgerette": {
+        "id": 957,
+        "nom_api": "tinkatink",
+        "talents": [
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tempo Perso",
+                "description": "Empêche la confusion.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pickpocket",
+                "description": "Vole les objets tenus des Pokémon attaquants en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Flotte-Mèche": {
+        "id": 987,
+        "nom_api": "flutter-mane",
+        "talents": [
+            {
+                "nom": "Paléosynthèse",
+                "description": "Augmente la stat la plus élevée sous un soleil intense, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Funécire": {
+        "id": 607,
+        "nom_api": "litwick",
+        "talents": [
+            {
+                "nom": "Torche",
+                "description": "Protège contre les capacités fire.  Une fois qu'une a été bloquée, les propres attaques Feu du Pokémon infligent 50% de dégats supplémentaires jusqu'à ce qu'il quitte le combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Infiltration",
+                "description": "Outrepasse light screen, reflect, et safeguard.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Miaouss": {
+        "id": 10161,
+        "nom_api": "meowth-galar",
+        "talents": [
+            {
+                "nom": "Ramassage",
+                "description": "Ramasse les objets tenus utilisés par d'autres Pokémon et lancés.  Peut aussi ramasser un objet après un combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Griffe Dure",
+                "description": "Renforce les capacités à contact d’1.33× leur puissance.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tritox": {
+        "id": 757,
+        "nom_api": "salandit",
+        "talents": [
+            {
+                "nom": "Corrosion",
+                "description": "Ce Pokémon peut infliger le poison aux Pokémon Poison et Acier.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Benêt",
+                "description": "Empêche l'attirance et protège contre captivate.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Paume-de-Fer": {
+        "id": 992,
+        "nom_api": "iron-hands",
+        "talents": [
+            {
+                "nom": "Charge Quantique",
+                "description": "Augmente la stat la plus élevée sous un Champ Électrifié, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Vrombi": {
+        "id": 965,
+        "nom_api": "varoom",
+        "talents": [
+            {
+                "nom": "Envelocape",
+                "description": "Protège contre les dégâts de la météo.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Début Calme",
+                "description": "Divise par deux l'Attaque et Vitesse pendant cinq tours en entrant au combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Fort-Ivoire": {
+        "id": 984,
+        "nom_api": "great-tusk",
+        "talents": [
+            {
+                "nom": "Paléosynthèse",
+                "description": "Augmente la stat la plus élevée sous un soleil intense, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Morphéo": {
+        "id": 351,
+        "nom_api": "castform",
+        "talents": [
+            {
+                "nom": "Météo",
+                "description": "Change le type et la forme de castform pour correspondre à la météo.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Kecleon": {
+        "id": 352,
+        "nom_api": "kecleon",
+        "talents": [
+            {
+                "nom": "Homochromie",
+                "description": "Change le type en accord avec celui de la capacité offensive qui vient de le toucher.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Protéen",
+                "description": "Change le type du porteur pour correspondre à chaque capacité qu'il utilise.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Frigodo": {
+        "id": 996,
+        "nom_api": "frigibax",
+        "talents": [
+            {
+                "nom": "Thermodynamique",
+                "description": "Augmente l’Attaque quand frappé par une capacité de type Feu. Ne peut pas être brûlé.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Hurle-Queue": {
+        "id": 985,
+        "nom_api": "scream-tail",
+        "talents": [
+            {
+                "nom": "Paléosynthèse",
+                "description": "Augmente la stat la plus élevée sous un soleil intense, ou en tenant un Énergie Booster.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Ptyranidur": {
+        "id": 696,
+        "nom_api": "tyrunt",
+        "talents": [
+            {
+                "nom": "Prognathe",
+                "description": "Renforce les capacités à morsure d'1.5× leur puissance.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Rototaupe": {
+        "id": 529,
+        "nom_api": "drilbur",
+        "talents": [
+            {
+                "nom": "Baigne Sable",
+                "description": "Double la Vitesse sous une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Force Sable",
+                "description": "Renforce les capacités rock, ground, et steel d'1.3× leur puissance sous une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Hydragon": {
+        "id": 882,
+        "nom_api": "dracovish",
+        "talents": [
+            {
+                "nom": "Absorbe-Eau",
+                "description": "Absorbe les capacités water, soignant 1/4 des PV max.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Prognathe",
+                "description": "Renforce les capacités à morsure d'1.5× leur puissance.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Baigne Sable",
+                "description": "Double la Vitesse sous une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Fantyrm": {
+        "id": 885,
+        "nom_api": "dreepy",
+        "talents": [
+            {
+                "nom": "Corps Sain",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Infiltration",
+                "description": "Outrepasse light screen, reflect, et safeguard.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Corps Maudit",
+                "description": "A 30% de chances d'Entraver n'importe quelle capacité qui frappe le Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Candine": {
+        "id": 762,
+        "nom_api": "steenee",
+        "talents": [
+            {
+                "nom": "Feuille Garde",
+                "description": "Protège contre les altérations majeures de statut sous soleil intense.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Benêt",
+                "description": "Empêche l'attirance et protège contre captivate.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gluco-Voile",
+                "description": "Empêche les Pokémon alliés de dormir.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Nounourson": {
+        "id": 759,
+        "nom_api": "stufful",
+        "talents": [
+            {
+                "nom": "Boule de Poils",
+                "description": "Les dégâts des capacités à contact sont divisées par deux.  Les dégâts des capacités Feu sont doublés.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Maladresse",
+                "description": "Empêche le Pokémon d'utiliser son objet tenu au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Joli Sourire",
+                "description": "A 30% de chances de rendre amoureux le Pokémon attaquant lors d'un contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Sovkipou": {
+        "id": 767,
+        "nom_api": "wimpod",
+        "talents": [
+            {
+                "nom": "Escampette",
+                "description": "Ce Pokémon se retire automatiquement quand ses PV tombent sous la moitié.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Duralugon": {
+        "id": 884,
+        "nom_api": "duraludon",
+        "talents": [
+            {
+                "nom": "Light Metal",
+                "description": "Divise par deux le poids du Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Heavy Metal",
+                "description": "Double le poids du Pokémon.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Nerfs d’Acier",
+                "description": "Ignore les capacités et talents qui attirent les capacités.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Grelaçon": {
+        "id": 712,
+        "nom_api": "bergmite",
+        "talents": [
+            {
+                "nom": "Tempo Perso",
+                "description": "Empêche la confusion.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Charbi": {
+        "id": 837,
+        "nom_api": "rolycoly",
+        "talents": [
+            {
+                "nom": "Turbine",
+                "description": "Booste la stat de Vitesse drastiquement quand le Pokémon est frappé par une capacité de type Feu ou Eau.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Ignifugé",
+                "description": "Divise par deux les dégâts des capacités fire et brûlures.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Torche",
+                "description": "Protège contre les capacités fire.  Une fois qu'une a été bloquée, les propres attaques Feu du Pokémon infligent 50% de dégats supplémentaires jusqu'à ce qu'il quitte le combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Larvibule": {
+        "id": 736,
+        "nom_api": "grubbin",
+        "talents": [
+            {
+                "nom": "Essaim",
+                "description": "Renforce les capacités bug pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Minisange": {
+        "id": 821,
+        "nom_api": "rookidee",
+        "talents": [
+            {
+                "nom": "Regard Vif",
+                "description": "Empêche la précision d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cœur de Coq",
+                "description": "Protège contre les baisses de Défense.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Grimalin": {
+        "id": 859,
+        "nom_api": "impidimp",
+        "talents": [
+            {
+                "nom": "Farceur",
+                "description": "Augmente la priorité des capacités non offensives d'un niveau.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fouille",
+                "description": "Révèle un objet tenu de l'adversaire en entrant au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pickpocket",
+                "description": "Vole les objets tenus des Pokémon attaquants en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Hexadron": {
+        "id": 870,
+        "nom_api": "falinks",
+        "talents": [
+            {
+                "nom": "Armurbaston",
+                "description": "Protège contre les coups critiques.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Acharné",
+                "description": "Augmente l'Attaque de deux niveaux en ayant n'importe quelle stat baissée.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Bibichut": {
+        "id": 856,
+        "nom_api": "hatenna",
+        "talents": [
+            {
+                "nom": "Cœur Soin",
+                "description": "A 30% de chances de soigner n'importe quel allié adjacent de n'importe quelle altération majeure de statut après chaque tour.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Anticipation",
+                "description": "Notifie tous les dresseurs en entrant au combat si un adversaire a une capacité super efficace, self destruct, explosion, ou une capacité OHKO.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Miroir Magik",
+                "description": "Renvoie la plupart des capacités non offensives à leur lanceur.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Verpom": {
+        "id": 840,
+        "nom_api": "applin",
+        "talents": [
+            {
+                "nom": "Mûrissement",
+                "description": "Double l’effet des baies.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Gloutonnerie",
+                "description": "Fait manger au Pokémon n'importe quelle Baie tenue déclenchée par des PV bas sous la moitié de ses PV max.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Pare-Balles",
+                "description": "Protège contre les projectiles, balles, et capacités à base de bombe.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Eiscue-ice": {
+        "id": 875,
+        "nom_api": "eiscue-ice",
+        "talents": [
+            {
+                "nom": "Tête de Gel",
+                "description": "La tête de gel du Pokémon peut subir une attaque physique comme substitut, mais l’attaque change aussi l’apparence du Pokémon. La glace sera restorée quand il neige.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Galvagon": {
+        "id": 880,
+        "nom_api": "dracozolt",
+        "talents": [
+            {
+                "nom": "Absorbe-Volt",
+                "description": "Absorbe les capacités electric, soignant 1/4 des PV max.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Baigne Sable",
+                "description": "Double la Vitesse sous une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Hydragla": {
+        "id": 883,
+        "nom_api": "arctovish",
+        "talents": [
+            {
+                "nom": "Absorbe-Eau",
+                "description": "Absorbe les capacités water, soignant 1/4 des PV max.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Chasse-Neige",
+                "description": "Sous Grêle, ce Pokémon a une Vitesse double.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Mordudor": {
+        "id": 999,
+        "nom_api": "gimmighoul",
+        "talents": [
+            {
+                "nom": "Phobique",
+                "description": "Augmente la Vitesse d'un niveau en étant frappé par une capacité dark, ghost, ou bug.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Charbambin": {
+        "id": 935,
+        "nom_api": "charcadet",
+        "talents": [
+            {
+                "nom": "Torche",
+                "description": "Protège contre les capacités fire.  Une fois qu'une a été bloquée, les propres attaques Feu du Pokémon infligent 50% de dégats supplémentaires jusqu'à ce qu'il quitte le combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Chinchidou": {
+        "id": 572,
+        "nom_api": "minccino",
+        "talents": [
+            {
+                "nom": "Joli Sourire",
+                "description": "A 30% de chances de rendre amoureux le Pokémon attaquant lors d'un contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Technicien",
+                "description": "Renforce les capacités à 60 de puissance de base ou moins d'1.5× leur puissance.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Multi-Coups",
+                "description": "Étend les capacités de deux à cinq coups et triple kick à leur longueur complète à chaque fois.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Nénupiot": {
+        "id": 270,
+        "nom_api": "lotad",
+        "talents": [
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cuvette",
+                "description": "Soigne 1/16 des PV max après chaque tour sous la pluie.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tempo Perso",
+                "description": "Empêche la confusion.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Cadoizo": {
+        "id": 225,
+        "nom_api": "delibird",
+        "talents": [
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Insomnia",
+                "description": "Empêche le sommeil.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Feuforêve": {
+        "id": 200,
+        "nom_api": "misdreavus",
+        "talents": [
+            {
+                "nom": "Lévitation",
+                "description": "Évite les capacités ground.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Machoc": {
+        "id": 66,
+        "nom_api": "machop",
+        "talents": [
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Annule Garde",
+                "description": "Assure que toutes les capacités utilisés par et contre le Pokémon touchent.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impassible",
+                "description": "Augmente la Vitesse d'un niveau lors d'un apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Axoloto": {
+        "id": 10253,
+        "nom_api": "wooper-paldea",
+        "talents": [
+            {
+                "nom": "Point Poison",
+                "description": "A 30% de chances d'empoisonner le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Absorbe-Eau",
+                "description": "Absorbe les capacités water, soignant 1/4 des PV max.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Inconscient",
+                "description": "Ignore les modifications de stat des autres Pokémon pour le calcul des dégâts et précision.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Férosinge": {
+        "id": 56,
+        "nom_api": "mankey",
+        "talents": [
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Colérique",
+                "description": "Augmente l'Attaque au maximum des six niveaux en recevant un coup critique.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Acharné",
+                "description": "Augmente l'Attaque de deux niveaux en ayant n'importe quelle stat baissée.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Lippouti": {
+        "id": 238,
+        "nom_api": "smoochum",
+        "talents": [
+            {
+                "nom": "Benêt",
+                "description": "Empêche l'attirance et protège contre captivate.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Prédiction",
+                "description": "Révèle la capacité la plus puissante des adversaires en entrant au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Hydratation",
+                "description": "Soigne n'importe quelle altération majeure de statut après chaque tour sous pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Scarabrute": {
+        "id": 127,
+        "nom_api": "pinsir",
+        "talents": [
+            {
+                "nom": "Hyper Cutter",
+                "description": "Empêche l'Attaque d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impudence",
+                "description": "Augmente l'Attaque d'un niveau en mettant un Pokémon KO.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Corboss": {
+        "id": 430,
+        "nom_api": "honchkrow",
+        "talents": [
+            {
+                "nom": "Insomnia",
+                "description": "Empêche le sommeil.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Chanceux",
+                "description": "Augmente les taux de coups critiques des capacités d'un niveau.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impudence",
+                "description": "Augmente l'Attaque d'un niveau en mettant un Pokémon KO.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Debugant": {
+        "id": 236,
+        "nom_api": "tyrogue",
+        "talents": [
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impassible",
+                "description": "Augmente la Vitesse d'un niveau lors d'un apeurement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Pyronille": {
+        "id": 636,
+        "nom_api": "larvesta",
+        "talents": [
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Essaim",
+                "description": "Renforce les capacités bug pour infliger 1.5× de dégâts à 1/3 des PV max ou moins.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Sorbébé": {
+        "id": 582,
+        "nom_api": "vanillite",
+        "talents": [
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Rideau Neige",
+                "description": "Augmente l'esquive de 1.25× sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Armurouillée",
+                "description": "Augmente la Vitesse et diminue la Défense d'un niveau chacune après être touché par une capacité physique.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Marcacrin": {
+        "id": 220,
+        "nom_api": "swinub",
+        "talents": [
+            {
+                "nom": "Benêt",
+                "description": "Empêche l'attirance et protège contre captivate.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Rideau Neige",
+                "description": "Augmente l'esquive de 1.25× sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Isograisse",
+                "description": "Divise par deux les dommages des capacités fire et ice.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Goélise": {
+        "id": 278,
+        "nom_api": "wingull",
+        "talents": [
+            {
+                "nom": "Regard Vif",
+                "description": "Empêche la précision d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Hydratation",
+                "description": "Soigne n'importe quelle altération majeure de statut après chaque tour sous pluie.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cuvette",
+                "description": "Soigne 1/16 des PV max après chaque tour sous la pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Coupenotte": {
+        "id": 610,
+        "nom_api": "axew",
+        "talents": [
+            {
+                "nom": "Rivalité",
+                "description": "Augmente les dégâts infligés de 1.25× contre les Pokémon du même genre, mais diminue les dégâts de 0.75× contre ceux du genre opposé.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Mélo": {
+        "id": 173,
+        "nom_api": "cleffa",
+        "talents": [
+            {
+                "nom": "Joli Sourire",
+                "description": "A 30% de chances de rendre amoureux le Pokémon attaquant lors d'un contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Garde Magik",
+                "description": "Protège contre les dégâts non directement causés par une capacité.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Garde-Ami",
+                "description": "Diminue tous les dégâts directs subis par les Pokémon alliés de 0.75×.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Furaiglon": {
+        "id": 627,
+        "nom_api": "rufflet",
+        "talents": [
+            {
+                "nom": "Regard Vif",
+                "description": "Empêche la précision d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Solochi": {
+        "id": 633,
+        "nom_api": "deino",
+        "talents": [
+            {
+                "nom": "Agitation",
+                "description": "Renforce les capacités physiques pour augmenter les dégâts de 1.5×, mais diminue leur précision de 0.8×.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Makuhita": {
+        "id": 296,
+        "nom_api": "makuhita",
+        "talents": [
+            {
+                "nom": "Isograisse",
+                "description": "Divise par deux les dommages des capacités fire et ice.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Azurill": {
+        "id": 298,
+        "nom_api": "azurill",
+        "talents": [
+            {
+                "nom": "Isograisse",
+                "description": "Divise par deux les dommages des capacités fire et ice.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Coloforce",
+                "description": "Double l'Attaque au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Herbivore",
+                "description": "Absorbe les capacités grass, augmentant l'Attaque d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Mysdibule": {
+        "id": 303,
+        "nom_api": "mawile",
+        "talents": [
+            {
+                "nom": "Hyper Cutter",
+                "description": "Empêche l'Attaque d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Intimidation",
+                "description": "Diminue l'Attaque des adversaires d'un niveau en entrant au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Zébibron": {
+        "id": 522,
+        "nom_api": "blitzle",
+        "talents": [
+            {
+                "nom": "Paratonnerre",
+                "description": "Redirige les capacités electric à cible unique sur ce Pokémon quand c'est possible.  Absorbe les capacités Électrik, augmentant l'Attaque Spéciale d'un niveau.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Motorisé",
+                "description": "Absorbe les capacités electric, augmentant la Vitesse d'un niveau.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Herbivore",
+                "description": "Absorbe les capacités grass, augmentant l'Attaque d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ponchiot": {
+        "id": 506,
+        "nom_api": "lillipup",
+        "talents": [
+            {
+                "nom": "Esprit Vital",
+                "description": "Empêche le sommeil.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Ramassage",
+                "description": "Ramasse les objets tenus utilisés par d'autres Pokémon et lancés.  Peut aussi ramasser un objet après un combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Charpenti": {
+        "id": 532,
+        "nom_api": "timburr",
+        "talents": [
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Poing de Fer",
+                "description": "Renforce les capacités à base de coups de poings d'1.2× leur puissance.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Baggiguane": {
+        "id": 559,
+        "nom_api": "scraggy",
+        "talents": [
+            {
+                "nom": "Mue",
+                "description": "A 33% de chances de soigner n'importe quelle altération majeure de statut après chaque tour.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Impudence",
+                "description": "Augmente l'Attaque d'un niveau en mettant un Pokémon KO.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Intimidation",
+                "description": "Diminue l'Attaque des adversaires d'un niveau en entrant au combat.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ténéfix": {
+        "id": 302,
+        "nom_api": "sableye",
+        "talents": [
+            {
+                "nom": "Regard Vif",
+                "description": "Empêche la précision d'être baissée.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Frein",
+                "description": "Fait agir le Pokémon en dernier pour une même priorité.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Farceur",
+                "description": "Augmente la priorité des capacités non offensives d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Galekid": {
+        "id": 304,
+        "nom_api": "aron",
+        "talents": [
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Heavy Metal",
+                "description": "Double le poids du Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Carvanha": {
+        "id": 318,
+        "nom_api": "carvanha",
+        "talents": [
+            {
+                "nom": "Peau Dure",
+                "description": "Inflige des dommages au Pokémon attaquant égaux à 1/8 de ses PV max lors d'un contact.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Turbo",
+                "description": "Augmente la Vitesse d'un niveau après chaque tour.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Barloche": {
+        "id": 339,
+        "nom_api": "barboach",
+        "talents": [
+            {
+                "nom": "Benêt",
+                "description": "Empêche l'attirance et protège contre captivate.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Anticipation",
+                "description": "Notifie tous les dresseurs en entrant au combat si un adversaire a une capacité super efficace, self destruct, explosion, ou une capacité OHKO.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Hydratation",
+                "description": "Soigne n'importe quelle altération majeure de statut après chaque tour sous pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Judokrak": {
+        "id": 538,
+        "nom_api": "throh",
+        "talents": [
+            {
+                "nom": "Cran",
+                "description": "Augmente l'Attaque d'1.5× avec une altération majeure de statut.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Blizzi": {
+        "id": 459,
+        "nom_api": "snover",
+        "talents": [
+            {
+                "nom": "Alerte Neige",
+                "description": "Invoque une grêle qui dure indéfiniment en entrant sur le terrain.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Anti-Bruit",
+                "description": "Protège contre les capacités basées sur le son.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Cradopaud": {
+        "id": 453,
+        "nom_api": "croagunk",
+        "talents": [
+            {
+                "nom": "Anticipation",
+                "description": "Notifie tous les dresseurs en entrant au combat si un adversaire a une capacité super efficace, self destruct, explosion, ou une capacité OHKO.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Peau Sèche",
+                "description": "Inflige 1/8 des PV max en dégâts à chaque tour durant un soleil intense, mais soigne 1/8 des PV max sous pluie.  Augmente les dégâts des capacités fire de 1.25×, mais absorbe les capacités water, soignant 1/4 des PV max.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Toxitouche",
+                "description": "A 30% de chances d'empoisonner le Pokémon cible lors d'un contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Anorith": {
+        "id": 347,
+        "nom_api": "anorith",
+        "talents": [
+            {
+                "nom": "Armurbaston",
+                "description": "Protège contre les coups critiques.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Ptiravi": {
+        "id": 440,
+        "nom_api": "happiny",
+        "talents": [
+            {
+                "nom": "Médic Nature",
+                "description": "Soigne n'importe quelle altération majeure de statut en se retirant.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Sérénité",
+                "description": "Double les chances d'activation des effets additionnels des capacités.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Garde-Ami",
+                "description": "Diminue tous les dégâts directs subis par les Pokémon alliés de 0.75×.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Lilia": {
+        "id": 345,
+        "nom_api": "lileep",
+        "talents": [
+            {
+                "nom": "Ventouse",
+                "description": "Empêche d'être retiré du combat par les capacités d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Lavabo",
+                "description": "Redirige les capacités water à cible unique sur ce Pokémon si possible.  Absorbe les capacités Eau, augmentant l'Attaque Spéciale d'un niveau.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Relicanth": {
+        "id": 369,
+        "nom_api": "relicanth",
+        "talents": [
+            {
+                "nom": "Glissade",
+                "description": "Double la Vitesse sous la pluie.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Tête de Roc",
+                "description": "Protège contre les contrecoups.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Dinoclier": {
+        "id": 410,
+        "nom_api": "shieldon",
+        "talents": [
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Anti-Bruit",
+                "description": "Protège contre les capacités basées sur le son.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Kranidos": {
+        "id": 408,
+        "nom_api": "cranidos",
+        "talents": [
+            {
+                "nom": "Brise Moule",
+                "description": "Outrepasse les talents des cibles si elles peuvent entraver ou empêcher une capacité.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Sans Limite",
+                "description": "Renforce les capacités avec effets supplémentaires d'1.3× leur puissance, mais empêche leurs effets additionnels.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Rozbouton": {
+        "id": 406,
+        "nom_api": "budew",
+        "talents": [
+            {
+                "nom": "Médic Nature",
+                "description": "Soigne n'importe quelle altération majeure de statut en se retirant.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Point Poison",
+                "description": "A 30% de chances d'empoisonner le Pokémon attaquant en cas de contact.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Feuille Garde",
+                "description": "Protège contre les altérations majeures de statut sous soleil intense.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Spiritomb": {
+        "id": 442,
+        "nom_api": "spiritomb",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Infiltration",
+                "description": "Outrepasse light screen, reflect, et safeguard.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Laporeille": {
+        "id": 427,
+        "nom_api": "buneary",
+        "talents": [
+            {
+                "nom": "Fuite",
+                "description": "Garantit la fuite lors de combats sauvages.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Maladresse",
+                "description": "Empêche le Pokémon d'utiliser son objet tenu au combat.",
+                "slot": 2,
+                "is_hidden": false,
+                "probabilite": "50%"
+            },
+            {
+                "nom": "Échauffement",
+                "description": "Empêche la paralysie.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Griknot": {
+        "id": 443,
+        "nom_api": "gible",
+        "talents": [
+            {
+                "nom": "Voile Sable",
+                "description": "Augmente l'esquive de 25% pendant une tempête de sable.  Protège contre les dégâts de la tempête de sable.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Peau Dure",
+                "description": "Inflige des dommages au Pokémon attaquant égaux à 1/8 de ses PV max lors d'un contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Kyogre": {
+        "id": 382,
+        "nom_api": "kyogre",
+        "talents": [
+            {
+                "nom": "Crachin",
+                "description": "Provoque la pluie qui dure indéfiniment dès l'entrée au combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Groudon": {
+        "id": 383,
+        "nom_api": "groudon",
+        "talents": [
+            {
+                "nom": "Sécheresse",
+                "description": "Invoque le soleil intense qui dure indéfiniment en entrant au combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Rayquaza": {
+        "id": 384,
+        "nom_api": "rayquaza",
+        "talents": [
+            {
+                "nom": "Air Lock",
+                "description": "Annule tous les effets de la météo, mais n'empêche pas la météo elle-même.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Mewtwo": {
+        "id": 150,
+        "nom_api": "mewtwo",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Tension",
+                "description": "Empêche les Pokémon adverses de manger des Baies tenues.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Xerneas": {
+        "id": 716,
+        "nom_api": "xerneas",
+        "talents": [
+            {
+                "nom": "Aura Féérique",
+                "description": "Renforce les capacités fairy d’1.33× leur puissance pour tous les Pokémon alliés et adverses.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Éthernatos": {
+        "id": 890,
+        "nom_api": "eternatus",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Regirock": {
+        "id": 377,
+        "nom_api": "regirock",
+        "talents": [
+            {
+                "nom": "Corps Sain",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Fermeté",
+                "description": "Empêche d'être mis KO en ayant tous ses PV, laissant 1 PV à la place.  Protège contre les capacités OHKO peu importe son nombre de PV.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Registeel": {
+        "id": 379,
+        "nom_api": "registeel",
+        "talents": [
+            {
+                "nom": "Corps Sain",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Light Metal",
+                "description": "Divise par deux le poids du Pokémon.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Regice": {
+        "id": 378,
+        "nom_api": "regice",
+        "talents": [
+            {
+                "nom": "Corps Sain",
+                "description": "Empêche les stats d'être diminuées par d'autres Pokémon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Corps Gel",
+                "description": "Soigne 1/16 des PV max après chaque tour sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Regidrago": {
+        "id": 895,
+        "nom_api": "regidrago",
+        "talents": [
+            {
+                "nom": "Dent de Dragon",
+                "description": "Augmente la puissance des capacités de type Dragon.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Regieleki": {
+        "id": 894,
+        "nom_api": "regieleki",
+        "talents": [
+            {
+                "nom": "Transistor",
+                "description": "Augmente la puissance des capacités de type Électrik.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Regigigas": {
+        "id": 486,
+        "nom_api": "regigigas",
+        "talents": [
+            {
+                "nom": "Début Calme",
+                "description": "Divise par deux l'Attaque et Vitesse pendant cinq tours en entrant au combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Heatran": {
+        "id": 485,
+        "nom_api": "heatran",
+        "talents": [
+            {
+                "nom": "Torche",
+                "description": "Protège contre les capacités fire.  Une fois qu'une a été bloquée, les propres attaques Feu du Pokémon infligent 50% de dégats supplémentaires jusqu'à ce qu'il quitte le combat.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Darkrai": {
+        "id": 491,
+        "nom_api": "darkrai",
+        "talents": [
+            {
+                "nom": "Mauvais Rêve",
+                "description": "Inflige des dégâts aux adversaires endormis à hauteur d'1/8 de leurs PV max après chaque tour.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Cobaltium": {
+        "id": 638,
+        "nom_api": "cobalion",
+        "talents": [
+            {
+                "nom": "Cœur Noble",
+                "description": "Augmente l'Attaque d'un niveau en subissant des dégâts d'une capacité dark.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Viridium": {
+        "id": 640,
+        "nom_api": "virizion",
+        "talents": [
+            {
+                "nom": "Cœur Noble",
+                "description": "Augmente l'Attaque d'un niveau en subissant des dégâts d'une capacité dark.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Terrakium": {
+        "id": 639,
+        "nom_api": "terrakion",
+        "talents": [
+            {
+                "nom": "Cœur Noble",
+                "description": "Augmente l'Attaque d'un niveau en subissant des dégâts d'une capacité dark.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Câblifère": {
+        "id": 796,
+        "nom_api": "xurkitree",
+        "talents": [
+            {
+                "nom": "Boost Chimère",
+                "description": "Augmente la plus stat la plus élevée de ce Pokémon d’une niveau quand il met KO un autre Pokémon. ",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Katagami": {
+        "id": 798,
+        "nom_api": "kartana",
+        "talents": [
+            {
+                "nom": "Boost Chimère",
+                "description": "Augmente la plus stat la plus élevée de ce Pokémon d’une niveau quand il met KO un autre Pokémon. ",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Pêchaminus": {
+        "id": 1025,
+        "nom_api": "pecharunt",
+        "talents": [
+            {
+                "nom": "Emprise Toxique",
+                "description": "Un Pokémon empoisonné par les capacités de Pêchaminus sera aussi confus.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Artikodin": {
+        "id": 144,
+        "nom_api": "articuno",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Rideau Neige",
+                "description": "Augmente l'esquive de 1.25× sous grêle.  Protège contre les dégâts de la grêle.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Sulfura": {
+        "id": 146,
+        "nom_api": "moltres",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Corps Ardent",
+                "description": "A 30% de chances de brûler le Pokémon attaquant en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Électhor": {
+        "id": 145,
+        "nom_api": "zapdos",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Statik",
+                "description": "A 30% de chances de paralyser le Pokémon attaquant en cas de contact.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Suicune": {
+        "id": 245,
+        "nom_api": "suicune",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Entei": {
+        "id": 244,
+        "nom_api": "entei",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Raikou": {
+        "id": 243,
+        "nom_api": "raikou",
+        "talents": [
+            {
+                "nom": "Pression",
+                "description": "Augmente le coût de PP des capacités ciblant ce Pokémon de un.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Attention",
+                "description": "Empêche l'apeurement.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Mouscoto": {
+        "id": 794,
+        "nom_api": "buzzwole",
+        "talents": [
+            {
+                "nom": "Boost Chimère",
+                "description": "Augmente la plus stat la plus élevée de ce Pokémon d’une niveau quand il met KO un autre Pokémon. ",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Cancrelove": {
+        "id": 795,
+        "nom_api": "pheromosa",
+        "talents": [
+            {
+                "nom": "Boost Chimère",
+                "description": "Augmente la plus stat la plus élevée de ce Pokémon d’une niveau quand il met KO un autre Pokémon. ",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            }
+        ]
+    },
+    "Tokorico": {
+        "id": 785,
+        "nom_api": "tapu-koko",
+        "talents": [
+            {
+                "nom": "Créa-Élec",
+                "description": "Quand ce Pokémon entre au combat, il change le terrain en Champ Électrifié.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Télépathe",
+                "description": "Protège contre les capacités offensives des Pokémon alliés.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tokopiyon": {
+        "id": 786,
+        "nom_api": "tapu-lele",
+        "talents": [
+            {
+                "nom": "Créa-Psy",
+                "description": "Quand ce Pokémon entre au combat, il change le terrain en Champ Psychique.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Télépathe",
+                "description": "Protège contre les capacités offensives des Pokémon alliés.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tokotoro": {
+        "id": 787,
+        "nom_api": "tapu-bulu",
+        "talents": [
+            {
+                "nom": "Créa-Herbe",
+                "description": "Quand ce Pokémon entre au combat, il change le terrain en Champ Herbu.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Télépathe",
+                "description": "Protège contre les capacités offensives des Pokémon alliés.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    },
+    "Tokopisco": {
+        "id": 788,
+        "nom_api": "tapu-fini",
+        "talents": [
+            {
+                "nom": "Créa-Brume",
+                "description": "Quand ce Pokémon entre au combat, il change le terrain en Champ Brumeux.",
+                "slot": 1,
+                "is_hidden": false,
+                "probabilite": "100%"
+            },
+            {
+                "nom": "Télépathe",
+                "description": "Protège contre les capacités offensives des Pokémon alliés.",
+                "slot": 3,
+                "is_hidden": true,
+                "probabilite": "60%"
+            }
+        ]
+    }
+}

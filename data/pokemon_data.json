@@ -1,0 +1,8604 @@
+{
+    "Bulbizarre": {
+        "id": 1,
+        "nom_api": "bulbasaur",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 49,
+            "defense": 49,
+            "attaque_spe": 65,
+            "defense_spe": 65,
+            "vitesse": 45
+        },
+        "talents": [
+            "Overgrow",
+            "Chlorophyll"
+        ],
+        "generation": "Generation 1"
+    },
+    "Herbizarre": {
+        "id": 2,
+        "nom_api": "ivysaur",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 62,
+            "defense": 63,
+            "attaque_spe": 80,
+            "defense_spe": 80,
+            "vitesse": 60
+        },
+        "talents": [
+            "Overgrow",
+            "Chlorophyll"
+        ],
+        "generation": "Generation 1"
+    },
+    "Florizarre": {
+        "id": 3,
+        "nom_api": "venusaur",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 82,
+            "defense": 83,
+            "attaque_spe": 100,
+            "defense_spe": 100,
+            "vitesse": 80
+        },
+        "talents": [
+            "Overgrow",
+            "Chlorophyll"
+        ],
+        "generation": "Generation 1"
+    },
+    "Salamèche": {
+        "id": 4,
+        "nom_api": "charmander",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 39,
+            "attaque": 52,
+            "defense": 43,
+            "attaque_spe": 60,
+            "defense_spe": 50,
+            "vitesse": 65
+        },
+        "talents": [
+            "Blaze",
+            "Solar power"
+        ],
+        "generation": "Generation 1"
+    },
+    "Reptincel": {
+        "id": 5,
+        "nom_api": "charmeleon",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 58,
+            "attaque": 64,
+            "defense": 58,
+            "attaque_spe": 80,
+            "defense_spe": 65,
+            "vitesse": 80
+        },
+        "talents": [
+            "Blaze",
+            "Solar power"
+        ],
+        "generation": "Generation 1"
+    },
+    "Dracaufeu": {
+        "id": 6,
+        "nom_api": "charizard",
+        "types": [
+            "Feu",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 84,
+            "defense": 78,
+            "attaque_spe": 109,
+            "defense_spe": 85,
+            "vitesse": 100
+        },
+        "talents": [
+            "Blaze",
+            "Solar power"
+        ],
+        "generation": "Generation 1"
+    },
+    "Carapuce": {
+        "id": 7,
+        "nom_api": "squirtle",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 44,
+            "attaque": 48,
+            "defense": 65,
+            "attaque_spe": 50,
+            "defense_spe": 64,
+            "vitesse": 43
+        },
+        "talents": [
+            "Torrent",
+            "Rain dish"
+        ],
+        "generation": "Generation 1"
+    },
+    "Carabaffe": {
+        "id": 8,
+        "nom_api": "wartortle",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 59,
+            "attaque": 63,
+            "defense": 80,
+            "attaque_spe": 65,
+            "defense_spe": 80,
+            "vitesse": 58
+        },
+        "talents": [
+            "Torrent",
+            "Rain dish"
+        ],
+        "generation": "Generation 1"
+    },
+    "Tortank": {
+        "id": 9,
+        "nom_api": "blastoise",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 79,
+            "attaque": 83,
+            "defense": 100,
+            "attaque_spe": 85,
+            "defense_spe": 105,
+            "vitesse": 78
+        },
+        "talents": [
+            "Torrent",
+            "Rain dish"
+        ],
+        "generation": "Generation 1"
+    },
+    "Germignon": {
+        "id": 152,
+        "nom_api": "chikorita",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 49,
+            "defense": 65,
+            "attaque_spe": 49,
+            "defense_spe": 65,
+            "vitesse": 45
+        },
+        "talents": [
+            "Overgrow",
+            "Leaf guard"
+        ],
+        "generation": "Generation 2"
+    },
+    "Macronium": {
+        "id": 153,
+        "nom_api": "bayleef",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 62,
+            "defense": 80,
+            "attaque_spe": 63,
+            "defense_spe": 80,
+            "vitesse": 60
+        },
+        "talents": [
+            "Overgrow",
+            "Leaf guard"
+        ],
+        "generation": "Generation 2"
+    },
+    "Méganium": {
+        "id": 154,
+        "nom_api": "meganium",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 82,
+            "defense": 100,
+            "attaque_spe": 83,
+            "defense_spe": 100,
+            "vitesse": 80
+        },
+        "talents": [
+            "Overgrow",
+            "Leaf guard"
+        ],
+        "generation": "Generation 2"
+    },
+    "Héricendre": {
+        "id": 155,
+        "nom_api": "cyndaquil",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 39,
+            "attaque": 52,
+            "defense": 43,
+            "attaque_spe": 60,
+            "defense_spe": 50,
+            "vitesse": 65
+        },
+        "talents": [
+            "Blaze",
+            "Flash fire"
+        ],
+        "generation": "Generation 2"
+    },
+    "Feurisson": {
+        "id": 156,
+        "nom_api": "quilava",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 58,
+            "attaque": 64,
+            "defense": 58,
+            "attaque_spe": 80,
+            "defense_spe": 65,
+            "vitesse": 80
+        },
+        "talents": [
+            "Blaze",
+            "Flash fire"
+        ],
+        "generation": "Generation 2"
+    },
+    "Typhlosion": {
+        "id": 157,
+        "nom_api": "typhlosion",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 84,
+            "defense": 78,
+            "attaque_spe": 109,
+            "defense_spe": 85,
+            "vitesse": 100
+        },
+        "talents": [
+            "Blaze",
+            "Flash fire"
+        ],
+        "generation": "Generation 2"
+    },
+    "Kaiminus": {
+        "id": 158,
+        "nom_api": "totodile",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 65,
+            "defense": 64,
+            "attaque_spe": 44,
+            "defense_spe": 48,
+            "vitesse": 43
+        },
+        "talents": [
+            "Torrent",
+            "Sheer force"
+        ],
+        "generation": "Generation 2"
+    },
+    "Crocrodil": {
+        "id": 159,
+        "nom_api": "croconaw",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 80,
+            "defense": 80,
+            "attaque_spe": 59,
+            "defense_spe": 63,
+            "vitesse": 58
+        },
+        "talents": [
+            "Torrent",
+            "Sheer force"
+        ],
+        "generation": "Generation 2"
+    },
+    "Aligatueur": {
+        "id": 160,
+        "nom_api": "feraligatr",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 105,
+            "defense": 100,
+            "attaque_spe": 79,
+            "defense_spe": 83,
+            "vitesse": 78
+        },
+        "talents": [
+            "Torrent",
+            "Sheer force"
+        ],
+        "generation": "Generation 2"
+    },
+    "Arcko": {
+        "id": 252,
+        "nom_api": "treecko",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 45,
+            "defense": 35,
+            "attaque_spe": 65,
+            "defense_spe": 55,
+            "vitesse": 70
+        },
+        "talents": [
+            "Overgrow",
+            "Unburden"
+        ],
+        "generation": "Generation 3"
+    },
+    "Massko": {
+        "id": 253,
+        "nom_api": "grovyle",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 65,
+            "defense": 45,
+            "attaque_spe": 85,
+            "defense_spe": 65,
+            "vitesse": 95
+        },
+        "talents": [
+            "Overgrow",
+            "Unburden"
+        ],
+        "generation": "Generation 3"
+    },
+    "Jungko": {
+        "id": 254,
+        "nom_api": "sceptile",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 65,
+            "attaque_spe": 105,
+            "defense_spe": 85,
+            "vitesse": 120
+        },
+        "talents": [
+            "Overgrow",
+            "Unburden"
+        ],
+        "generation": "Generation 3"
+    },
+    "Poussifeu": {
+        "id": 255,
+        "nom_api": "torchic",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 60,
+            "defense": 40,
+            "attaque_spe": 70,
+            "defense_spe": 50,
+            "vitesse": 45
+        },
+        "talents": [
+            "Blaze",
+            "Speed boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Galifeu": {
+        "id": 256,
+        "nom_api": "combusken",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 85,
+            "defense": 60,
+            "attaque_spe": 85,
+            "defense_spe": 60,
+            "vitesse": 55
+        },
+        "talents": [
+            "Blaze",
+            "Speed boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Braségali": {
+        "id": 257,
+        "nom_api": "blaziken",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 120,
+            "defense": 70,
+            "attaque_spe": 110,
+            "defense_spe": 70,
+            "vitesse": 80
+        },
+        "talents": [
+            "Blaze",
+            "Speed boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Gobou": {
+        "id": 258,
+        "nom_api": "mudkip",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 70,
+            "defense": 50,
+            "attaque_spe": 50,
+            "defense_spe": 50,
+            "vitesse": 40
+        },
+        "talents": [
+            "Torrent",
+            "Damp"
+        ],
+        "generation": "Generation 3"
+    },
+    "Flobio": {
+        "id": 259,
+        "nom_api": "marshtomp",
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 70,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 50
+        },
+        "talents": [
+            "Torrent",
+            "Damp"
+        ],
+        "generation": "Generation 3"
+    },
+    "Laggron": {
+        "id": 260,
+        "nom_api": "swampert",
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 110,
+            "defense": 90,
+            "attaque_spe": 85,
+            "defense_spe": 90,
+            "vitesse": 60
+        },
+        "talents": [
+            "Torrent",
+            "Damp"
+        ],
+        "generation": "Generation 3"
+    },
+    "Tortipouss": {
+        "id": 387,
+        "nom_api": "turtwig",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 68,
+            "defense": 64,
+            "attaque_spe": 45,
+            "defense_spe": 55,
+            "vitesse": 31
+        },
+        "talents": [
+            "Overgrow",
+            "Shell armor"
+        ],
+        "generation": "Generation 4"
+    },
+    "Boskara": {
+        "id": 388,
+        "nom_api": "grotle",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 89,
+            "defense": 85,
+            "attaque_spe": 55,
+            "defense_spe": 65,
+            "vitesse": 36
+        },
+        "talents": [
+            "Overgrow",
+            "Shell armor"
+        ],
+        "generation": "Generation 4"
+    },
+    "Torterra": {
+        "id": 389,
+        "nom_api": "torterra",
+        "types": [
+            "Plante",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 109,
+            "defense": 105,
+            "attaque_spe": 75,
+            "defense_spe": 85,
+            "vitesse": 56
+        },
+        "talents": [
+            "Overgrow",
+            "Shell armor"
+        ],
+        "generation": "Generation 4"
+    },
+    "Ouisticram": {
+        "id": 390,
+        "nom_api": "chimchar",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 44,
+            "attaque": 58,
+            "defense": 44,
+            "attaque_spe": 58,
+            "defense_spe": 44,
+            "vitesse": 61
+        },
+        "talents": [
+            "Blaze",
+            "Iron fist"
+        ],
+        "generation": "Generation 4"
+    },
+    "Chimpenfeu": {
+        "id": 391,
+        "nom_api": "monferno",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 64,
+            "attaque": 78,
+            "defense": 52,
+            "attaque_spe": 78,
+            "defense_spe": 52,
+            "vitesse": 81
+        },
+        "talents": [
+            "Blaze",
+            "Iron fist"
+        ],
+        "generation": "Generation 4"
+    },
+    "Simiabraz": {
+        "id": 392,
+        "nom_api": "infernape",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 76,
+            "attaque": 104,
+            "defense": 71,
+            "attaque_spe": 104,
+            "defense_spe": 71,
+            "vitesse": 108
+        },
+        "talents": [
+            "Blaze",
+            "Iron fist"
+        ],
+        "generation": "Generation 4"
+    },
+    "Tiplouf": {
+        "id": 393,
+        "nom_api": "piplup",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 53,
+            "attaque": 51,
+            "defense": 53,
+            "attaque_spe": 61,
+            "defense_spe": 56,
+            "vitesse": 40
+        },
+        "talents": [
+            "Torrent",
+            "Competitive"
+        ],
+        "generation": "Generation 4"
+    },
+    "Prinplouf": {
+        "id": 394,
+        "nom_api": "prinplup",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 64,
+            "attaque": 66,
+            "defense": 68,
+            "attaque_spe": 81,
+            "defense_spe": 76,
+            "vitesse": 50
+        },
+        "talents": [
+            "Torrent",
+            "Competitive"
+        ],
+        "generation": "Generation 4"
+    },
+    "Pingoléon": {
+        "id": 395,
+        "nom_api": "empoleon",
+        "types": [
+            "Eau",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 84,
+            "attaque": 86,
+            "defense": 88,
+            "attaque_spe": 111,
+            "defense_spe": 101,
+            "vitesse": 60
+        },
+        "talents": [
+            "Torrent",
+            "Competitive"
+        ],
+        "generation": "Generation 4"
+    },
+    "Vipélierre": {
+        "id": 495,
+        "nom_api": "snivy",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 45,
+            "defense": 55,
+            "attaque_spe": 45,
+            "defense_spe": 55,
+            "vitesse": 63
+        },
+        "talents": [
+            "Overgrow",
+            "Contrary"
+        ],
+        "generation": "Generation 5"
+    },
+    "Lianaja": {
+        "id": 496,
+        "nom_api": "servine",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 60,
+            "defense": 75,
+            "attaque_spe": 60,
+            "defense_spe": 75,
+            "vitesse": 83
+        },
+        "talents": [
+            "Overgrow",
+            "Contrary"
+        ],
+        "generation": "Generation 5"
+    },
+    "Majaspic": {
+        "id": 497,
+        "nom_api": "serperior",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 75,
+            "defense": 95,
+            "attaque_spe": 75,
+            "defense_spe": 95,
+            "vitesse": 113
+        },
+        "talents": [
+            "Overgrow",
+            "Contrary"
+        ],
+        "generation": "Generation 5"
+    },
+    "Gruikui": {
+        "id": 498,
+        "nom_api": "tepig",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 63,
+            "defense": 45,
+            "attaque_spe": 45,
+            "defense_spe": 45,
+            "vitesse": 45
+        },
+        "talents": [
+            "Blaze",
+            "Thick fat"
+        ],
+        "generation": "Generation 5"
+    },
+    "Grotichon": {
+        "id": 499,
+        "nom_api": "pignite",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 93,
+            "defense": 55,
+            "attaque_spe": 70,
+            "defense_spe": 55,
+            "vitesse": 55
+        },
+        "talents": [
+            "Blaze",
+            "Thick fat"
+        ],
+        "generation": "Generation 5"
+    },
+    "Roitiflam": {
+        "id": 500,
+        "nom_api": "emboar",
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 123,
+            "defense": 65,
+            "attaque_spe": 100,
+            "defense_spe": 65,
+            "vitesse": 65
+        },
+        "talents": [
+            "Blaze",
+            "Reckless"
+        ],
+        "generation": "Generation 5"
+    },
+    "Moustillon": {
+        "id": 501,
+        "nom_api": "oshawott",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 55,
+            "defense": 45,
+            "attaque_spe": 63,
+            "defense_spe": 45,
+            "vitesse": 45
+        },
+        "talents": [
+            "Torrent",
+            "Shell armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mateloutre": {
+        "id": 502,
+        "nom_api": "dewott",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 75,
+            "defense": 60,
+            "attaque_spe": 83,
+            "defense_spe": 60,
+            "vitesse": 60
+        },
+        "talents": [
+            "Torrent",
+            "Shell armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Clamiral": {
+        "id": 503,
+        "nom_api": "samurott",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 100,
+            "defense": 85,
+            "attaque_spe": 108,
+            "defense_spe": 70,
+            "vitesse": 70
+        },
+        "talents": [
+            "Torrent",
+            "Shell armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Marisson": {
+        "id": 650,
+        "nom_api": "chespin",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 56,
+            "attaque": 61,
+            "defense": 65,
+            "attaque_spe": 48,
+            "defense_spe": 45,
+            "vitesse": 38
+        },
+        "talents": [
+            "Overgrow",
+            "Bulletproof"
+        ],
+        "generation": "Generation 6"
+    },
+    "Boguérisse": {
+        "id": 651,
+        "nom_api": "quilladin",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 61,
+            "attaque": 78,
+            "defense": 95,
+            "attaque_spe": 56,
+            "defense_spe": 58,
+            "vitesse": 57
+        },
+        "talents": [
+            "Overgrow",
+            "Bulletproof"
+        ],
+        "generation": "Generation 6"
+    },
+    "Blindépique": {
+        "id": 652,
+        "nom_api": "chesnaught",
+        "types": [
+            "Plante",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 88,
+            "attaque": 107,
+            "defense": 122,
+            "attaque_spe": 74,
+            "defense_spe": 75,
+            "vitesse": 64
+        },
+        "talents": [
+            "Overgrow",
+            "Bulletproof"
+        ],
+        "generation": "Generation 6"
+    },
+    "Feunnec": {
+        "id": 653,
+        "nom_api": "fennekin",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 45,
+            "defense": 40,
+            "attaque_spe": 62,
+            "defense_spe": 60,
+            "vitesse": 60
+        },
+        "talents": [
+            "Blaze",
+            "Magician"
+        ],
+        "generation": "Generation 6"
+    },
+    "Roussil": {
+        "id": 654,
+        "nom_api": "braixen",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 59,
+            "attaque": 59,
+            "defense": 58,
+            "attaque_spe": 90,
+            "defense_spe": 70,
+            "vitesse": 73
+        },
+        "talents": [
+            "Blaze",
+            "Magician"
+        ],
+        "generation": "Generation 6"
+    },
+    "Goupelin": {
+        "id": 655,
+        "nom_api": "delphox",
+        "types": [
+            "Feu",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 69,
+            "defense": 72,
+            "attaque_spe": 114,
+            "defense_spe": 100,
+            "vitesse": 104
+        },
+        "talents": [
+            "Blaze",
+            "Magician"
+        ],
+        "generation": "Generation 6"
+    },
+    "Grenousse": {
+        "id": 656,
+        "nom_api": "froakie",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 41,
+            "attaque": 56,
+            "defense": 40,
+            "attaque_spe": 62,
+            "defense_spe": 44,
+            "vitesse": 71
+        },
+        "talents": [
+            "Torrent",
+            "Protean"
+        ],
+        "generation": "Generation 6"
+    },
+    "Croâporal": {
+        "id": 657,
+        "nom_api": "frogadier",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 54,
+            "attaque": 63,
+            "defense": 52,
+            "attaque_spe": 83,
+            "defense_spe": 56,
+            "vitesse": 97
+        },
+        "talents": [
+            "Torrent",
+            "Protean"
+        ],
+        "generation": "Generation 6"
+    },
+    "Amphinobi": {
+        "id": 658,
+        "nom_api": "greninja",
+        "types": [
+            "Eau",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 72,
+            "attaque": 95,
+            "defense": 67,
+            "attaque_spe": 103,
+            "defense_spe": 71,
+            "vitesse": 122
+        },
+        "talents": [
+            "Torrent",
+            "Protean"
+        ],
+        "generation": "Generation 6"
+    },
+    "Brindibou": {
+        "id": 722,
+        "nom_api": "rowlet",
+        "types": [
+            "Plante",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 55,
+            "defense": 55,
+            "attaque_spe": 50,
+            "defense_spe": 50,
+            "vitesse": 42
+        },
+        "talents": [
+            "Overgrow",
+            "Long reach"
+        ],
+        "generation": "Generation 7"
+    },
+    "Efflèche": {
+        "id": 723,
+        "nom_api": "dartrix",
+        "types": [
+            "Plante",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 75,
+            "defense": 75,
+            "attaque_spe": 70,
+            "defense_spe": 70,
+            "vitesse": 52
+        },
+        "talents": [
+            "Overgrow",
+            "Long reach"
+        ],
+        "generation": "Generation 7"
+    },
+    "Archéduc": {
+        "id": 724,
+        "nom_api": "decidueye",
+        "types": [
+            "Plante",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 107,
+            "defense": 75,
+            "attaque_spe": 100,
+            "defense_spe": 100,
+            "vitesse": 70
+        },
+        "talents": [
+            "Overgrow",
+            "Long reach"
+        ],
+        "generation": "Generation 7"
+    },
+    "Flamiaou": {
+        "id": 725,
+        "nom_api": "litten",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 65,
+            "defense": 40,
+            "attaque_spe": 60,
+            "defense_spe": 40,
+            "vitesse": 70
+        },
+        "talents": [
+            "Blaze",
+            "Intimidate"
+        ],
+        "generation": "Generation 7"
+    },
+    "Matoufeu": {
+        "id": 726,
+        "nom_api": "torracat",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 85,
+            "defense": 50,
+            "attaque_spe": 80,
+            "defense_spe": 50,
+            "vitesse": 90
+        },
+        "talents": [
+            "Blaze",
+            "Intimidate"
+        ],
+        "generation": "Generation 7"
+    },
+    "Félinferno": {
+        "id": 727,
+        "nom_api": "incineroar",
+        "types": [
+            "Feu",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 115,
+            "defense": 90,
+            "attaque_spe": 80,
+            "defense_spe": 90,
+            "vitesse": 60
+        },
+        "talents": [
+            "Blaze",
+            "Intimidate"
+        ],
+        "generation": "Generation 7"
+    },
+    "Otaquin": {
+        "id": 728,
+        "nom_api": "popplio",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 54,
+            "defense": 54,
+            "attaque_spe": 66,
+            "defense_spe": 56,
+            "vitesse": 40
+        },
+        "talents": [
+            "Torrent",
+            "Liquid voice"
+        ],
+        "generation": "Generation 7"
+    },
+    "Otarlette": {
+        "id": 729,
+        "nom_api": "brionne",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 69,
+            "defense": 69,
+            "attaque_spe": 91,
+            "defense_spe": 81,
+            "vitesse": 50
+        },
+        "talents": [
+            "Torrent",
+            "Liquid voice"
+        ],
+        "generation": "Generation 7"
+    },
+    "Oratoria": {
+        "id": 730,
+        "nom_api": "primarina",
+        "types": [
+            "Eau",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 74,
+            "defense": 74,
+            "attaque_spe": 126,
+            "defense_spe": 116,
+            "vitesse": 60
+        },
+        "talents": [
+            "Torrent",
+            "Liquid voice"
+        ],
+        "generation": "Generation 7"
+    },
+    "Ouistempo": {
+        "id": 810,
+        "nom_api": "grookey",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 65,
+            "defense": 50,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 65
+        },
+        "talents": [
+            "Overgrow",
+            "Grassy surge"
+        ],
+        "generation": "Generation 8"
+    },
+    "Badabouin": {
+        "id": 811,
+        "nom_api": "thwackey",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 70,
+            "attaque_spe": 55,
+            "defense_spe": 60,
+            "vitesse": 80
+        },
+        "talents": [
+            "Overgrow",
+            "Grassy surge"
+        ],
+        "generation": "Generation 8"
+    },
+    "Gorythmic": {
+        "id": 812,
+        "nom_api": "rillaboom",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 125,
+            "defense": 90,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 85
+        },
+        "talents": [
+            "Overgrow",
+            "Grassy surge"
+        ],
+        "generation": "Generation 8"
+    },
+    "Flambino": {
+        "id": 813,
+        "nom_api": "scorbunny",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 71,
+            "defense": 40,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 69
+        },
+        "talents": [
+            "Blaze",
+            "Libero"
+        ],
+        "generation": "Generation 8"
+    },
+    "Lapyro": {
+        "id": 814,
+        "nom_api": "raboot",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 86,
+            "defense": 60,
+            "attaque_spe": 55,
+            "defense_spe": 60,
+            "vitesse": 94
+        },
+        "talents": [
+            "Blaze",
+            "Libero"
+        ],
+        "generation": "Generation 8"
+    },
+    "Pyrobut": {
+        "id": 815,
+        "nom_api": "cinderace",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 116,
+            "defense": 75,
+            "attaque_spe": 65,
+            "defense_spe": 75,
+            "vitesse": 119
+        },
+        "talents": [
+            "Blaze",
+            "Libero"
+        ],
+        "generation": "Generation 8"
+    },
+    "Larméléon": {
+        "id": 816,
+        "nom_api": "sobble",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 40,
+            "defense": 40,
+            "attaque_spe": 70,
+            "defense_spe": 40,
+            "vitesse": 70
+        },
+        "talents": [
+            "Torrent",
+            "Sniper"
+        ],
+        "generation": "Generation 8"
+    },
+    "Arrozard": {
+        "id": 817,
+        "nom_api": "drizzile",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 60,
+            "defense": 55,
+            "attaque_spe": 95,
+            "defense_spe": 55,
+            "vitesse": 90
+        },
+        "talents": [
+            "Torrent",
+            "Sniper"
+        ],
+        "generation": "Generation 8"
+    },
+    "Lézargus": {
+        "id": 818,
+        "nom_api": "inteleon",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 65,
+            "attaque_spe": 125,
+            "defense_spe": 65,
+            "vitesse": 120
+        },
+        "talents": [
+            "Torrent",
+            "Sniper"
+        ],
+        "generation": "Generation 8"
+    },
+    "Poussacha": {
+        "id": 906,
+        "nom_api": "sprigatito",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 61,
+            "defense": 54,
+            "attaque_spe": 45,
+            "defense_spe": 45,
+            "vitesse": 65
+        },
+        "talents": [
+            "Overgrow",
+            "Protean"
+        ],
+        "generation": "Generation 9"
+    },
+    "Matourgeon": {
+        "id": 907,
+        "nom_api": "floragato",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 61,
+            "attaque": 80,
+            "defense": 63,
+            "attaque_spe": 60,
+            "defense_spe": 63,
+            "vitesse": 83
+        },
+        "talents": [
+            "Overgrow",
+            "Protean"
+        ],
+        "generation": "Generation 9"
+    },
+    "Miascarade": {
+        "id": 908,
+        "nom_api": "meowscarada",
+        "types": [
+            "Plante",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 76,
+            "attaque": 110,
+            "defense": 70,
+            "attaque_spe": 81,
+            "defense_spe": 70,
+            "vitesse": 123
+        },
+        "talents": [
+            "Overgrow",
+            "Protean"
+        ],
+        "generation": "Generation 9"
+    },
+    "Chochodile": {
+        "id": 909,
+        "nom_api": "fuecoco",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 67,
+            "attaque": 45,
+            "defense": 59,
+            "attaque_spe": 63,
+            "defense_spe": 40,
+            "vitesse": 36
+        },
+        "talents": [
+            "Blaze",
+            "Unaware"
+        ],
+        "generation": "Generation 9"
+    },
+    "Crocogril": {
+        "id": 910,
+        "nom_api": "crocalor",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 81,
+            "attaque": 55,
+            "defense": 78,
+            "attaque_spe": 90,
+            "defense_spe": 58,
+            "vitesse": 49
+        },
+        "talents": [
+            "Blaze",
+            "Unaware"
+        ],
+        "generation": "Generation 9"
+    },
+    "Flâmigator": {
+        "id": 911,
+        "nom_api": "skeledirge",
+        "types": [
+            "Feu",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 104,
+            "attaque": 75,
+            "defense": 100,
+            "attaque_spe": 110,
+            "defense_spe": 75,
+            "vitesse": 66
+        },
+        "talents": [
+            "Blaze",
+            "Unaware"
+        ],
+        "generation": "Generation 9"
+    },
+    "Coiffeton": {
+        "id": 912,
+        "nom_api": "quaxly",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 65,
+            "defense": 45,
+            "attaque_spe": 50,
+            "defense_spe": 45,
+            "vitesse": 50
+        },
+        "talents": [
+            "Torrent",
+            "Moxie"
+        ],
+        "generation": "Generation 9"
+    },
+    "Canarbello": {
+        "id": 913,
+        "nom_api": "quaxwell",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 65,
+            "attaque_spe": 65,
+            "defense_spe": 60,
+            "vitesse": 65
+        },
+        "talents": [
+            "Torrent",
+            "Moxie"
+        ],
+        "generation": "Generation 9"
+    },
+    "Palmaval": {
+        "id": 914,
+        "nom_api": "quaquaval",
+        "types": [
+            "Eau",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 120,
+            "defense": 80,
+            "attaque_spe": 85,
+            "defense_spe": 75,
+            "vitesse": 85
+        },
+        "talents": [
+            "Torrent",
+            "Moxie"
+        ],
+        "generation": "Generation 9"
+    },
+    "Tarsal": {
+        "id": 280,
+        "nom_api": "ralts",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 28,
+            "attaque": 25,
+            "defense": 25,
+            "attaque_spe": 45,
+            "defense_spe": 35,
+            "vitesse": 40
+        },
+        "talents": [
+            "Synchronize",
+            "Trace",
+            "Telepathy"
+        ],
+        "generation": "Generation 3"
+    },
+    "Kirlia": {
+        "id": 281,
+        "nom_api": "kirlia",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 38,
+            "attaque": 35,
+            "defense": 35,
+            "attaque_spe": 65,
+            "defense_spe": 55,
+            "vitesse": 50
+        },
+        "talents": [
+            "Synchronize",
+            "Trace",
+            "Telepathy"
+        ],
+        "generation": "Generation 3"
+    },
+    "Gardevoir": {
+        "id": 282,
+        "nom_api": "gardevoir",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 65,
+            "defense": 65,
+            "attaque_spe": 125,
+            "defense_spe": 115,
+            "vitesse": 80
+        },
+        "talents": [
+            "Synchronize",
+            "Trace",
+            "Telepathy"
+        ],
+        "generation": "Generation 3"
+    },
+    "Gallame": {
+        "id": 475,
+        "nom_api": "gallade",
+        "types": [
+            "Psy",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 125,
+            "defense": 65,
+            "attaque_spe": 65,
+            "defense_spe": 115,
+            "vitesse": 80
+        },
+        "talents": [
+            "Steadfast",
+            "Sharpness",
+            "Justified"
+        ],
+        "generation": "Generation 4"
+    },
+    "Parecool": {
+        "id": 287,
+        "nom_api": "slakoth",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 60,
+            "defense": 60,
+            "attaque_spe": 35,
+            "defense_spe": 35,
+            "vitesse": 30
+        },
+        "talents": [
+            "Truant"
+        ],
+        "generation": "Generation 3"
+    },
+    "Vigoroth": {
+        "id": 288,
+        "nom_api": "vigoroth",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 80,
+            "defense": 80,
+            "attaque_spe": 55,
+            "defense_spe": 55,
+            "vitesse": 90
+        },
+        "talents": [
+            "Vital spirit"
+        ],
+        "generation": "Generation 3"
+    },
+    "Monaflèmit": {
+        "id": 289,
+        "nom_api": "slaking",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 150,
+            "attaque": 160,
+            "defense": 100,
+            "attaque_spe": 95,
+            "defense_spe": 65,
+            "vitesse": 100
+        },
+        "talents": [
+            "Truant"
+        ],
+        "generation": "Generation 3"
+    },
+    "Fantominus": {
+        "id": 92,
+        "nom_api": "gastly",
+        "types": [
+            "Spectre",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 30,
+            "attaque": 35,
+            "defense": 30,
+            "attaque_spe": 100,
+            "defense_spe": 35,
+            "vitesse": 80
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 1"
+    },
+    "Spectrum": {
+        "id": 93,
+        "nom_api": "haunter",
+        "types": [
+            "Spectre",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 50,
+            "defense": 45,
+            "attaque_spe": 115,
+            "defense_spe": 55,
+            "vitesse": 95
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 1"
+    },
+    "Ectoplasma": {
+        "id": 94,
+        "nom_api": "gengar",
+        "types": [
+            "Spectre",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 65,
+            "defense": 60,
+            "attaque_spe": 130,
+            "defense_spe": 75,
+            "vitesse": 110
+        },
+        "talents": [
+            "Cursed body"
+        ],
+        "generation": "Generation 1"
+    },
+    "Riolu": {
+        "id": 447,
+        "nom_api": "riolu",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 70,
+            "defense": 40,
+            "attaque_spe": 35,
+            "defense_spe": 40,
+            "vitesse": 60
+        },
+        "talents": [
+            "Steadfast",
+            "Inner focus",
+            "Prankster"
+        ],
+        "generation": "Generation 4"
+    },
+    "Lucario": {
+        "id": 448,
+        "nom_api": "lucario",
+        "types": [
+            "Combat",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 110,
+            "defense": 70,
+            "attaque_spe": 115,
+            "defense_spe": 70,
+            "vitesse": 90
+        },
+        "talents": [
+            "Steadfast",
+            "Inner focus",
+            "Justified"
+        ],
+        "generation": "Generation 4"
+    },
+    "Absol": {
+        "id": 359,
+        "nom_api": "absol",
+        "types": [
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 130,
+            "defense": 60,
+            "attaque_spe": 75,
+            "defense_spe": 60,
+            "vitesse": 75
+        },
+        "talents": [
+            "Pressure",
+            "Super luck",
+            "Justified"
+        ],
+        "generation": "Generation 3"
+    },
+    "Scalpion": {
+        "id": 624,
+        "nom_api": "pawniard",
+        "types": [
+            "Ténèbres",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 85,
+            "defense": 70,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 60
+        },
+        "talents": [
+            "Defiant",
+            "Inner focus",
+            "Pressure"
+        ],
+        "generation": "Generation 5"
+    },
+    "Scalproie": {
+        "id": 625,
+        "nom_api": "bisharp",
+        "types": [
+            "Ténèbres",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 125,
+            "defense": 100,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 70
+        },
+        "talents": [
+            "Defiant",
+            "Inner focus",
+            "Pressure"
+        ],
+        "generation": "Generation 5"
+    },
+    "Scalpereur": {
+        "id": 983,
+        "nom_api": "kingambit",
+        "types": [
+            "Ténèbres",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 135,
+            "defense": 120,
+            "attaque_spe": 60,
+            "defense_spe": 85,
+            "vitesse": 50
+        },
+        "talents": [
+            "Defiant",
+            "Supreme overlord",
+            "Pressure"
+        ],
+        "generation": "Generation 9"
+    },
+    "Terhal": {
+        "id": 374,
+        "nom_api": "beldum",
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 55,
+            "defense": 80,
+            "attaque_spe": 35,
+            "defense_spe": 60,
+            "vitesse": 30
+        },
+        "talents": [
+            "Clear body",
+            "Light metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Métang": {
+        "id": 375,
+        "nom_api": "metang",
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 75,
+            "defense": 100,
+            "attaque_spe": 55,
+            "defense_spe": 80,
+            "vitesse": 50
+        },
+        "talents": [
+            "Clear body",
+            "Light metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Métalosse": {
+        "id": 376,
+        "nom_api": "metagross",
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 135,
+            "defense": 130,
+            "attaque_spe": 95,
+            "defense_spe": 90,
+            "vitesse": 70
+        },
+        "talents": [
+            "Clear body",
+            "Light metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Embrylex": {
+        "id": 246,
+        "nom_api": "larvitar",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 64,
+            "defense": 50,
+            "attaque_spe": 45,
+            "defense_spe": 50,
+            "vitesse": 41
+        },
+        "talents": [
+            "Guts",
+            "Sand veil"
+        ],
+        "generation": "Generation 2"
+    },
+    "Ymphect": {
+        "id": 247,
+        "nom_api": "pupitar",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 84,
+            "defense": 70,
+            "attaque_spe": 65,
+            "defense_spe": 70,
+            "vitesse": 51
+        },
+        "talents": [
+            "Shed skin"
+        ],
+        "generation": "Generation 2"
+    },
+    "Tyranocif": {
+        "id": 248,
+        "nom_api": "tyranitar",
+        "types": [
+            "Roche",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 134,
+            "defense": 110,
+            "attaque_spe": 95,
+            "defense_spe": 100,
+            "vitesse": 61
+        },
+        "talents": [
+            "Sand stream",
+            "Unnerve"
+        ],
+        "generation": "Generation 2"
+    },
+    "Insécateur": {
+        "id": 123,
+        "nom_api": "scyther",
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 110,
+            "defense": 80,
+            "attaque_spe": 55,
+            "defense_spe": 80,
+            "vitesse": 105
+        },
+        "talents": [
+            "Swarm",
+            "Technician",
+            "Steadfast"
+        ],
+        "generation": "Generation 1"
+    },
+    "Cizayox": {
+        "id": 212,
+        "nom_api": "scizor",
+        "types": [
+            "Insecte",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 130,
+            "defense": 100,
+            "attaque_spe": 55,
+            "defense_spe": 80,
+            "vitesse": 65
+        },
+        "talents": [
+            "Swarm",
+            "Technician",
+            "Light metal"
+        ],
+        "generation": "Generation 2"
+    },
+    "Hachécateur": {
+        "id": 900,
+        "nom_api": "kleavor",
+        "types": [
+            "Insecte",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 135,
+            "defense": 95,
+            "attaque_spe": 45,
+            "defense_spe": 70,
+            "vitesse": 85
+        },
+        "talents": [
+            "Swarm",
+            "Sheer force",
+            "Sharpness"
+        ],
+        "generation": "Generation 8"
+    },
+    "Chenipan": {
+        "id": 10,
+        "nom_api": "caterpie",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 30,
+            "defense": 35,
+            "attaque_spe": 20,
+            "defense_spe": 20,
+            "vitesse": 45
+        },
+        "talents": [
+            "Shield dust",
+            "Run away"
+        ],
+        "generation": "Generation 1"
+    },
+    "Chrysacier": {
+        "id": 11,
+        "nom_api": "metapod",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 20,
+            "defense": 55,
+            "attaque_spe": 25,
+            "defense_spe": 25,
+            "vitesse": 30
+        },
+        "talents": [
+            "Shed skin"
+        ],
+        "generation": "Generation 1"
+    },
+    "Papilusion": {
+        "id": 12,
+        "nom_api": "butterfree",
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 45,
+            "defense": 50,
+            "attaque_spe": 90,
+            "defense_spe": 80,
+            "vitesse": 70
+        },
+        "talents": [
+            "Compound eyes",
+            "Tinted lens"
+        ],
+        "generation": "Generation 1"
+    },
+    "Chenipotte": {
+        "id": 265,
+        "nom_api": "wurmple",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 45,
+            "defense": 35,
+            "attaque_spe": 20,
+            "defense_spe": 30,
+            "vitesse": 20
+        },
+        "talents": [
+            "Shield dust",
+            "Run away"
+        ],
+        "generation": "Generation 3"
+    },
+    "Armulys": {
+        "id": 266,
+        "nom_api": "silcoon",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 35,
+            "defense": 55,
+            "attaque_spe": 25,
+            "defense_spe": 25,
+            "vitesse": 15
+        },
+        "talents": [
+            "Shed skin"
+        ],
+        "generation": "Generation 3"
+    },
+    "Charmillon": {
+        "id": 267,
+        "nom_api": "beautifly",
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 70,
+            "defense": 50,
+            "attaque_spe": 100,
+            "defense_spe": 50,
+            "vitesse": 65
+        },
+        "talents": [
+            "Swarm",
+            "Rivalry"
+        ],
+        "generation": "Generation 3"
+    },
+    "Blindalys": {
+        "id": 268,
+        "nom_api": "cascoon",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 35,
+            "defense": 55,
+            "attaque_spe": 25,
+            "defense_spe": 25,
+            "vitesse": 15
+        },
+        "talents": [
+            "Shed skin"
+        ],
+        "generation": "Generation 3"
+    },
+    "Papinox": {
+        "id": 269,
+        "nom_api": "dustox",
+        "types": [
+            "Insecte",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 50,
+            "defense": 70,
+            "attaque_spe": 50,
+            "defense_spe": 90,
+            "vitesse": 65
+        },
+        "talents": [
+            "Shield dust",
+            "Compound eyes"
+        ],
+        "generation": "Generation 3"
+    },
+    "Stalgamin": {
+        "id": 361,
+        "nom_api": "snorunt",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 50,
+            "defense": 50,
+            "attaque_spe": 50,
+            "defense_spe": 50,
+            "vitesse": 50
+        },
+        "talents": [
+            "Inner focus",
+            "Ice body",
+            "Moody"
+        ],
+        "generation": "Generation 3"
+    },
+    "Oniglali": {
+        "id": 362,
+        "nom_api": "glalie",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 80,
+            "defense": 80,
+            "attaque_spe": 80,
+            "defense_spe": 80,
+            "vitesse": 80
+        },
+        "talents": [
+            "Inner focus",
+            "Ice body",
+            "Moody"
+        ],
+        "generation": "Generation 3"
+    },
+    "Momartik": {
+        "id": 478,
+        "nom_api": "froslass",
+        "types": [
+            "Glace",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 80,
+            "defense": 70,
+            "attaque_spe": 80,
+            "defense_spe": 70,
+            "vitesse": 110
+        },
+        "talents": [
+            "Snow cloak",
+            "Cursed body"
+        ],
+        "generation": "Generation 4"
+    },
+    "Airmure": {
+        "id": 227,
+        "nom_api": "skarmory",
+        "types": [
+            "Acier",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 80,
+            "defense": 140,
+            "attaque_spe": 40,
+            "defense_spe": 70,
+            "vitesse": 70
+        },
+        "talents": [
+            "Keen eye",
+            "Sturdy",
+            "Weak armor"
+        ],
+        "generation": "Generation 2"
+    },
+    "Draby": {
+        "id": 371,
+        "nom_api": "bagon",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 75,
+            "defense": 60,
+            "attaque_spe": 40,
+            "defense_spe": 30,
+            "vitesse": 50
+        },
+        "talents": [
+            "Rock head",
+            "Sheer force"
+        ],
+        "generation": "Generation 3"
+    },
+    "Drackhaus": {
+        "id": 372,
+        "nom_api": "shelgon",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 95,
+            "defense": 100,
+            "attaque_spe": 60,
+            "defense_spe": 50,
+            "vitesse": 50
+        },
+        "talents": [
+            "Rock head",
+            "Overcoat"
+        ],
+        "generation": "Generation 3"
+    },
+    "Drattak": {
+        "id": 373,
+        "nom_api": "salamence",
+        "types": [
+            "Dragon",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 135,
+            "defense": 80,
+            "attaque_spe": 110,
+            "defense_spe": 80,
+            "vitesse": 100
+        },
+        "talents": [
+            "Intimidate",
+            "Moxie"
+        ],
+        "generation": "Generation 3"
+    },
+    "Archéomire": {
+        "id": 436,
+        "nom_api": "bronzor",
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 57,
+            "attaque": 24,
+            "defense": 86,
+            "attaque_spe": 24,
+            "defense_spe": 86,
+            "vitesse": 23
+        },
+        "talents": [
+            "Levitate",
+            "Heatproof",
+            "Heavy metal"
+        ],
+        "generation": "Generation 4"
+    },
+    "Archéodong": {
+        "id": 437,
+        "nom_api": "bronzong",
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 67,
+            "attaque": 89,
+            "defense": 116,
+            "attaque_spe": 79,
+            "defense_spe": 116,
+            "vitesse": 33
+        },
+        "talents": [
+            "Levitate",
+            "Heatproof",
+            "Heavy metal"
+        ],
+        "generation": "Generation 4"
+    },
+    "Ptéra": {
+        "id": 142,
+        "nom_api": "aerodactyl",
+        "types": [
+            "Roche",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 105,
+            "defense": 65,
+            "attaque_spe": 60,
+            "defense_spe": 75,
+            "vitesse": 130
+        },
+        "talents": [
+            "Rock head",
+            "Pressure",
+            "Unnerve"
+        ],
+        "generation": "Generation 1"
+    },
+    "Racaillou": {
+        "id": 74,
+        "nom_api": "geodude",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 80,
+            "defense": 100,
+            "attaque_spe": 30,
+            "defense_spe": 30,
+            "vitesse": 20
+        },
+        "talents": [
+            "Rock head",
+            "Sturdy",
+            "Sand veil"
+        ],
+        "generation": "Generation 1"
+    },
+    "Gravalanch": {
+        "id": 75,
+        "nom_api": "graveler",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 95,
+            "defense": 115,
+            "attaque_spe": 45,
+            "defense_spe": 45,
+            "vitesse": 35
+        },
+        "talents": [
+            "Rock head",
+            "Sturdy",
+            "Sand veil"
+        ],
+        "generation": "Generation 1"
+    },
+    "Grolem": {
+        "id": 76,
+        "nom_api": "golem",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 120,
+            "defense": 130,
+            "attaque_spe": 55,
+            "defense_spe": 65,
+            "vitesse": 45
+        },
+        "talents": [
+            "Rock head",
+            "Sturdy",
+            "Sand veil"
+        ],
+        "generation": "Generation 1"
+    },
+    "Nodulithe": {
+        "id": 524,
+        "nom_api": "roggenrola",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 75,
+            "defense": 85,
+            "attaque_spe": 25,
+            "defense_spe": 25,
+            "vitesse": 15
+        },
+        "talents": [
+            "Sturdy",
+            "Weak armor",
+            "Sand force"
+        ],
+        "generation": "Generation 5"
+    },
+    "Géolithe": {
+        "id": 525,
+        "nom_api": "boldore",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 105,
+            "defense": 105,
+            "attaque_spe": 50,
+            "defense_spe": 40,
+            "vitesse": 20
+        },
+        "talents": [
+            "Sturdy",
+            "Weak armor",
+            "Sand force"
+        ],
+        "generation": "Generation 5"
+    },
+    "Gigalithe": {
+        "id": 526,
+        "nom_api": "gigalith",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 135,
+            "defense": 130,
+            "attaque_spe": 60,
+            "defense_spe": 80,
+            "vitesse": 25
+        },
+        "talents": [
+            "Sturdy",
+            "Sand stream",
+            "Sand force"
+        ],
+        "generation": "Generation 5"
+    },
+    "Hélionceau": {
+        "id": 667,
+        "nom_api": "litleo",
+        "types": [
+            "Feu",
+            "Normal"
+        ],
+        "stats": {
+            "hp": 62,
+            "attaque": 50,
+            "defense": 58,
+            "attaque_spe": 73,
+            "defense_spe": 54,
+            "vitesse": 72
+        },
+        "talents": [
+            "Rivalry",
+            "Unnerve",
+            "Moxie"
+        ],
+        "generation": "Generation 6"
+    },
+    "Némélios": {
+        "id": 668,
+        "nom_api": "pyroar",
+        "types": [
+            "Feu",
+            "Normal"
+        ],
+        "stats": {
+            "hp": 86,
+            "attaque": 68,
+            "defense": 72,
+            "attaque_spe": 109,
+            "defense_spe": 66,
+            "vitesse": 106
+        },
+        "talents": [
+            "Rivalry",
+            "Unnerve",
+            "Moxie"
+        ],
+        "generation": "Generation 6"
+    },
+    "Coxy": {
+        "id": 165,
+        "nom_api": "ledyba",
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 20,
+            "defense": 30,
+            "attaque_spe": 40,
+            "defense_spe": 80,
+            "vitesse": 55
+        },
+        "talents": [
+            "Swarm",
+            "Early bird",
+            "Rattled"
+        ],
+        "generation": "Generation 2"
+    },
+    "Coxyclaque": {
+        "id": 166,
+        "nom_api": "ledian",
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 35,
+            "defense": 50,
+            "attaque_spe": 55,
+            "defense_spe": 110,
+            "vitesse": 85
+        },
+        "talents": [
+            "Swarm",
+            "Early bird",
+            "Iron fist"
+        ],
+        "generation": "Generation 2"
+    },
+    "Smogo": {
+        "id": 109,
+        "nom_api": "koffing",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 65,
+            "defense": 95,
+            "attaque_spe": 60,
+            "defense_spe": 45,
+            "vitesse": 35
+        },
+        "talents": [
+            "Levitate",
+            "Neutralizing gas",
+            "Stench"
+        ],
+        "generation": "Generation 1"
+    },
+    "Smogogo": {
+        "id": 110,
+        "nom_api": "weezing",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 90,
+            "defense": 120,
+            "attaque_spe": 85,
+            "defense_spe": 70,
+            "vitesse": 60
+        },
+        "talents": [
+            "Levitate",
+            "Neutralizing gas",
+            "Stench"
+        ],
+        "generation": "Generation 1"
+    },
+    "Gloupti": {
+        "id": 316,
+        "nom_api": "gulpin",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 43,
+            "defense": 53,
+            "attaque_spe": 43,
+            "defense_spe": 53,
+            "vitesse": 40
+        },
+        "talents": [
+            "Liquid ooze",
+            "Sticky hold",
+            "Gluttony"
+        ],
+        "generation": "Generation 3"
+    },
+    "Avaltout": {
+        "id": 317,
+        "nom_api": "swalot",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 73,
+            "defense": 83,
+            "attaque_spe": 73,
+            "defense_spe": 83,
+            "vitesse": 55
+        },
+        "talents": [
+            "Liquid ooze",
+            "Sticky hold",
+            "Gluttony"
+        ],
+        "generation": "Generation 3"
+    },
+    "Dynavolt": {
+        "id": 309,
+        "nom_api": "electrike",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 45,
+            "defense": 40,
+            "attaque_spe": 65,
+            "defense_spe": 40,
+            "vitesse": 65
+        },
+        "talents": [
+            "Static",
+            "Lightning rod",
+            "Minus"
+        ],
+        "generation": "Generation 3"
+    },
+    "Élecsprint": {
+        "id": 310,
+        "nom_api": "manectric",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 75,
+            "defense": 60,
+            "attaque_spe": 105,
+            "defense_spe": 60,
+            "vitesse": 105
+        },
+        "talents": [
+            "Static",
+            "Lightning rod",
+            "Minus"
+        ],
+        "generation": "Generation 3"
+    },
+    "Élekid": {
+        "id": 239,
+        "nom_api": "elekid",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 63,
+            "defense": 37,
+            "attaque_spe": 65,
+            "defense_spe": 55,
+            "vitesse": 95
+        },
+        "talents": [
+            "Static",
+            "Vital spirit"
+        ],
+        "generation": "Generation 2"
+    },
+    "Élektek": {
+        "id": 125,
+        "nom_api": "electabuzz",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 83,
+            "defense": 57,
+            "attaque_spe": 95,
+            "defense_spe": 85,
+            "vitesse": 105
+        },
+        "talents": [
+            "Static",
+            "Vital spirit"
+        ],
+        "generation": "Generation 1"
+    },
+    "Élekable": {
+        "id": 466,
+        "nom_api": "electivire",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 123,
+            "defense": 67,
+            "attaque_spe": 95,
+            "defense_spe": 85,
+            "vitesse": 95
+        },
+        "talents": [
+            "Motor drive",
+            "Vital spirit"
+        ],
+        "generation": "Generation 4"
+    },
+    "Magby": {
+        "id": 240,
+        "nom_api": "magby",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 75,
+            "defense": 37,
+            "attaque_spe": 70,
+            "defense_spe": 55,
+            "vitesse": 83
+        },
+        "talents": [
+            "Flame body",
+            "Vital spirit"
+        ],
+        "generation": "Generation 2"
+    },
+    "Magmar": {
+        "id": 126,
+        "nom_api": "magmar",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 95,
+            "defense": 57,
+            "attaque_spe": 100,
+            "defense_spe": 85,
+            "vitesse": 93
+        },
+        "talents": [
+            "Flame body",
+            "Vital spirit"
+        ],
+        "generation": "Generation 1"
+    },
+    "Maganon": {
+        "id": 467,
+        "nom_api": "magmortar",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 95,
+            "defense": 67,
+            "attaque_spe": 125,
+            "defense_spe": 95,
+            "vitesse": 83
+        },
+        "talents": [
+            "Flame body",
+            "Vital spirit"
+        ],
+        "generation": "Generation 4"
+    },
+    "Voltorbe": {
+        "id": 100,
+        "nom_api": "voltorb",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 30,
+            "defense": 50,
+            "attaque_spe": 55,
+            "defense_spe": 55,
+            "vitesse": 100
+        },
+        "talents": [
+            "Soundproof",
+            "Static",
+            "Aftermath"
+        ],
+        "generation": "Generation 1"
+    },
+    "Électrode": {
+        "id": 101,
+        "nom_api": "electrode",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 50,
+            "defense": 70,
+            "attaque_spe": 80,
+            "defense_spe": 80,
+            "vitesse": 150
+        },
+        "talents": [
+            "Soundproof",
+            "Static",
+            "Aftermath"
+        ],
+        "generation": "Generation 1"
+    },
+    "Séviper": {
+        "id": 336,
+        "nom_api": "seviper",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 73,
+            "attaque": 100,
+            "defense": 60,
+            "attaque_spe": 100,
+            "defense_spe": 60,
+            "vitesse": 65
+        },
+        "talents": [
+            "Shed skin",
+            "Infiltrator"
+        ],
+        "generation": "Generation 3"
+    },
+    "Mangriff": {
+        "id": 335,
+        "nom_api": "zangoose",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 73,
+            "attaque": 115,
+            "defense": 60,
+            "attaque_spe": 60,
+            "defense_spe": 60,
+            "vitesse": 90
+        },
+        "talents": [
+            "Immunity",
+            "Toxic boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Abo": {
+        "id": 23,
+        "nom_api": "ekans",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 60,
+            "defense": 44,
+            "attaque_spe": 40,
+            "defense_spe": 54,
+            "vitesse": 55
+        },
+        "talents": [
+            "Intimidate",
+            "Shed skin",
+            "Unnerve"
+        ],
+        "generation": "Generation 1"
+    },
+    "Arbok": {
+        "id": 24,
+        "nom_api": "arbok",
+        "types": [
+            "Poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 95,
+            "defense": 69,
+            "attaque_spe": 65,
+            "defense_spe": 79,
+            "vitesse": 80
+        },
+        "talents": [
+            "Intimidate",
+            "Shed skin",
+            "Unnerve"
+        ],
+        "generation": "Generation 1"
+    },
+    "Medhyèna": {
+        "id": 261,
+        "nom_api": "poochyena",
+        "types": [
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 55,
+            "defense": 35,
+            "attaque_spe": 30,
+            "defense_spe": 30,
+            "vitesse": 35
+        },
+        "talents": [
+            "Run away",
+            "Quick feet",
+            "Rattled"
+        ],
+        "generation": "Generation 3"
+    },
+    "Grahyèna": {
+        "id": 262,
+        "nom_api": "mightyena",
+        "types": [
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 90,
+            "defense": 70,
+            "attaque_spe": 60,
+            "defense_spe": 60,
+            "vitesse": 70
+        },
+        "talents": [
+            "Intimidate",
+            "Quick feet",
+            "Moxie"
+        ],
+        "generation": "Generation 3"
+    },
+    "Zigzaton": {
+        "id": 10174,
+        "nom_api": "zigzagoon-galar",
+        "types": [
+            "Ténèbres",
+            "Normal"
+        ],
+        "stats": {
+            "hp": 38,
+            "attaque": 30,
+            "defense": 41,
+            "attaque_spe": 30,
+            "defense_spe": 41,
+            "vitesse": 60
+        },
+        "talents": [
+            "Pickup",
+            "Gluttony",
+            "Quick feet"
+        ],
+        "generation": "Generation 3"
+    },
+    "Linéon": {
+        "id": 10175,
+        "nom_api": "linoone-galar",
+        "types": [
+            "Ténèbres",
+            "Normal"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 70,
+            "defense": 61,
+            "attaque_spe": 50,
+            "defense_spe": 61,
+            "vitesse": 100
+        },
+        "talents": [
+            "Pickup",
+            "Gluttony",
+            "Quick feet"
+        ],
+        "generation": "Generation 3"
+    },
+    "Ixon": {
+        "id": 862,
+        "nom_api": "obstagoon",
+        "types": [
+            "Ténèbres",
+            "Normal"
+        ],
+        "stats": {
+            "hp": 93,
+            "attaque": 90,
+            "defense": 101,
+            "attaque_spe": 60,
+            "defense_spe": 81,
+            "vitesse": 95
+        },
+        "talents": [
+            "Reckless",
+            "Guts",
+            "Defiant"
+        ],
+        "generation": "Generation 8"
+    },
+    "Limonde": {
+        "id": 10180,
+        "nom_api": "stunfisk-galar",
+        "types": [
+            "Sol",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 109,
+            "attaque": 81,
+            "defense": 99,
+            "attaque_spe": 66,
+            "defense_spe": 84,
+            "vitesse": 32
+        },
+        "talents": [
+            "Mimicry"
+        ],
+        "generation": "Generation 5"
+    },
+    "Ponyta": {
+        "id": 10162,
+        "nom_api": "ponyta-galar",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 85,
+            "defense": 55,
+            "attaque_spe": 65,
+            "defense_spe": 65,
+            "vitesse": 90
+        },
+        "talents": [
+            "Run away",
+            "Pastel veil",
+            "Anticipation"
+        ],
+        "generation": "Generation 1"
+    },
+    "Galopa": {
+        "id": 10163,
+        "nom_api": "rapidash-galar",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 100,
+            "defense": 70,
+            "attaque_spe": 80,
+            "defense_spe": 80,
+            "vitesse": 105
+        },
+        "talents": [
+            "Run away",
+            "Pastel veil",
+            "Anticipation"
+        ],
+        "generation": "Generation 1"
+    },
+    "Scrutella": {
+        "id": 574,
+        "nom_api": "gothita",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 30,
+            "defense": 50,
+            "attaque_spe": 55,
+            "defense_spe": 65,
+            "vitesse": 45
+        },
+        "talents": [
+            "Frisk",
+            "Competitive",
+            "Shadow tag"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mesmérella": {
+        "id": 575,
+        "nom_api": "gothorita",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 45,
+            "defense": 70,
+            "attaque_spe": 75,
+            "defense_spe": 85,
+            "vitesse": 55
+        },
+        "talents": [
+            "Frisk",
+            "Competitive",
+            "Shadow tag"
+        ],
+        "generation": "Generation 5"
+    },
+    "Sidérella": {
+        "id": 576,
+        "nom_api": "gothitelle",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 55,
+            "defense": 95,
+            "attaque_spe": 95,
+            "defense_spe": 110,
+            "vitesse": 65
+        },
+        "talents": [
+            "Frisk",
+            "Competitive",
+            "Shadow tag"
+        ],
+        "generation": "Generation 5"
+    },
+    "Abra": {
+        "id": 63,
+        "nom_api": "abra",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 25,
+            "attaque": 20,
+            "defense": 15,
+            "attaque_spe": 105,
+            "defense_spe": 55,
+            "vitesse": 90
+        },
+        "talents": [
+            "Synchronize",
+            "Inner focus",
+            "Magic guard"
+        ],
+        "generation": "Generation 1"
+    },
+    "Kadabra": {
+        "id": 64,
+        "nom_api": "kadabra",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 35,
+            "defense": 30,
+            "attaque_spe": 120,
+            "defense_spe": 70,
+            "vitesse": 105
+        },
+        "talents": [
+            "Synchronize",
+            "Inner focus",
+            "Magic guard"
+        ],
+        "generation": "Generation 1"
+    },
+    "Alakazam": {
+        "id": 65,
+        "nom_api": "alakazam",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 50,
+            "defense": 45,
+            "attaque_spe": 135,
+            "defense_spe": 95,
+            "vitesse": 120
+        },
+        "talents": [
+            "Synchronize",
+            "Inner focus",
+            "Magic guard"
+        ],
+        "generation": "Generation 1"
+    },
+    "Chartor": {
+        "id": 324,
+        "nom_api": "torkoal",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 140,
+            "attaque_spe": 85,
+            "defense_spe": 70,
+            "vitesse": 20
+        },
+        "talents": [
+            "White smoke",
+            "Drought",
+            "Shell armor"
+        ],
+        "generation": "Generation 3"
+    },
+    "Magnéti": {
+        "id": 81,
+        "nom_api": "magnemite",
+        "types": [
+            "Electrik",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 25,
+            "attaque": 35,
+            "defense": 70,
+            "attaque_spe": 95,
+            "defense_spe": 55,
+            "vitesse": 45
+        },
+        "talents": [
+            "Magnet pull",
+            "Sturdy",
+            "Analytic"
+        ],
+        "generation": "Generation 1"
+    },
+    "Magnéton": {
+        "id": 82,
+        "nom_api": "magneton",
+        "types": [
+            "Electrik",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 60,
+            "defense": 95,
+            "attaque_spe": 120,
+            "defense_spe": 70,
+            "vitesse": 70
+        },
+        "talents": [
+            "Magnet pull",
+            "Sturdy",
+            "Analytic"
+        ],
+        "generation": "Generation 1"
+    },
+    "Magnézone": {
+        "id": 462,
+        "nom_api": "magnezone",
+        "types": [
+            "Electrik",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 70,
+            "defense": 115,
+            "attaque_spe": 130,
+            "defense_spe": 90,
+            "vitesse": 60
+        },
+        "talents": [
+            "Magnet pull",
+            "Sturdy",
+            "Analytic"
+        ],
+        "generation": "Generation 4"
+    },
+    "Kabuto": {
+        "id": 140,
+        "nom_api": "kabuto",
+        "types": [
+            "Roche",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 30,
+            "attaque": 80,
+            "defense": 90,
+            "attaque_spe": 55,
+            "defense_spe": 45,
+            "vitesse": 55
+        },
+        "talents": [
+            "Swift swim",
+            "Battle armor",
+            "Weak armor"
+        ],
+        "generation": "Generation 1"
+    },
+    "Kabutops": {
+        "id": 141,
+        "nom_api": "kabutops",
+        "types": [
+            "Roche",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 115,
+            "defense": 105,
+            "attaque_spe": 65,
+            "defense_spe": 70,
+            "vitesse": 80
+        },
+        "talents": [
+            "Swift swim",
+            "Battle armor",
+            "Weak armor"
+        ],
+        "generation": "Generation 1"
+    },
+    "Grindur": {
+        "id": 597,
+        "nom_api": "ferroseed",
+        "types": [
+            "Plante",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 44,
+            "attaque": 50,
+            "defense": 91,
+            "attaque_spe": 24,
+            "defense_spe": 86,
+            "vitesse": 10
+        },
+        "talents": [
+            "Iron barbs"
+        ],
+        "generation": "Generation 5"
+    },
+    "Noacier": {
+        "id": 598,
+        "nom_api": "ferrothorn",
+        "types": [
+            "Plante",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 74,
+            "attaque": 94,
+            "defense": 131,
+            "attaque_spe": 54,
+            "defense_spe": 116,
+            "vitesse": 20
+        },
+        "talents": [
+            "Iron barbs",
+            "Anticipation"
+        ],
+        "generation": "Generation 5"
+    },
+    "Onix": {
+        "id": 95,
+        "nom_api": "onix",
+        "types": [
+            "Roche",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 45,
+            "defense": 160,
+            "attaque_spe": 30,
+            "defense_spe": 45,
+            "vitesse": 70
+        },
+        "talents": [
+            "Rock head",
+            "Sturdy",
+            "Weak armor"
+        ],
+        "generation": "Generation 1"
+    },
+    "Steelix": {
+        "id": 208,
+        "nom_api": "steelix",
+        "types": [
+            "Acier",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 85,
+            "defense": 200,
+            "attaque_spe": 55,
+            "defense_spe": 65,
+            "vitesse": 30
+        },
+        "talents": [
+            "Rock head",
+            "Sturdy",
+            "Sheer force"
+        ],
+        "generation": "Generation 2"
+    },
+    "Amonita": {
+        "id": 138,
+        "nom_api": "omanyte",
+        "types": [
+            "Roche",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 40,
+            "defense": 100,
+            "attaque_spe": 90,
+            "defense_spe": 55,
+            "vitesse": 35
+        },
+        "talents": [
+            "Swift swim",
+            "Shell armor",
+            "Weak armor"
+        ],
+        "generation": "Generation 1"
+    },
+    "Amonistar": {
+        "id": 139,
+        "nom_api": "omastar",
+        "types": [
+            "Roche",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 60,
+            "defense": 125,
+            "attaque_spe": 115,
+            "defense_spe": 70,
+            "vitesse": 55
+        },
+        "talents": [
+            "Swift swim",
+            "Shell armor",
+            "Weak armor"
+        ],
+        "generation": "Generation 1"
+    },
+    "Pichu": {
+        "id": 172,
+        "nom_api": "pichu",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 20,
+            "attaque": 40,
+            "defense": 15,
+            "attaque_spe": 35,
+            "defense_spe": 35,
+            "vitesse": 60
+        },
+        "talents": [
+            "Static",
+            "Lightning rod"
+        ],
+        "generation": "Generation 2"
+    },
+    "Pikachu": {
+        "id": 25,
+        "nom_api": "pikachu",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 55,
+            "defense": 40,
+            "attaque_spe": 50,
+            "defense_spe": 50,
+            "vitesse": 90
+        },
+        "talents": [
+            "Static",
+            "Lightning rod"
+        ],
+        "generation": "Generation 1"
+    },
+    "Raichu": {
+        "id": 26,
+        "nom_api": "raichu",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 90,
+            "defense": 55,
+            "attaque_spe": 90,
+            "defense_spe": 80,
+            "vitesse": 110
+        },
+        "talents": [
+            "Static",
+            "Lightning rod"
+        ],
+        "generation": "Generation 1"
+    },
+    "Magicarpe": {
+        "id": 129,
+        "nom_api": "magikarp",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 20,
+            "attaque": 10,
+            "defense": 55,
+            "attaque_spe": 15,
+            "defense_spe": 20,
+            "vitesse": 80
+        },
+        "talents": [
+            "Swift swim",
+            "Rattled"
+        ],
+        "generation": "Generation 1"
+    },
+    "Léviator": {
+        "id": 130,
+        "nom_api": "gyarados",
+        "types": [
+            "Eau",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 125,
+            "defense": 79,
+            "attaque_spe": 60,
+            "defense_spe": 100,
+            "vitesse": 81
+        },
+        "talents": [
+            "Intimidate",
+            "Moxie"
+        ],
+        "generation": "Generation 1"
+    },
+    "Grainipiot": {
+        "id": 273,
+        "nom_api": "seedot",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 40,
+            "defense": 50,
+            "attaque_spe": 30,
+            "defense_spe": 30,
+            "vitesse": 30
+        },
+        "talents": [
+            "Chlorophyll",
+            "Early bird",
+            "Pickpocket"
+        ],
+        "generation": "Generation 3"
+    },
+    "Pifeuil": {
+        "id": 274,
+        "nom_api": "nuzleaf",
+        "types": [
+            "Plante",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 70,
+            "defense": 40,
+            "attaque_spe": 60,
+            "defense_spe": 40,
+            "vitesse": 60
+        },
+        "talents": [
+            "Chlorophyll",
+            "Early bird",
+            "Pickpocket"
+        ],
+        "generation": "Generation 3"
+    },
+    "Tengalice": {
+        "id": 275,
+        "nom_api": "shiftry",
+        "types": [
+            "Plante",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 100,
+            "defense": 60,
+            "attaque_spe": 90,
+            "defense_spe": 60,
+            "vitesse": 80
+        },
+        "talents": [
+            "Chlorophyll",
+            "Wind rider",
+            "Pickpocket"
+        ],
+        "generation": "Generation 3"
+    },
+    "Rattata": {
+        "id": 19,
+        "nom_api": "rattata",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 30,
+            "attaque": 56,
+            "defense": 35,
+            "attaque_spe": 25,
+            "defense_spe": 35,
+            "vitesse": 72
+        },
+        "talents": [
+            "Run away",
+            "Guts",
+            "Hustle"
+        ],
+        "generation": "Generation 1"
+    },
+    "Rattatac": {
+        "id": 20,
+        "nom_api": "raticate",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 81,
+            "defense": 60,
+            "attaque_spe": 50,
+            "defense_spe": 70,
+            "vitesse": 97
+        },
+        "talents": [
+            "Run away",
+            "Guts",
+            "Hustle"
+        ],
+        "generation": "Generation 1"
+    },
+    "Carapagos": {
+        "id": 564,
+        "nom_api": "tirtouga",
+        "types": [
+            "Eau",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 54,
+            "attaque": 78,
+            "defense": 103,
+            "attaque_spe": 53,
+            "defense_spe": 45,
+            "vitesse": 22
+        },
+        "talents": [
+            "Solid rock",
+            "Sturdy",
+            "Swift swim"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mégapagos": {
+        "id": 565,
+        "nom_api": "carracosta",
+        "types": [
+            "Eau",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 74,
+            "attaque": 108,
+            "defense": 133,
+            "attaque_spe": 83,
+            "defense_spe": 65,
+            "vitesse": 32
+        },
+        "talents": [
+            "Solid rock",
+            "Sturdy",
+            "Swift swim"
+        ],
+        "generation": "Generation 5"
+    },
+    "Flabébé": {
+        "id": 669,
+        "nom_api": "flabebe",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 44,
+            "attaque": 38,
+            "defense": 39,
+            "attaque_spe": 61,
+            "defense_spe": 79,
+            "vitesse": 42
+        },
+        "talents": [
+            "Flower veil",
+            "Symbiosis"
+        ],
+        "generation": "Generation 6"
+    },
+    "Floette": {
+        "id": 670,
+        "nom_api": "floette",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 54,
+            "attaque": 45,
+            "defense": 47,
+            "attaque_spe": 75,
+            "defense_spe": 98,
+            "vitesse": 52
+        },
+        "talents": [
+            "Flower veil",
+            "Symbiosis"
+        ],
+        "generation": "Generation 6"
+    },
+    "Florges": {
+        "id": 671,
+        "nom_api": "florges",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 65,
+            "defense": 68,
+            "attaque_spe": 112,
+            "defense_spe": 154,
+            "vitesse": 75
+        },
+        "talents": [
+            "Flower veil",
+            "Symbiosis"
+        ],
+        "generation": "Generation 6"
+    },
+    "Arkéapti": {
+        "id": 566,
+        "nom_api": "archen",
+        "types": [
+            "Roche",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 112,
+            "defense": 45,
+            "attaque_spe": 74,
+            "defense_spe": 45,
+            "vitesse": 70
+        },
+        "talents": [
+            "Defeatist"
+        ],
+        "generation": "Generation 5"
+    },
+    "Aéroptéryx": {
+        "id": 567,
+        "nom_api": "archeops",
+        "types": [
+            "Roche",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 140,
+            "defense": 65,
+            "attaque_spe": 112,
+            "defense_spe": 65,
+            "vitesse": 110
+        },
+        "talents": [
+            "Defeatist"
+        ],
+        "generation": "Generation 5"
+    },
+    "Goupix": {
+        "id": 10103,
+        "nom_api": "vulpix-alola",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 38,
+            "attaque": 41,
+            "defense": 40,
+            "attaque_spe": 50,
+            "defense_spe": 65,
+            "vitesse": 65
+        },
+        "talents": [
+            "Snow cloak",
+            "Snow warning"
+        ],
+        "generation": "Generation 1"
+    },
+    "Feunard": {
+        "id": 10104,
+        "nom_api": "ninetales-alola",
+        "types": [
+            "Glace",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 73,
+            "attaque": 67,
+            "defense": 75,
+            "attaque_spe": 81,
+            "defense_spe": 100,
+            "vitesse": 109
+        },
+        "talents": [
+            "Snow cloak",
+            "Snow warning"
+        ],
+        "generation": "Generation 1"
+    },
+    "Draïeul": {
+        "id": 780,
+        "nom_api": "drampa",
+        "types": [
+            "Normal",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 60,
+            "defense": 85,
+            "attaque_spe": 135,
+            "defense_spe": 91,
+            "vitesse": 36
+        },
+        "talents": [
+            "Berserk",
+            "Sap sipper",
+            "Cloud nine"
+        ],
+        "generation": "Generation 7"
+    },
+    "Vorastérie": {
+        "id": 747,
+        "nom_api": "mareanie",
+        "types": [
+            "Poison",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 53,
+            "defense": 62,
+            "attaque_spe": 43,
+            "defense_spe": 52,
+            "vitesse": 45
+        },
+        "talents": [
+            "Merciless",
+            "Limber",
+            "Regenerator"
+        ],
+        "generation": "Generation 7"
+    },
+    "Prédastérie": {
+        "id": 748,
+        "nom_api": "toxapex",
+        "types": [
+            "Poison",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 63,
+            "defense": 152,
+            "attaque_spe": 53,
+            "defense_spe": 142,
+            "vitesse": 35
+        },
+        "talents": [
+            "Merciless",
+            "Limber",
+            "Regenerator"
+        ],
+        "generation": "Generation 7"
+    },
+    "Sabelette": {
+        "id": 10101,
+        "nom_api": "sandshrew-alola",
+        "types": [
+            "Glace",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 75,
+            "defense": 90,
+            "attaque_spe": 10,
+            "defense_spe": 35,
+            "vitesse": 40
+        },
+        "talents": [
+            "Snow cloak",
+            "Slush rush"
+        ],
+        "generation": "Generation 1"
+    },
+    "Sablaireau": {
+        "id": 10102,
+        "nom_api": "sandslash-alola",
+        "types": [
+            "Glace",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 100,
+            "defense": 120,
+            "attaque_spe": 25,
+            "defense_spe": 65,
+            "vitesse": 65
+        },
+        "talents": [
+            "Snow cloak",
+            "Slush rush"
+        ],
+        "generation": "Generation 1"
+    },
+    "Tiboudet": {
+        "id": 749,
+        "nom_api": "mudbray",
+        "types": [
+            "Sol"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 100,
+            "defense": 70,
+            "attaque_spe": 45,
+            "defense_spe": 55,
+            "vitesse": 45
+        },
+        "talents": [
+            "Own tempo",
+            "Stamina",
+            "Inner focus"
+        ],
+        "generation": "Generation 7"
+    },
+    "Bourrinos": {
+        "id": 750,
+        "nom_api": "mudsdale",
+        "types": [
+            "Sol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 125,
+            "defense": 100,
+            "attaque_spe": 55,
+            "defense_spe": 85,
+            "vitesse": 35
+        },
+        "talents": [
+            "Own tempo",
+            "Stamina",
+            "Inner focus"
+        ],
+        "generation": "Generation 7"
+    },
+    "Garde-de-Fer": {
+        "id": 1006,
+        "nom_api": "iron-valiant",
+        "types": [
+            "Fée",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 74,
+            "attaque": 130,
+            "defense": 90,
+            "attaque_spe": 120,
+            "defense_spe": 60,
+            "vitesse": 116
+        },
+        "talents": [
+            "Quark drive"
+        ],
+        "generation": "Generation 9"
+    },
+    "Darumarond": {
+        "id": 554,
+        "nom_api": "darumaka",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 90,
+            "defense": 45,
+            "attaque_spe": 15,
+            "defense_spe": 45,
+            "vitesse": 50
+        },
+        "talents": [
+            "Hustle",
+            "Inner focus"
+        ],
+        "generation": "Generation 5"
+    },
+    "Passerouge": {
+        "id": 661,
+        "nom_api": "fletchling",
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 50,
+            "defense": 43,
+            "attaque_spe": 40,
+            "defense_spe": 38,
+            "vitesse": 62
+        },
+        "talents": [
+            "Big pecks",
+            "Gale wings"
+        ],
+        "generation": "Generation 6"
+    },
+    "Braisillon": {
+        "id": 662,
+        "nom_api": "fletchinder",
+        "types": [
+            "Feu",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 62,
+            "attaque": 73,
+            "defense": 55,
+            "attaque_spe": 56,
+            "defense_spe": 52,
+            "vitesse": 84
+        },
+        "talents": [
+            "Flame body",
+            "Gale wings"
+        ],
+        "generation": "Generation 6"
+    },
+    "Flambusard": {
+        "id": 663,
+        "nom_api": "talonflame",
+        "types": [
+            "Feu",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 78,
+            "attaque": 81,
+            "defense": 71,
+            "attaque_spe": 74,
+            "defense_spe": 69,
+            "vitesse": 126
+        },
+        "talents": [
+            "Flame body",
+            "Gale wings"
+        ],
+        "generation": "Generation 6"
+    },
+    "Tadmorv": {
+        "id": 10112,
+        "nom_api": "grimer-alola",
+        "types": [
+            "Poison",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 80,
+            "defense": 50,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 25
+        },
+        "talents": [
+            "Poison touch",
+            "Gluttony",
+            "Power of alchemy"
+        ],
+        "generation": "Generation 1"
+    },
+    "Grotadmorv": {
+        "id": 10113,
+        "nom_api": "muk-alola",
+        "types": [
+            "Poison",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 105,
+            "attaque": 105,
+            "defense": 75,
+            "attaque_spe": 65,
+            "defense_spe": 100,
+            "vitesse": 50
+        },
+        "talents": [
+            "Poison touch",
+            "Gluttony",
+            "Power of alchemy"
+        ],
+        "generation": "Generation 1"
+    },
+    "Zorua": {
+        "id": 10238,
+        "nom_api": "zorua-hisui",
+        "types": [
+            "Normal",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 60,
+            "defense": 40,
+            "attaque_spe": 85,
+            "defense_spe": 40,
+            "vitesse": 70
+        },
+        "talents": [
+            "Illusion"
+        ],
+        "generation": "Generation 5"
+    },
+    "Zoroark": {
+        "id": 10239,
+        "nom_api": "zoroark-hisui",
+        "types": [
+            "Normal",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 100,
+            "defense": 60,
+            "attaque_spe": 125,
+            "defense_spe": 60,
+            "vitesse": 110
+        },
+        "talents": [
+            "Illusion"
+        ],
+        "generation": "Generation 5"
+    },
+    "Roue-de-Fer": {
+        "id": 990,
+        "nom_api": "iron-treads",
+        "types": [
+            "Sol",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 112,
+            "defense": 120,
+            "attaque_spe": 72,
+            "defense_spe": 70,
+            "vitesse": 106
+        },
+        "talents": [
+            "Quark drive"
+        ],
+        "generation": "Generation 9"
+    },
+    "Forgerette": {
+        "id": 957,
+        "nom_api": "tinkatink",
+        "types": [
+            "Fée",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 45,
+            "defense": 45,
+            "attaque_spe": 35,
+            "defense_spe": 64,
+            "vitesse": 58
+        },
+        "talents": [
+            "Mold breaker",
+            "Own tempo",
+            "Pickpocket"
+        ],
+        "generation": "Generation 9"
+    },
+    "Forgella": {
+        "id": 958,
+        "nom_api": "tinkatuff",
+        "types": [
+            "Fée",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 55,
+            "defense": 55,
+            "attaque_spe": 45,
+            "defense_spe": 82,
+            "vitesse": 78
+        },
+        "talents": [
+            "Mold breaker",
+            "Own tempo",
+            "Pickpocket"
+        ],
+        "generation": "Generation 9"
+    },
+    "Forgelina": {
+        "id": 959,
+        "nom_api": "tinkaton",
+        "types": [
+            "Fée",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 75,
+            "defense": 77,
+            "attaque_spe": 70,
+            "defense_spe": 105,
+            "vitesse": 94
+        },
+        "talents": [
+            "Mold breaker",
+            "Own tempo",
+            "Pickpocket"
+        ],
+        "generation": "Generation 9"
+    },
+    "Flotte-Mèche": {
+        "id": 987,
+        "nom_api": "flutter-mane",
+        "types": [
+            "Spectre",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 55,
+            "defense": 55,
+            "attaque_spe": 135,
+            "defense_spe": 135,
+            "vitesse": 135
+        },
+        "talents": [
+            "Protosynthesis"
+        ],
+        "generation": "Generation 9"
+    },
+    "Funécire": {
+        "id": 607,
+        "nom_api": "litwick",
+        "types": [
+            "Spectre",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 30,
+            "defense": 55,
+            "attaque_spe": 65,
+            "defense_spe": 55,
+            "vitesse": 20
+        },
+        "talents": [
+            "Flash fire",
+            "Flame body",
+            "Infiltrator"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mélancolux": {
+        "id": 608,
+        "nom_api": "lampent",
+        "types": [
+            "Spectre",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 40,
+            "defense": 60,
+            "attaque_spe": 95,
+            "defense_spe": 60,
+            "vitesse": 55
+        },
+        "talents": [
+            "Flash fire",
+            "Flame body",
+            "Infiltrator"
+        ],
+        "generation": "Generation 5"
+    },
+    "Lugulabre": {
+        "id": 609,
+        "nom_api": "chandelure",
+        "types": [
+            "Spectre",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 55,
+            "defense": 90,
+            "attaque_spe": 145,
+            "defense_spe": 90,
+            "vitesse": 80
+        },
+        "talents": [
+            "Flash fire",
+            "Flame body",
+            "Infiltrator"
+        ],
+        "generation": "Generation 5"
+    },
+    "Miaouss": {
+        "id": 10161,
+        "nom_api": "meowth-galar",
+        "types": [
+            "Acier"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 65,
+            "defense": 55,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 40
+        },
+        "talents": [
+            "Pickup",
+            "Tough claws",
+            "Unnerve"
+        ],
+        "generation": "Generation 1"
+    },
+    "Persian": {
+        "id": 10108,
+        "nom_api": "persian-alola",
+        "types": [
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 60,
+            "defense": 60,
+            "attaque_spe": 75,
+            "defense_spe": 65,
+            "vitesse": 115
+        },
+        "talents": [
+            "Fur coat",
+            "Technician",
+            "Rattled"
+        ],
+        "generation": "Generation 1"
+    },
+    "Berserkatt": {
+        "id": 863,
+        "nom_api": "perrserker",
+        "types": [
+            "Acier"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 110,
+            "defense": 100,
+            "attaque_spe": 50,
+            "defense_spe": 60,
+            "vitesse": 50
+        },
+        "talents": [
+            "Battle armor",
+            "Tough claws",
+            "Steely spirit"
+        ],
+        "generation": "Generation 8"
+    },
+    "Tritox": {
+        "id": 757,
+        "nom_api": "salandit",
+        "types": [
+            "Poison",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 48,
+            "attaque": 44,
+            "defense": 40,
+            "attaque_spe": 71,
+            "defense_spe": 40,
+            "vitesse": 77
+        },
+        "talents": [
+            "Corrosion",
+            "Oblivious"
+        ],
+        "generation": "Generation 7"
+    },
+    "Malamandre": {
+        "id": 758,
+        "nom_api": "salazzle",
+        "types": [
+            "Poison",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 64,
+            "defense": 60,
+            "attaque_spe": 111,
+            "defense_spe": 60,
+            "vitesse": 117
+        },
+        "talents": [
+            "Corrosion",
+            "Oblivious"
+        ],
+        "generation": "Generation 7"
+    },
+    "Paume-de-Fer": {
+        "id": 992,
+        "nom_api": "iron-hands",
+        "types": [
+            "Combat",
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 154,
+            "attaque": 140,
+            "defense": 108,
+            "attaque_spe": 50,
+            "defense_spe": 68,
+            "vitesse": 50
+        },
+        "talents": [
+            "Quark drive"
+        ],
+        "generation": "Generation 9"
+    },
+    "Vrombi": {
+        "id": 965,
+        "nom_api": "varoom",
+        "types": [
+            "Acier",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 70,
+            "defense": 63,
+            "attaque_spe": 30,
+            "defense_spe": 45,
+            "vitesse": 47
+        },
+        "talents": [
+            "Overcoat",
+            "Slow start"
+        ],
+        "generation": "Generation 9"
+    },
+    "Vrombotor": {
+        "id": 966,
+        "nom_api": "revavroom",
+        "types": [
+            "Acier",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 119,
+            "defense": 90,
+            "attaque_spe": 54,
+            "defense_spe": 67,
+            "vitesse": 90
+        },
+        "talents": [
+            "Overcoat",
+            "Filter"
+        ],
+        "generation": "Generation 9"
+    },
+    "Fort-Ivoire": {
+        "id": 984,
+        "nom_api": "great-tusk",
+        "types": [
+            "Sol",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 115,
+            "attaque": 131,
+            "defense": 131,
+            "attaque_spe": 53,
+            "defense_spe": 53,
+            "vitesse": 87
+        },
+        "talents": [
+            "Protosynthesis"
+        ],
+        "generation": "Generation 9"
+    },
+    "Morphéo": {
+        "id": 351,
+        "nom_api": "castform",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 70,
+            "defense": 70,
+            "attaque_spe": 70,
+            "defense_spe": 70,
+            "vitesse": 70
+        },
+        "talents": [
+            "Forecast"
+        ],
+        "generation": "Generation 3"
+    },
+    "Kecleon": {
+        "id": 352,
+        "nom_api": "kecleon",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 90,
+            "defense": 70,
+            "attaque_spe": 60,
+            "defense_spe": 120,
+            "vitesse": 40
+        },
+        "talents": [
+            "Color change",
+            "Protean"
+        ],
+        "generation": "Generation 3"
+    },
+    "Frigodo": {
+        "id": 996,
+        "nom_api": "frigibax",
+        "types": [
+            "Dragon",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 75,
+            "defense": 45,
+            "attaque_spe": 35,
+            "defense_spe": 45,
+            "vitesse": 55
+        },
+        "talents": [
+            "Thermal exchange",
+            "Ice body"
+        ],
+        "generation": "Generation 9"
+    },
+    "Cryodo": {
+        "id": 997,
+        "nom_api": "arctibax",
+        "types": [
+            "Dragon",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 95,
+            "defense": 66,
+            "attaque_spe": 45,
+            "defense_spe": 65,
+            "vitesse": 62
+        },
+        "talents": [
+            "Thermal exchange",
+            "Ice body"
+        ],
+        "generation": "Generation 9"
+    },
+    "Glaivodo": {
+        "id": 998,
+        "nom_api": "baxcalibur",
+        "types": [
+            "Dragon",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 115,
+            "attaque": 145,
+            "defense": 92,
+            "attaque_spe": 75,
+            "defense_spe": 86,
+            "vitesse": 87
+        },
+        "talents": [
+            "Thermal exchange",
+            "Ice body"
+        ],
+        "generation": "Generation 9"
+    },
+    "Hurle-Queue": {
+        "id": 985,
+        "nom_api": "scream-tail",
+        "types": [
+            "Fée",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 115,
+            "attaque": 65,
+            "defense": 99,
+            "attaque_spe": 65,
+            "defense_spe": 115,
+            "vitesse": 111
+        },
+        "talents": [
+            "Protosynthesis"
+        ],
+        "generation": "Generation 9"
+    },
+    "Ptyranidur": {
+        "id": 696,
+        "nom_api": "tyrunt",
+        "types": [
+            "Roche",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 58,
+            "attaque": 89,
+            "defense": 77,
+            "attaque_spe": 45,
+            "defense_spe": 45,
+            "vitesse": 48
+        },
+        "talents": [
+            "Strong jaw",
+            "Sturdy"
+        ],
+        "generation": "Generation 6"
+    },
+    "Rexillius": {
+        "id": 697,
+        "nom_api": "tyrantrum",
+        "types": [
+            "Roche",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 82,
+            "attaque": 121,
+            "defense": 119,
+            "attaque_spe": 69,
+            "defense_spe": 59,
+            "vitesse": 71
+        },
+        "talents": [
+            "Strong jaw",
+            "Rock head"
+        ],
+        "generation": "Generation 6"
+    },
+    "Rototaupe": {
+        "id": 529,
+        "nom_api": "drilbur",
+        "types": [
+            "Sol"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 85,
+            "defense": 40,
+            "attaque_spe": 30,
+            "defense_spe": 45,
+            "vitesse": 68
+        },
+        "talents": [
+            "Sand rush",
+            "Sand force",
+            "Mold breaker"
+        ],
+        "generation": "Generation 5"
+    },
+    "Minotaupe": {
+        "id": 530,
+        "nom_api": "excadrill",
+        "types": [
+            "Sol",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 135,
+            "defense": 60,
+            "attaque_spe": 50,
+            "defense_spe": 65,
+            "vitesse": 88
+        },
+        "talents": [
+            "Sand rush",
+            "Sand force",
+            "Mold breaker"
+        ],
+        "generation": "Generation 5"
+    },
+    "Hydragon": {
+        "id": 882,
+        "nom_api": "dracovish",
+        "types": [
+            "Eau",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 90,
+            "defense": 100,
+            "attaque_spe": 70,
+            "defense_spe": 80,
+            "vitesse": 75
+        },
+        "talents": [
+            "Water absorb",
+            "Strong jaw",
+            "Sand rush"
+        ],
+        "generation": "Generation 8"
+    },
+    "Fantyrm": {
+        "id": 885,
+        "nom_api": "dreepy",
+        "types": [
+            "Dragon",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 28,
+            "attaque": 60,
+            "defense": 30,
+            "attaque_spe": 40,
+            "defense_spe": 30,
+            "vitesse": 82
+        },
+        "talents": [
+            "Clear body",
+            "Infiltrator",
+            "Cursed body"
+        ],
+        "generation": "Generation 8"
+    },
+    "Dispareptil": {
+        "id": 886,
+        "nom_api": "drakloak",
+        "types": [
+            "Dragon",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 80,
+            "defense": 50,
+            "attaque_spe": 60,
+            "defense_spe": 50,
+            "vitesse": 102
+        },
+        "talents": [
+            "Clear body",
+            "Infiltrator",
+            "Cursed body"
+        ],
+        "generation": "Generation 8"
+    },
+    "Lanssorien": {
+        "id": 887,
+        "nom_api": "dragapult",
+        "types": [
+            "Dragon",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 88,
+            "attaque": 120,
+            "defense": 75,
+            "attaque_spe": 100,
+            "defense_spe": 75,
+            "vitesse": 142
+        },
+        "talents": [
+            "Clear body",
+            "Infiltrator",
+            "Cursed body"
+        ],
+        "generation": "Generation 8"
+    },
+    "Croquine": {
+        "id": 761,
+        "nom_api": "bounsweet",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 42,
+            "attaque": 30,
+            "defense": 38,
+            "attaque_spe": 30,
+            "defense_spe": 38,
+            "vitesse": 32
+        },
+        "talents": [
+            "Leaf guard",
+            "Oblivious",
+            "Sweet veil"
+        ],
+        "generation": "Generation 7"
+    },
+    "Candine": {
+        "id": 762,
+        "nom_api": "steenee",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 52,
+            "attaque": 40,
+            "defense": 48,
+            "attaque_spe": 40,
+            "defense_spe": 48,
+            "vitesse": 62
+        },
+        "talents": [
+            "Leaf guard",
+            "Oblivious",
+            "Sweet veil"
+        ],
+        "generation": "Generation 7"
+    },
+    "Sucreine": {
+        "id": 763,
+        "nom_api": "tsareena",
+        "types": [
+            "Plante"
+        ],
+        "stats": {
+            "hp": 72,
+            "attaque": 120,
+            "defense": 98,
+            "attaque_spe": 50,
+            "defense_spe": 98,
+            "vitesse": 72
+        },
+        "talents": [
+            "Leaf guard",
+            "Queenly majesty",
+            "Sweet veil"
+        ],
+        "generation": "Generation 7"
+    },
+    "Nounourson": {
+        "id": 759,
+        "nom_api": "stufful",
+        "types": [
+            "Normal",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 75,
+            "defense": 50,
+            "attaque_spe": 45,
+            "defense_spe": 50,
+            "vitesse": 50
+        },
+        "talents": [
+            "Fluffy",
+            "Klutz",
+            "Cute charm"
+        ],
+        "generation": "Generation 7"
+    },
+    "Chelours": {
+        "id": 760,
+        "nom_api": "bewear",
+        "types": [
+            "Normal",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 120,
+            "attaque": 125,
+            "defense": 80,
+            "attaque_spe": 55,
+            "defense_spe": 60,
+            "vitesse": 60
+        },
+        "talents": [
+            "Fluffy",
+            "Klutz",
+            "Unnerve"
+        ],
+        "generation": "Generation 7"
+    },
+    "Sovkipou": {
+        "id": 767,
+        "nom_api": "wimpod",
+        "types": [
+            "Insecte",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 25,
+            "attaque": 35,
+            "defense": 40,
+            "attaque_spe": 20,
+            "defense_spe": 30,
+            "vitesse": 80
+        },
+        "talents": [
+            "Wimp out"
+        ],
+        "generation": "Generation 7"
+    },
+    "Sarmuraï": {
+        "id": 768,
+        "nom_api": "golisopod",
+        "types": [
+            "Insecte",
+            "Eau"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 125,
+            "defense": 140,
+            "attaque_spe": 60,
+            "defense_spe": 90,
+            "vitesse": 40
+        },
+        "talents": [
+            "Emergency exit"
+        ],
+        "generation": "Generation 7"
+    },
+    "Duralugon": {
+        "id": 884,
+        "nom_api": "duraludon",
+        "types": [
+            "Acier",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 95,
+            "defense": 115,
+            "attaque_spe": 120,
+            "defense_spe": 50,
+            "vitesse": 85
+        },
+        "talents": [
+            "Light metal",
+            "Heavy metal",
+            "Stalwart"
+        ],
+        "generation": "Generation 8"
+    },
+    "Pondralugon": {
+        "id": 1018,
+        "nom_api": "archaludon",
+        "types": [
+            "Acier",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 105,
+            "defense": 130,
+            "attaque_spe": 125,
+            "defense_spe": 65,
+            "vitesse": 85
+        },
+        "talents": [
+            "Stamina",
+            "Sturdy",
+            "Stalwart"
+        ],
+        "generation": "Generation 9"
+    },
+    "Grelaçon": {
+        "id": 712,
+        "nom_api": "bergmite",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 69,
+            "defense": 85,
+            "attaque_spe": 32,
+            "defense_spe": 35,
+            "vitesse": 28
+        },
+        "talents": [
+            "Own tempo",
+            "Ice body",
+            "Sturdy"
+        ],
+        "generation": "Generation 6"
+    },
+    "Séracrawl": {
+        "id": 713,
+        "nom_api": "avalugg",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 117,
+            "defense": 184,
+            "attaque_spe": 44,
+            "defense_spe": 46,
+            "vitesse": 28
+        },
+        "talents": [
+            "Own tempo",
+            "Ice body",
+            "Sturdy"
+        ],
+        "generation": "Generation 6"
+    },
+    "Charbi": {
+        "id": 837,
+        "nom_api": "rolycoly",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 30,
+            "attaque": 40,
+            "defense": 50,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 30
+        },
+        "talents": [
+            "Steam engine",
+            "Heatproof",
+            "Flash fire"
+        ],
+        "generation": "Generation 8"
+    },
+    "Wagomine": {
+        "id": 838,
+        "nom_api": "carkol",
+        "types": [
+            "Roche",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 60,
+            "defense": 90,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 50
+        },
+        "talents": [
+            "Steam engine",
+            "Flame body",
+            "Flash fire"
+        ],
+        "generation": "Generation 8"
+    },
+    "Monthracite": {
+        "id": 839,
+        "nom_api": "coalossal",
+        "types": [
+            "Roche",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 80,
+            "defense": 120,
+            "attaque_spe": 80,
+            "defense_spe": 90,
+            "vitesse": 30
+        },
+        "talents": [
+            "Steam engine",
+            "Flame body",
+            "Flash fire"
+        ],
+        "generation": "Generation 8"
+    },
+    "Larvibule": {
+        "id": 736,
+        "nom_api": "grubbin",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 47,
+            "attaque": 62,
+            "defense": 45,
+            "attaque_spe": 55,
+            "defense_spe": 45,
+            "vitesse": 46
+        },
+        "talents": [
+            "Swarm"
+        ],
+        "generation": "Generation 7"
+    },
+    "Chrysapile": {
+        "id": 737,
+        "nom_api": "charjabug",
+        "types": [
+            "Insecte",
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 57,
+            "attaque": 82,
+            "defense": 95,
+            "attaque_spe": 55,
+            "defense_spe": 75,
+            "vitesse": 36
+        },
+        "talents": [
+            "Battery"
+        ],
+        "generation": "Generation 7"
+    },
+    "Lucanon": {
+        "id": 738,
+        "nom_api": "vikavolt",
+        "types": [
+            "Insecte",
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 77,
+            "attaque": 70,
+            "defense": 90,
+            "attaque_spe": 145,
+            "defense_spe": 75,
+            "vitesse": 43
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 7"
+    },
+    "Minisange": {
+        "id": 821,
+        "nom_api": "rookidee",
+        "types": [
+            "Vol"
+        ],
+        "stats": {
+            "hp": 38,
+            "attaque": 47,
+            "defense": 35,
+            "attaque_spe": 33,
+            "defense_spe": 35,
+            "vitesse": 57
+        },
+        "talents": [
+            "Keen eye",
+            "Unnerve",
+            "Big pecks"
+        ],
+        "generation": "Generation 8"
+    },
+    "Bleuseille": {
+        "id": 822,
+        "nom_api": "corvisquire",
+        "types": [
+            "Vol"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 67,
+            "defense": 55,
+            "attaque_spe": 43,
+            "defense_spe": 55,
+            "vitesse": 77
+        },
+        "talents": [
+            "Keen eye",
+            "Unnerve",
+            "Big pecks"
+        ],
+        "generation": "Generation 8"
+    },
+    "Corvaillus": {
+        "id": 823,
+        "nom_api": "corviknight",
+        "types": [
+            "Vol",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 98,
+            "attaque": 87,
+            "defense": 105,
+            "attaque_spe": 53,
+            "defense_spe": 85,
+            "vitesse": 67
+        },
+        "talents": [
+            "Pressure",
+            "Unnerve",
+            "Mirror armor"
+        ],
+        "generation": "Generation 8"
+    },
+    "Grimalin": {
+        "id": 859,
+        "nom_api": "impidimp",
+        "types": [
+            "Ténèbres",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 45,
+            "defense": 30,
+            "attaque_spe": 55,
+            "defense_spe": 40,
+            "vitesse": 50
+        },
+        "talents": [
+            "Prankster",
+            "Frisk",
+            "Pickpocket"
+        ],
+        "generation": "Generation 8"
+    },
+    "Fourbelin": {
+        "id": 860,
+        "nom_api": "morgrem",
+        "types": [
+            "Ténèbres",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 60,
+            "defense": 45,
+            "attaque_spe": 75,
+            "defense_spe": 55,
+            "vitesse": 70
+        },
+        "talents": [
+            "Prankster",
+            "Frisk",
+            "Pickpocket"
+        ],
+        "generation": "Generation 8"
+    },
+    "Angoliath": {
+        "id": 861,
+        "nom_api": "grimmsnarl",
+        "types": [
+            "Ténèbres",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 120,
+            "defense": 65,
+            "attaque_spe": 95,
+            "defense_spe": 75,
+            "vitesse": 60
+        },
+        "talents": [
+            "Prankster",
+            "Frisk",
+            "Pickpocket"
+        ],
+        "generation": "Generation 8"
+    },
+    "Hexadron": {
+        "id": 870,
+        "nom_api": "falinks",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 100,
+            "defense": 100,
+            "attaque_spe": 70,
+            "defense_spe": 60,
+            "vitesse": 75
+        },
+        "talents": [
+            "Battle armor",
+            "Defiant"
+        ],
+        "generation": "Generation 8"
+    },
+    "Bibichut": {
+        "id": 856,
+        "nom_api": "hatenna",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 42,
+            "attaque": 30,
+            "defense": 45,
+            "attaque_spe": 56,
+            "defense_spe": 53,
+            "vitesse": 39
+        },
+        "talents": [
+            "Healer",
+            "Anticipation",
+            "Magic bounce"
+        ],
+        "generation": "Generation 8"
+    },
+    "Chapotus": {
+        "id": 857,
+        "nom_api": "hattrem",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 57,
+            "attaque": 40,
+            "defense": 65,
+            "attaque_spe": 86,
+            "defense_spe": 73,
+            "vitesse": 49
+        },
+        "talents": [
+            "Healer",
+            "Anticipation",
+            "Magic bounce"
+        ],
+        "generation": "Generation 8"
+    },
+    "Sorcilence": {
+        "id": 858,
+        "nom_api": "hatterene",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 57,
+            "attaque": 90,
+            "defense": 95,
+            "attaque_spe": 136,
+            "defense_spe": 103,
+            "vitesse": 29
+        },
+        "talents": [
+            "Healer",
+            "Anticipation",
+            "Magic bounce"
+        ],
+        "generation": "Generation 8"
+    },
+    "Verpom": {
+        "id": 840,
+        "nom_api": "applin",
+        "types": [
+            "Plante",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 40,
+            "defense": 80,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 20
+        },
+        "talents": [
+            "Ripen",
+            "Gluttony",
+            "Bulletproof"
+        ],
+        "generation": "Generation 8"
+    },
+    "Pomdrapi": {
+        "id": 841,
+        "nom_api": "flapple",
+        "types": [
+            "Plante",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 110,
+            "defense": 80,
+            "attaque_spe": 95,
+            "defense_spe": 60,
+            "vitesse": 70
+        },
+        "talents": [
+            "Ripen",
+            "Gluttony",
+            "Hustle"
+        ],
+        "generation": "Generation 8"
+    },
+    "Dratatin": {
+        "id": 842,
+        "nom_api": "appletun",
+        "types": [
+            "Plante",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 85,
+            "defense": 80,
+            "attaque_spe": 100,
+            "defense_spe": 80,
+            "vitesse": 30
+        },
+        "talents": [
+            "Ripen",
+            "Gluttony",
+            "Thick fat"
+        ],
+        "generation": "Generation 8"
+    },
+    "Pomdramour": {
+        "id": 1011,
+        "nom_api": "dipplin",
+        "types": [
+            "Plante",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 80,
+            "defense": 110,
+            "attaque_spe": 95,
+            "defense_spe": 80,
+            "vitesse": 40
+        },
+        "talents": [
+            "Supersweet syrup",
+            "Gluttony",
+            "Sticky hold"
+        ],
+        "generation": "Generation 9"
+    },
+    "Pomdorochi": {
+        "id": 1019,
+        "nom_api": "hydrapple",
+        "types": [
+            "Plante",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 106,
+            "attaque": 80,
+            "defense": 110,
+            "attaque_spe": 120,
+            "defense_spe": 80,
+            "vitesse": 44
+        },
+        "talents": [
+            "Supersweet syrup",
+            "Regenerator",
+            "Sticky hold"
+        ],
+        "generation": "Generation 9"
+    },
+    "Galvagon": {
+        "id": 880,
+        "nom_api": "dracozolt",
+        "types": [
+            "Electrik",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 100,
+            "defense": 90,
+            "attaque_spe": 80,
+            "defense_spe": 70,
+            "vitesse": 75
+        },
+        "talents": [
+            "Volt absorb",
+            "Hustle",
+            "Sand rush"
+        ],
+        "generation": "Generation 8"
+    },
+    "Hydragla": {
+        "id": 883,
+        "nom_api": "arctovish",
+        "types": [
+            "Eau",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 90,
+            "defense": 100,
+            "attaque_spe": 80,
+            "defense_spe": 90,
+            "vitesse": 55
+        },
+        "talents": [
+            "Water absorb",
+            "Ice body",
+            "Slush rush"
+        ],
+        "generation": "Generation 8"
+    },
+    "Mordudor": {
+        "id": 999,
+        "nom_api": "gimmighoul",
+        "types": [
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 30,
+            "defense": 70,
+            "attaque_spe": 75,
+            "defense_spe": 70,
+            "vitesse": 10
+        },
+        "talents": [
+            "Rattled"
+        ],
+        "generation": "Generation 9"
+    },
+    "Gromago": {
+        "id": 1000,
+        "nom_api": "gholdengo",
+        "types": [
+            "Acier",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 87,
+            "attaque": 60,
+            "defense": 95,
+            "attaque_spe": 133,
+            "defense_spe": 91,
+            "vitesse": 84
+        },
+        "talents": [
+            "Good as gold"
+        ],
+        "generation": "Generation 9"
+    },
+    "Charbambin": {
+        "id": 935,
+        "nom_api": "charcadet",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 50,
+            "defense": 40,
+            "attaque_spe": 50,
+            "defense_spe": 40,
+            "vitesse": 35
+        },
+        "talents": [
+            "Flash fire",
+            "Flame body"
+        ],
+        "generation": "Generation 9"
+    },
+    "Carmadura": {
+        "id": 936,
+        "nom_api": "armarouge",
+        "types": [
+            "Feu",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 60,
+            "defense": 100,
+            "attaque_spe": 125,
+            "defense_spe": 80,
+            "vitesse": 75
+        },
+        "talents": [
+            "Flash fire",
+            "Weak armor"
+        ],
+        "generation": "Generation 9"
+    },
+    "Malvalame": {
+        "id": 937,
+        "nom_api": "ceruledge",
+        "types": [
+            "Feu",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 125,
+            "defense": 80,
+            "attaque_spe": 60,
+            "defense_spe": 100,
+            "vitesse": 85
+        },
+        "talents": [
+            "Flash fire",
+            "Weak armor"
+        ],
+        "generation": "Generation 9"
+    },
+    "Chinchidou": {
+        "id": 572,
+        "nom_api": "minccino",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 50,
+            "defense": 40,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 75
+        },
+        "talents": [
+            "Cute charm",
+            "Technician",
+            "Skill link"
+        ],
+        "generation": "Generation 5"
+    },
+    "Pashmilla": {
+        "id": 573,
+        "nom_api": "cinccino",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 95,
+            "defense": 60,
+            "attaque_spe": 65,
+            "defense_spe": 60,
+            "vitesse": 115
+        },
+        "talents": [
+            "Cute charm",
+            "Technician",
+            "Skill link"
+        ],
+        "generation": "Generation 5"
+    },
+    "Nénupiot": {
+        "id": 270,
+        "nom_api": "lotad",
+        "types": [
+            "Eau",
+            "Plante"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 30,
+            "defense": 30,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 30
+        },
+        "talents": [
+            "Swift swim",
+            "Rain dish",
+            "Own tempo"
+        ],
+        "generation": "Generation 3"
+    },
+    "Lombre": {
+        "id": 271,
+        "nom_api": "lombre",
+        "types": [
+            "Eau",
+            "Plante"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 50,
+            "defense": 50,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 50
+        },
+        "talents": [
+            "Swift swim",
+            "Rain dish",
+            "Own tempo"
+        ],
+        "generation": "Generation 3"
+    },
+    "Ludicolo": {
+        "id": 272,
+        "nom_api": "ludicolo",
+        "types": [
+            "Eau",
+            "Plante"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 70,
+            "defense": 70,
+            "attaque_spe": 90,
+            "defense_spe": 100,
+            "vitesse": 70
+        },
+        "talents": [
+            "Swift swim",
+            "Rain dish",
+            "Own tempo"
+        ],
+        "generation": "Generation 3"
+    },
+    "Cadoizo": {
+        "id": 225,
+        "nom_api": "delibird",
+        "types": [
+            "Glace",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 55,
+            "defense": 45,
+            "attaque_spe": 65,
+            "defense_spe": 45,
+            "vitesse": 75
+        },
+        "talents": [
+            "Vital spirit",
+            "Hustle",
+            "Insomnia"
+        ],
+        "generation": "Generation 2"
+    },
+    "Feuforêve": {
+        "id": 200,
+        "nom_api": "misdreavus",
+        "types": [
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 60,
+            "defense": 60,
+            "attaque_spe": 85,
+            "defense_spe": 85,
+            "vitesse": 85
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 2"
+    },
+    "Magirêve": {
+        "id": 429,
+        "nom_api": "mismagius",
+        "types": [
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 60,
+            "defense": 60,
+            "attaque_spe": 105,
+            "defense_spe": 105,
+            "vitesse": 105
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 4"
+    },
+    "Machoc": {
+        "id": 66,
+        "nom_api": "machop",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 80,
+            "defense": 50,
+            "attaque_spe": 35,
+            "defense_spe": 35,
+            "vitesse": 35
+        },
+        "talents": [
+            "Guts",
+            "No guard",
+            "Steadfast"
+        ],
+        "generation": "Generation 1"
+    },
+    "Machopeur": {
+        "id": 67,
+        "nom_api": "machoke",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 100,
+            "defense": 70,
+            "attaque_spe": 50,
+            "defense_spe": 60,
+            "vitesse": 45
+        },
+        "talents": [
+            "Guts",
+            "No guard",
+            "Steadfast"
+        ],
+        "generation": "Generation 1"
+    },
+    "Mackogneur": {
+        "id": 68,
+        "nom_api": "machamp",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 130,
+            "defense": 80,
+            "attaque_spe": 65,
+            "defense_spe": 85,
+            "vitesse": 55
+        },
+        "talents": [
+            "Guts",
+            "No guard",
+            "Steadfast"
+        ],
+        "generation": "Generation 1"
+    },
+    "Axoloto": {
+        "id": 10253,
+        "nom_api": "wooper-paldea",
+        "types": [
+            "Poison",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 45,
+            "defense": 45,
+            "attaque_spe": 25,
+            "defense_spe": 25,
+            "vitesse": 15
+        },
+        "talents": [
+            "Poison point",
+            "Water absorb",
+            "Unaware"
+        ],
+        "generation": "Generation 2"
+    },
+    "Maraiste": {
+        "id": 195,
+        "nom_api": "quagsire",
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 85,
+            "defense": 85,
+            "attaque_spe": 65,
+            "defense_spe": 65,
+            "vitesse": 35
+        },
+        "talents": [
+            "Damp",
+            "Water absorb",
+            "Unaware"
+        ],
+        "generation": "Generation 2"
+    },
+    "Terraiste": {
+        "id": 980,
+        "nom_api": "clodsire",
+        "types": [
+            "Poison",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 130,
+            "attaque": 75,
+            "defense": 60,
+            "attaque_spe": 45,
+            "defense_spe": 100,
+            "vitesse": 20
+        },
+        "talents": [
+            "Poison point",
+            "Water absorb",
+            "Unaware"
+        ],
+        "generation": "Generation 9"
+    },
+    "Férosinge": {
+        "id": 56,
+        "nom_api": "mankey",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 80,
+            "defense": 35,
+            "attaque_spe": 35,
+            "defense_spe": 45,
+            "vitesse": 70
+        },
+        "talents": [
+            "Vital spirit",
+            "Anger point",
+            "Defiant"
+        ],
+        "generation": "Generation 1"
+    },
+    "Colossinge": {
+        "id": 57,
+        "nom_api": "primeape",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 105,
+            "defense": 60,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 95
+        },
+        "talents": [
+            "Vital spirit",
+            "Anger point",
+            "Defiant"
+        ],
+        "generation": "Generation 1"
+    },
+    "Courrousinge": {
+        "id": 979,
+        "nom_api": "annihilape",
+        "types": [
+            "Combat",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 115,
+            "defense": 80,
+            "attaque_spe": 50,
+            "defense_spe": 90,
+            "vitesse": 90
+        },
+        "talents": [
+            "Vital spirit",
+            "Inner focus",
+            "Defiant"
+        ],
+        "generation": "Generation 9"
+    },
+    "Lippouti": {
+        "id": 238,
+        "nom_api": "smoochum",
+        "types": [
+            "Glace",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 30,
+            "defense": 15,
+            "attaque_spe": 85,
+            "defense_spe": 65,
+            "vitesse": 65
+        },
+        "talents": [
+            "Oblivious",
+            "Forewarn",
+            "Hydration"
+        ],
+        "generation": "Generation 2"
+    },
+    "Lippoutou": {
+        "id": 124,
+        "nom_api": "jynx",
+        "types": [
+            "Glace",
+            "Psy"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 50,
+            "defense": 35,
+            "attaque_spe": 115,
+            "defense_spe": 95,
+            "vitesse": 95
+        },
+        "talents": [
+            "Oblivious",
+            "Forewarn",
+            "Dry skin"
+        ],
+        "generation": "Generation 1"
+    },
+    "Scarabrute": {
+        "id": 127,
+        "nom_api": "pinsir",
+        "types": [
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 125,
+            "defense": 100,
+            "attaque_spe": 55,
+            "defense_spe": 70,
+            "vitesse": 85
+        },
+        "talents": [
+            "Hyper cutter",
+            "Mold breaker",
+            "Moxie"
+        ],
+        "generation": "Generation 1"
+    },
+    "Cornèbre": {
+        "id": 198,
+        "nom_api": "murkrow",
+        "types": [
+            "Ténèbres",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 85,
+            "defense": 42,
+            "attaque_spe": 85,
+            "defense_spe": 42,
+            "vitesse": 91
+        },
+        "talents": [
+            "Insomnia",
+            "Super luck",
+            "Prankster"
+        ],
+        "generation": "Generation 2"
+    },
+    "Corboss": {
+        "id": 430,
+        "nom_api": "honchkrow",
+        "types": [
+            "Ténèbres",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 125,
+            "defense": 52,
+            "attaque_spe": 105,
+            "defense_spe": 52,
+            "vitesse": 71
+        },
+        "talents": [
+            "Insomnia",
+            "Super luck",
+            "Moxie"
+        ],
+        "generation": "Generation 4"
+    },
+    "Debugant": {
+        "id": 236,
+        "nom_api": "tyrogue",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 35,
+            "attaque": 35,
+            "defense": 35,
+            "attaque_spe": 35,
+            "defense_spe": 35,
+            "vitesse": 35
+        },
+        "talents": [
+            "Guts",
+            "Steadfast",
+            "Vital spirit"
+        ],
+        "generation": "Generation 2"
+    },
+    "Kicklee": {
+        "id": 106,
+        "nom_api": "hitmonlee",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 120,
+            "defense": 53,
+            "attaque_spe": 35,
+            "defense_spe": 110,
+            "vitesse": 87
+        },
+        "talents": [
+            "Limber",
+            "Reckless",
+            "Unburden"
+        ],
+        "generation": "Generation 1"
+    },
+    "Tygnon": {
+        "id": 107,
+        "nom_api": "hitmonchan",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 105,
+            "defense": 79,
+            "attaque_spe": 35,
+            "defense_spe": 110,
+            "vitesse": 76
+        },
+        "talents": [
+            "Keen eye",
+            "Iron fist",
+            "Inner focus"
+        ],
+        "generation": "Generation 1"
+    },
+    "Kapoera": {
+        "id": 237,
+        "nom_api": "hitmontop",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 95,
+            "defense": 95,
+            "attaque_spe": 35,
+            "defense_spe": 110,
+            "vitesse": 70
+        },
+        "talents": [
+            "Intimidate",
+            "Technician",
+            "Steadfast"
+        ],
+        "generation": "Generation 2"
+    },
+    "Pyronille": {
+        "id": 636,
+        "nom_api": "larvesta",
+        "types": [
+            "Insecte",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 85,
+            "defense": 55,
+            "attaque_spe": 50,
+            "defense_spe": 55,
+            "vitesse": 60
+        },
+        "talents": [
+            "Flame body",
+            "Swarm"
+        ],
+        "generation": "Generation 5"
+    },
+    "Pyrax": {
+        "id": 637,
+        "nom_api": "volcarona",
+        "types": [
+            "Insecte",
+            "Feu"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 60,
+            "defense": 65,
+            "attaque_spe": 135,
+            "defense_spe": 105,
+            "vitesse": 100
+        },
+        "talents": [
+            "Flame body",
+            "Swarm"
+        ],
+        "generation": "Generation 5"
+    },
+    "Sorbébé": {
+        "id": 582,
+        "nom_api": "vanillite",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 36,
+            "attaque": 50,
+            "defense": 50,
+            "attaque_spe": 65,
+            "defense_spe": 60,
+            "vitesse": 44
+        },
+        "talents": [
+            "Ice body",
+            "Snow cloak",
+            "Weak armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Sorboul": {
+        "id": 583,
+        "nom_api": "vanillish",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 51,
+            "attaque": 65,
+            "defense": 65,
+            "attaque_spe": 80,
+            "defense_spe": 75,
+            "vitesse": 59
+        },
+        "talents": [
+            "Ice body",
+            "Snow cloak",
+            "Weak armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Sorbouboul": {
+        "id": 584,
+        "nom_api": "vanilluxe",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 71,
+            "attaque": 95,
+            "defense": 85,
+            "attaque_spe": 110,
+            "defense_spe": 95,
+            "vitesse": 79
+        },
+        "talents": [
+            "Ice body",
+            "Snow warning",
+            "Weak armor"
+        ],
+        "generation": "Generation 5"
+    },
+    "Marcacrin": {
+        "id": 220,
+        "nom_api": "swinub",
+        "types": [
+            "Glace",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 50,
+            "defense": 40,
+            "attaque_spe": 30,
+            "defense_spe": 30,
+            "vitesse": 50
+        },
+        "talents": [
+            "Oblivious",
+            "Snow cloak",
+            "Thick fat"
+        ],
+        "generation": "Generation 2"
+    },
+    "Cochignon": {
+        "id": 221,
+        "nom_api": "piloswine",
+        "types": [
+            "Glace",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 100,
+            "defense": 80,
+            "attaque_spe": 60,
+            "defense_spe": 60,
+            "vitesse": 50
+        },
+        "talents": [
+            "Oblivious",
+            "Snow cloak",
+            "Thick fat"
+        ],
+        "generation": "Generation 2"
+    },
+    "Mammochon": {
+        "id": 473,
+        "nom_api": "mamoswine",
+        "types": [
+            "Glace",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 130,
+            "defense": 80,
+            "attaque_spe": 70,
+            "defense_spe": 60,
+            "vitesse": 80
+        },
+        "talents": [
+            "Oblivious",
+            "Snow cloak",
+            "Thick fat"
+        ],
+        "generation": "Generation 4"
+    },
+    "Goélise": {
+        "id": 278,
+        "nom_api": "wingull",
+        "types": [
+            "Eau",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 30,
+            "defense": 30,
+            "attaque_spe": 55,
+            "defense_spe": 30,
+            "vitesse": 85
+        },
+        "talents": [
+            "Keen eye",
+            "Hydration",
+            "Rain dish"
+        ],
+        "generation": "Generation 3"
+    },
+    "Bekipan": {
+        "id": 279,
+        "nom_api": "pelipper",
+        "types": [
+            "Eau",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 50,
+            "defense": 100,
+            "attaque_spe": 95,
+            "defense_spe": 70,
+            "vitesse": 65
+        },
+        "talents": [
+            "Keen eye",
+            "Drizzle",
+            "Rain dish"
+        ],
+        "generation": "Generation 3"
+    },
+    "Coupenotte": {
+        "id": 610,
+        "nom_api": "axew",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 46,
+            "attaque": 87,
+            "defense": 60,
+            "attaque_spe": 30,
+            "defense_spe": 40,
+            "vitesse": 57
+        },
+        "talents": [
+            "Rivalry",
+            "Mold breaker",
+            "Unnerve"
+        ],
+        "generation": "Generation 5"
+    },
+    "Incisache": {
+        "id": 611,
+        "nom_api": "fraxure",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 66,
+            "attaque": 117,
+            "defense": 70,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 67
+        },
+        "talents": [
+            "Rivalry",
+            "Mold breaker",
+            "Unnerve"
+        ],
+        "generation": "Generation 5"
+    },
+    "Tranchodon": {
+        "id": 612,
+        "nom_api": "haxorus",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 76,
+            "attaque": 147,
+            "defense": 90,
+            "attaque_spe": 60,
+            "defense_spe": 70,
+            "vitesse": 97
+        },
+        "talents": [
+            "Rivalry",
+            "Mold breaker",
+            "Unnerve"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mélo": {
+        "id": 173,
+        "nom_api": "cleffa",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 25,
+            "defense": 28,
+            "attaque_spe": 45,
+            "defense_spe": 55,
+            "vitesse": 15
+        },
+        "talents": [
+            "Cute charm",
+            "Magic guard",
+            "Friend guard"
+        ],
+        "generation": "Generation 2"
+    },
+    "Mélofée": {
+        "id": 35,
+        "nom_api": "clefairy",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 45,
+            "defense": 48,
+            "attaque_spe": 60,
+            "defense_spe": 65,
+            "vitesse": 35
+        },
+        "talents": [
+            "Cute charm",
+            "Magic guard",
+            "Friend guard"
+        ],
+        "generation": "Generation 1"
+    },
+    "Mélodelfe": {
+        "id": 36,
+        "nom_api": "clefable",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 95,
+            "attaque": 70,
+            "defense": 73,
+            "attaque_spe": 95,
+            "defense_spe": 90,
+            "vitesse": 60
+        },
+        "talents": [
+            "Cute charm",
+            "Magic guard",
+            "Unaware"
+        ],
+        "generation": "Generation 1"
+    },
+    "Furaiglon": {
+        "id": 627,
+        "nom_api": "rufflet",
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 83,
+            "defense": 50,
+            "attaque_spe": 37,
+            "defense_spe": 50,
+            "vitesse": 60
+        },
+        "talents": [
+            "Keen eye",
+            "Sheer force",
+            "Hustle"
+        ],
+        "generation": "Generation 5"
+    },
+    "Gueriaigle": {
+        "id": 628,
+        "nom_api": "braviary",
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 123,
+            "defense": 75,
+            "attaque_spe": 57,
+            "defense_spe": 75,
+            "vitesse": 80
+        },
+        "talents": [
+            "Keen eye",
+            "Sheer force",
+            "Defiant"
+        ],
+        "generation": "Generation 5"
+    },
+    "Solochi": {
+        "id": 633,
+        "nom_api": "deino",
+        "types": [
+            "Ténèbres",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 52,
+            "attaque": 65,
+            "defense": 50,
+            "attaque_spe": 45,
+            "defense_spe": 50,
+            "vitesse": 38
+        },
+        "talents": [
+            "Hustle"
+        ],
+        "generation": "Generation 5"
+    },
+    "Diamat": {
+        "id": 634,
+        "nom_api": "zweilous",
+        "types": [
+            "Ténèbres",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 72,
+            "attaque": 85,
+            "defense": 70,
+            "attaque_spe": 65,
+            "defense_spe": 70,
+            "vitesse": 58
+        },
+        "talents": [
+            "Hustle"
+        ],
+        "generation": "Generation 5"
+    },
+    "Trioxhydre": {
+        "id": 635,
+        "nom_api": "hydreigon",
+        "types": [
+            "Ténèbres",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 92,
+            "attaque": 105,
+            "defense": 90,
+            "attaque_spe": 125,
+            "defense_spe": 90,
+            "vitesse": 98
+        },
+        "talents": [
+            "Levitate"
+        ],
+        "generation": "Generation 5"
+    },
+    "Makuhita": {
+        "id": 296,
+        "nom_api": "makuhita",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 72,
+            "attaque": 60,
+            "defense": 30,
+            "attaque_spe": 20,
+            "defense_spe": 30,
+            "vitesse": 25
+        },
+        "talents": [
+            "Thick fat",
+            "Guts",
+            "Sheer force"
+        ],
+        "generation": "Generation 3"
+    },
+    "Hariyama": {
+        "id": 297,
+        "nom_api": "hariyama",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 144,
+            "attaque": 120,
+            "defense": 60,
+            "attaque_spe": 40,
+            "defense_spe": 60,
+            "vitesse": 50
+        },
+        "talents": [
+            "Thick fat",
+            "Guts",
+            "Sheer force"
+        ],
+        "generation": "Generation 3"
+    },
+    "Azurill": {
+        "id": 298,
+        "nom_api": "azurill",
+        "types": [
+            "Normal",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 20,
+            "defense": 40,
+            "attaque_spe": 20,
+            "defense_spe": 40,
+            "vitesse": 20
+        },
+        "talents": [
+            "Thick fat",
+            "Huge power",
+            "Sap sipper"
+        ],
+        "generation": "Generation 3"
+    },
+    "Marill": {
+        "id": 183,
+        "nom_api": "marill",
+        "types": [
+            "Eau",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 20,
+            "defense": 50,
+            "attaque_spe": 20,
+            "defense_spe": 50,
+            "vitesse": 40
+        },
+        "talents": [
+            "Thick fat",
+            "Huge power",
+            "Sap sipper"
+        ],
+        "generation": "Generation 2"
+    },
+    "Azumarill": {
+        "id": 184,
+        "nom_api": "azumarill",
+        "types": [
+            "Eau",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 50,
+            "defense": 80,
+            "attaque_spe": 60,
+            "defense_spe": 80,
+            "vitesse": 50
+        },
+        "talents": [
+            "Thick fat",
+            "Huge power",
+            "Sap sipper"
+        ],
+        "generation": "Generation 2"
+    },
+    "Mysdibule": {
+        "id": 303,
+        "nom_api": "mawile",
+        "types": [
+            "Acier",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 85,
+            "defense": 85,
+            "attaque_spe": 55,
+            "defense_spe": 55,
+            "vitesse": 50
+        },
+        "talents": [
+            "Hyper cutter",
+            "Intimidate",
+            "Sheer force"
+        ],
+        "generation": "Generation 3"
+    },
+    "Zébibron": {
+        "id": 522,
+        "nom_api": "blitzle",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 60,
+            "defense": 32,
+            "attaque_spe": 50,
+            "defense_spe": 32,
+            "vitesse": 76
+        },
+        "talents": [
+            "Lightning rod",
+            "Motor drive",
+            "Sap sipper"
+        ],
+        "generation": "Generation 5"
+    },
+    "Zéblitz": {
+        "id": 523,
+        "nom_api": "zebstrika",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 100,
+            "defense": 63,
+            "attaque_spe": 80,
+            "defense_spe": 63,
+            "vitesse": 116
+        },
+        "talents": [
+            "Lightning rod",
+            "Motor drive",
+            "Sap sipper"
+        ],
+        "generation": "Generation 5"
+    },
+    "Ponchiot": {
+        "id": 506,
+        "nom_api": "lillipup",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 60,
+            "defense": 45,
+            "attaque_spe": 25,
+            "defense_spe": 45,
+            "vitesse": 55
+        },
+        "talents": [
+            "Vital spirit",
+            "Pickup",
+            "Run away"
+        ],
+        "generation": "Generation 5"
+    },
+    "Ponchien": {
+        "id": 507,
+        "nom_api": "herdier",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 80,
+            "defense": 65,
+            "attaque_spe": 35,
+            "defense_spe": 65,
+            "vitesse": 60
+        },
+        "talents": [
+            "Intimidate",
+            "Sand rush",
+            "Scrappy"
+        ],
+        "generation": "Generation 5"
+    },
+    "Mastouffe": {
+        "id": 508,
+        "nom_api": "stoutland",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 110,
+            "defense": 90,
+            "attaque_spe": 45,
+            "defense_spe": 90,
+            "vitesse": 80
+        },
+        "talents": [
+            "Intimidate",
+            "Sand rush",
+            "Scrappy"
+        ],
+        "generation": "Generation 5"
+    },
+    "Charpenti": {
+        "id": 532,
+        "nom_api": "timburr",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 80,
+            "defense": 55,
+            "attaque_spe": 25,
+            "defense_spe": 35,
+            "vitesse": 35
+        },
+        "talents": [
+            "Guts",
+            "Sheer force",
+            "Iron fist"
+        ],
+        "generation": "Generation 5"
+    },
+    "Ouvrifier": {
+        "id": 533,
+        "nom_api": "gurdurr",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 85,
+            "attaque": 105,
+            "defense": 85,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 40
+        },
+        "talents": [
+            "Guts",
+            "Sheer force",
+            "Iron fist"
+        ],
+        "generation": "Generation 5"
+    },
+    "Bétochef": {
+        "id": 534,
+        "nom_api": "conkeldurr",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 105,
+            "attaque": 140,
+            "defense": 95,
+            "attaque_spe": 55,
+            "defense_spe": 65,
+            "vitesse": 45
+        },
+        "talents": [
+            "Guts",
+            "Sheer force",
+            "Iron fist"
+        ],
+        "generation": "Generation 5"
+    },
+    "Baggiguane": {
+        "id": 559,
+        "nom_api": "scraggy",
+        "types": [
+            "Ténèbres",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 75,
+            "defense": 70,
+            "attaque_spe": 35,
+            "defense_spe": 70,
+            "vitesse": 48
+        },
+        "talents": [
+            "Shed skin",
+            "Moxie",
+            "Intimidate"
+        ],
+        "generation": "Generation 5"
+    },
+    "Baggaïd": {
+        "id": 560,
+        "nom_api": "scrafty",
+        "types": [
+            "Ténèbres",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 90,
+            "defense": 115,
+            "attaque_spe": 45,
+            "defense_spe": 115,
+            "vitesse": 58
+        },
+        "talents": [
+            "Shed skin",
+            "Moxie",
+            "Intimidate"
+        ],
+        "generation": "Generation 5"
+    },
+    "Ténéfix": {
+        "id": 302,
+        "nom_api": "sableye",
+        "types": [
+            "Ténèbres",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 75,
+            "defense": 75,
+            "attaque_spe": 65,
+            "defense_spe": 65,
+            "vitesse": 50
+        },
+        "talents": [
+            "Keen eye",
+            "Stall",
+            "Prankster"
+        ],
+        "generation": "Generation 3"
+    },
+    "Galekid": {
+        "id": 304,
+        "nom_api": "aron",
+        "types": [
+            "Acier",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 70,
+            "defense": 100,
+            "attaque_spe": 40,
+            "defense_spe": 40,
+            "vitesse": 30
+        },
+        "talents": [
+            "Sturdy",
+            "Rock head",
+            "Heavy metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Galegon": {
+        "id": 305,
+        "nom_api": "lairon",
+        "types": [
+            "Acier",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 90,
+            "defense": 140,
+            "attaque_spe": 50,
+            "defense_spe": 50,
+            "vitesse": 40
+        },
+        "talents": [
+            "Sturdy",
+            "Rock head",
+            "Heavy metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Galeking": {
+        "id": 306,
+        "nom_api": "aggron",
+        "types": [
+            "Acier",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 110,
+            "defense": 180,
+            "attaque_spe": 60,
+            "defense_spe": 60,
+            "vitesse": 50
+        },
+        "talents": [
+            "Sturdy",
+            "Rock head",
+            "Heavy metal"
+        ],
+        "generation": "Generation 3"
+    },
+    "Carvanha": {
+        "id": 318,
+        "nom_api": "carvanha",
+        "types": [
+            "Eau",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 90,
+            "defense": 20,
+            "attaque_spe": 65,
+            "defense_spe": 20,
+            "vitesse": 65
+        },
+        "talents": [
+            "Rough skin",
+            "Speed boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Sharpedo": {
+        "id": 319,
+        "nom_api": "sharpedo",
+        "types": [
+            "Eau",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 120,
+            "defense": 40,
+            "attaque_spe": 95,
+            "defense_spe": 40,
+            "vitesse": 95
+        },
+        "talents": [
+            "Rough skin",
+            "Speed boost"
+        ],
+        "generation": "Generation 3"
+    },
+    "Barloche": {
+        "id": 339,
+        "nom_api": "barboach",
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 48,
+            "defense": 43,
+            "attaque_spe": 46,
+            "defense_spe": 41,
+            "vitesse": 60
+        },
+        "talents": [
+            "Oblivious",
+            "Anticipation",
+            "Hydration"
+        ],
+        "generation": "Generation 3"
+    },
+    "Barbicha": {
+        "id": 340,
+        "nom_api": "whiscash",
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 78,
+            "defense": 73,
+            "attaque_spe": 76,
+            "defense_spe": 71,
+            "vitesse": 60
+        },
+        "talents": [
+            "Oblivious",
+            "Anticipation",
+            "Hydration"
+        ],
+        "generation": "Generation 3"
+    },
+    "Judokrak": {
+        "id": 538,
+        "nom_api": "throh",
+        "types": [
+            "Combat"
+        ],
+        "stats": {
+            "hp": 120,
+            "attaque": 100,
+            "defense": 85,
+            "attaque_spe": 30,
+            "defense_spe": 85,
+            "vitesse": 45
+        },
+        "talents": [
+            "Guts",
+            "Inner focus",
+            "Mold breaker"
+        ],
+        "generation": "Generation 5"
+    },
+    "Blizzi": {
+        "id": 459,
+        "nom_api": "snover",
+        "types": [
+            "Plante",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 62,
+            "defense": 50,
+            "attaque_spe": 62,
+            "defense_spe": 60,
+            "vitesse": 40
+        },
+        "talents": [
+            "Snow warning",
+            "Soundproof"
+        ],
+        "generation": "Generation 4"
+    },
+    "Blizzaroi": {
+        "id": 460,
+        "nom_api": "abomasnow",
+        "types": [
+            "Plante",
+            "Glace"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 92,
+            "defense": 75,
+            "attaque_spe": 92,
+            "defense_spe": 85,
+            "vitesse": 60
+        },
+        "talents": [
+            "Snow warning",
+            "Soundproof"
+        ],
+        "generation": "Generation 4"
+    },
+    "Cradopaud": {
+        "id": 453,
+        "nom_api": "croagunk",
+        "types": [
+            "Poison",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 48,
+            "attaque": 61,
+            "defense": 40,
+            "attaque_spe": 61,
+            "defense_spe": 40,
+            "vitesse": 50
+        },
+        "talents": [
+            "Anticipation",
+            "Dry skin",
+            "Poison touch"
+        ],
+        "generation": "Generation 4"
+    },
+    "Coatox": {
+        "id": 454,
+        "nom_api": "toxicroak",
+        "types": [
+            "Poison",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 83,
+            "attaque": 106,
+            "defense": 65,
+            "attaque_spe": 86,
+            "defense_spe": 65,
+            "vitesse": 85
+        },
+        "talents": [
+            "Anticipation",
+            "Dry skin",
+            "Poison touch"
+        ],
+        "generation": "Generation 4"
+    },
+    "Anorith": {
+        "id": 347,
+        "nom_api": "anorith",
+        "types": [
+            "Roche",
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 45,
+            "attaque": 95,
+            "defense": 50,
+            "attaque_spe": 40,
+            "defense_spe": 50,
+            "vitesse": 75
+        },
+        "talents": [
+            "Battle armor",
+            "Swift swim"
+        ],
+        "generation": "Generation 3"
+    },
+    "Armaldo": {
+        "id": 348,
+        "nom_api": "armaldo",
+        "types": [
+            "Roche",
+            "Insecte"
+        ],
+        "stats": {
+            "hp": 75,
+            "attaque": 125,
+            "defense": 100,
+            "attaque_spe": 70,
+            "defense_spe": 80,
+            "vitesse": 45
+        },
+        "talents": [
+            "Battle armor",
+            "Swift swim"
+        ],
+        "generation": "Generation 3"
+    },
+    "Ptiravi": {
+        "id": 440,
+        "nom_api": "happiny",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 5,
+            "defense": 5,
+            "attaque_spe": 15,
+            "defense_spe": 65,
+            "vitesse": 30
+        },
+        "talents": [
+            "Natural cure",
+            "Serene grace",
+            "Friend guard"
+        ],
+        "generation": "Generation 4"
+    },
+    "Leveinard": {
+        "id": 113,
+        "nom_api": "chansey",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 250,
+            "attaque": 5,
+            "defense": 5,
+            "attaque_spe": 35,
+            "defense_spe": 105,
+            "vitesse": 50
+        },
+        "talents": [
+            "Natural cure",
+            "Serene grace",
+            "Healer"
+        ],
+        "generation": "Generation 1"
+    },
+    "Leuphorie": {
+        "id": 242,
+        "nom_api": "blissey",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 255,
+            "attaque": 10,
+            "defense": 10,
+            "attaque_spe": 75,
+            "defense_spe": 135,
+            "vitesse": 55
+        },
+        "talents": [
+            "Natural cure",
+            "Serene grace",
+            "Healer"
+        ],
+        "generation": "Generation 2"
+    },
+    "Lilia": {
+        "id": 345,
+        "nom_api": "lileep",
+        "types": [
+            "Roche",
+            "Plante"
+        ],
+        "stats": {
+            "hp": 66,
+            "attaque": 41,
+            "defense": 77,
+            "attaque_spe": 61,
+            "defense_spe": 87,
+            "vitesse": 23
+        },
+        "talents": [
+            "Suction cups",
+            "Storm drain"
+        ],
+        "generation": "Generation 3"
+    },
+    "Vacilys": {
+        "id": 346,
+        "nom_api": "cradily",
+        "types": [
+            "Roche",
+            "Plante"
+        ],
+        "stats": {
+            "hp": 86,
+            "attaque": 81,
+            "defense": 97,
+            "attaque_spe": 81,
+            "defense_spe": 107,
+            "vitesse": 43
+        },
+        "talents": [
+            "Suction cups",
+            "Storm drain"
+        ],
+        "generation": "Generation 3"
+    },
+    "Relicanth": {
+        "id": 369,
+        "nom_api": "relicanth",
+        "types": [
+            "Eau",
+            "Roche"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 90,
+            "defense": 130,
+            "attaque_spe": 45,
+            "defense_spe": 65,
+            "vitesse": 55
+        },
+        "talents": [
+            "Swift swim",
+            "Rock head",
+            "Sturdy"
+        ],
+        "generation": "Generation 3"
+    },
+    "Dinoclier": {
+        "id": 410,
+        "nom_api": "shieldon",
+        "types": [
+            "Roche",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 30,
+            "attaque": 42,
+            "defense": 118,
+            "attaque_spe": 42,
+            "defense_spe": 88,
+            "vitesse": 30
+        },
+        "talents": [
+            "Sturdy",
+            "Soundproof"
+        ],
+        "generation": "Generation 4"
+    },
+    "Bastiodon": {
+        "id": 411,
+        "nom_api": "bastiodon",
+        "types": [
+            "Roche",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 52,
+            "defense": 168,
+            "attaque_spe": 47,
+            "defense_spe": 138,
+            "vitesse": 30
+        },
+        "talents": [
+            "Sturdy",
+            "Soundproof"
+        ],
+        "generation": "Generation 4"
+    },
+    "Kranidos": {
+        "id": 408,
+        "nom_api": "cranidos",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 67,
+            "attaque": 125,
+            "defense": 40,
+            "attaque_spe": 30,
+            "defense_spe": 30,
+            "vitesse": 58
+        },
+        "talents": [
+            "Mold breaker",
+            "Sheer force"
+        ],
+        "generation": "Generation 4"
+    },
+    "Charkos": {
+        "id": 409,
+        "nom_api": "rampardos",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 97,
+            "attaque": 165,
+            "defense": 60,
+            "attaque_spe": 65,
+            "defense_spe": 50,
+            "vitesse": 58
+        },
+        "talents": [
+            "Mold breaker",
+            "Sheer force"
+        ],
+        "generation": "Generation 4"
+    },
+    "Rozbouton": {
+        "id": 406,
+        "nom_api": "budew",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 40,
+            "attaque": 30,
+            "defense": 35,
+            "attaque_spe": 50,
+            "defense_spe": 70,
+            "vitesse": 55
+        },
+        "talents": [
+            "Natural cure",
+            "Poison point",
+            "Leaf guard"
+        ],
+        "generation": "Generation 4"
+    },
+    "Rosélia": {
+        "id": 315,
+        "nom_api": "roselia",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 60,
+            "defense": 45,
+            "attaque_spe": 100,
+            "defense_spe": 80,
+            "vitesse": 65
+        },
+        "talents": [
+            "Natural cure",
+            "Poison point",
+            "Leaf guard"
+        ],
+        "generation": "Generation 3"
+    },
+    "Roserade": {
+        "id": 407,
+        "nom_api": "roserade",
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attaque": 70,
+            "defense": 65,
+            "attaque_spe": 125,
+            "defense_spe": 105,
+            "vitesse": 90
+        },
+        "talents": [
+            "Natural cure",
+            "Poison point",
+            "Technician"
+        ],
+        "generation": "Generation 4"
+    },
+    "Spiritomb": {
+        "id": 442,
+        "nom_api": "spiritomb",
+        "types": [
+            "Spectre",
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 50,
+            "attaque": 92,
+            "defense": 108,
+            "attaque_spe": 92,
+            "defense_spe": 108,
+            "vitesse": 35
+        },
+        "talents": [
+            "Pressure",
+            "Infiltrator"
+        ],
+        "generation": "Generation 4"
+    },
+    "Laporeille": {
+        "id": 427,
+        "nom_api": "buneary",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 55,
+            "attaque": 66,
+            "defense": 44,
+            "attaque_spe": 44,
+            "defense_spe": 56,
+            "vitesse": 85
+        },
+        "talents": [
+            "Run away",
+            "Klutz",
+            "Limber"
+        ],
+        "generation": "Generation 4"
+    },
+    "Lockpin": {
+        "id": 428,
+        "nom_api": "lopunny",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 65,
+            "attaque": 76,
+            "defense": 84,
+            "attaque_spe": 54,
+            "defense_spe": 96,
+            "vitesse": 105
+        },
+        "talents": [
+            "Cute charm",
+            "Klutz",
+            "Limber"
+        ],
+        "generation": "Generation 4"
+    },
+    "Griknot": {
+        "id": 443,
+        "nom_api": "gible",
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 58,
+            "attaque": 70,
+            "defense": 45,
+            "attaque_spe": 40,
+            "defense_spe": 45,
+            "vitesse": 42
+        },
+        "talents": [
+            "Sand veil",
+            "Rough skin"
+        ],
+        "generation": "Generation 4"
+    },
+    "Carmache": {
+        "id": 444,
+        "nom_api": "gabite",
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 68,
+            "attaque": 90,
+            "defense": 65,
+            "attaque_spe": 50,
+            "defense_spe": 55,
+            "vitesse": 82
+        },
+        "talents": [
+            "Sand veil",
+            "Rough skin"
+        ],
+        "generation": "Generation 4"
+    },
+    "Carchacrok": {
+        "id": 445,
+        "nom_api": "garchomp",
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "stats": {
+            "hp": 108,
+            "attaque": 130,
+            "defense": 95,
+            "attaque_spe": 80,
+            "defense_spe": 85,
+            "vitesse": 102
+        },
+        "talents": [
+            "Sand veil",
+            "Rough skin"
+        ],
+        "generation": "Generation 4"
+    },
+    "Kyogre": {
+        "id": 382,
+        "nom_api": "kyogre",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 100,
+            "defense": 90,
+            "attaque_spe": 150,
+            "defense_spe": 140,
+            "vitesse": 90
+        },
+        "talents": [
+            "Drizzle"
+        ],
+        "generation": "Legendaires"
+    },
+    "Groudon": {
+        "id": 383,
+        "nom_api": "groudon",
+        "types": [
+            "Sol"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 150,
+            "defense": 140,
+            "attaque_spe": 100,
+            "defense_spe": 90,
+            "vitesse": 90
+        },
+        "talents": [
+            "Drought"
+        ],
+        "generation": "Legendaires"
+    },
+    "Rayquaza": {
+        "id": 384,
+        "nom_api": "rayquaza",
+        "types": [
+            "Dragon",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 105,
+            "attaque": 150,
+            "defense": 90,
+            "attaque_spe": 150,
+            "defense_spe": 90,
+            "vitesse": 95
+        },
+        "talents": [
+            "Air lock"
+        ],
+        "generation": "Legendaires"
+    },
+    "Mewtwo": {
+        "id": 150,
+        "nom_api": "mewtwo",
+        "types": [
+            "Psy"
+        ],
+        "stats": {
+            "hp": 106,
+            "attaque": 110,
+            "defense": 90,
+            "attaque_spe": 154,
+            "defense_spe": 90,
+            "vitesse": 130
+        },
+        "talents": [
+            "Pressure",
+            "Unnerve"
+        ],
+        "generation": "Legendaires"
+    },
+    "Xerneas": {
+        "id": 716,
+        "nom_api": "xerneas",
+        "types": [
+            "Fée"
+        ],
+        "stats": {
+            "hp": 126,
+            "attaque": 131,
+            "defense": 95,
+            "attaque_spe": 131,
+            "defense_spe": 98,
+            "vitesse": 99
+        },
+        "talents": [
+            "Fairy aura"
+        ],
+        "generation": "Legendaires"
+    },
+    "Éthernatos": {
+        "id": 890,
+        "nom_api": "eternatus",
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 140,
+            "attaque": 85,
+            "defense": 95,
+            "attaque_spe": 145,
+            "defense_spe": 95,
+            "vitesse": 130
+        },
+        "talents": [
+            "Pressure"
+        ],
+        "generation": "Legendaires"
+    },
+    "Regirock": {
+        "id": 377,
+        "nom_api": "regirock",
+        "types": [
+            "Roche"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 100,
+            "defense": 200,
+            "attaque_spe": 50,
+            "defense_spe": 100,
+            "vitesse": 50
+        },
+        "talents": [
+            "Clear body",
+            "Sturdy"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Registeel": {
+        "id": 379,
+        "nom_api": "registeel",
+        "types": [
+            "Acier"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 75,
+            "defense": 150,
+            "attaque_spe": 75,
+            "defense_spe": 150,
+            "vitesse": 50
+        },
+        "talents": [
+            "Clear body",
+            "Light metal"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Regice": {
+        "id": 378,
+        "nom_api": "regice",
+        "types": [
+            "Glace"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 50,
+            "defense": 100,
+            "attaque_spe": 100,
+            "defense_spe": 200,
+            "vitesse": 50
+        },
+        "talents": [
+            "Clear body",
+            "Ice body"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Regidrago": {
+        "id": 895,
+        "nom_api": "regidrago",
+        "types": [
+            "Dragon"
+        ],
+        "stats": {
+            "hp": 200,
+            "attaque": 100,
+            "defense": 50,
+            "attaque_spe": 100,
+            "defense_spe": 50,
+            "vitesse": 80
+        },
+        "talents": [
+            "Dragons maw"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Regieleki": {
+        "id": 894,
+        "nom_api": "regieleki",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 80,
+            "attaque": 100,
+            "defense": 50,
+            "attaque_spe": 100,
+            "defense_spe": 50,
+            "vitesse": 200
+        },
+        "talents": [
+            "Transistor"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Regigigas": {
+        "id": 486,
+        "nom_api": "regigigas",
+        "types": [
+            "Normal"
+        ],
+        "stats": {
+            "hp": 110,
+            "attaque": 160,
+            "defense": 110,
+            "attaque_spe": 80,
+            "defense_spe": 110,
+            "vitesse": 100
+        },
+        "talents": [
+            "Slow start"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Heatran": {
+        "id": 485,
+        "nom_api": "heatran",
+        "types": [
+            "Feu",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 91,
+            "attaque": 90,
+            "defense": 106,
+            "attaque_spe": 130,
+            "defense_spe": 106,
+            "vitesse": 77
+        },
+        "talents": [
+            "Flash fire",
+            "Flame body"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Darkrai": {
+        "id": 491,
+        "nom_api": "darkrai",
+        "types": [
+            "Ténèbres"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 90,
+            "defense": 90,
+            "attaque_spe": 135,
+            "defense_spe": 90,
+            "vitesse": 125
+        },
+        "talents": [
+            "Bad dreams"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Cobaltium": {
+        "id": 638,
+        "nom_api": "cobalion",
+        "types": [
+            "Acier",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 91,
+            "attaque": 90,
+            "defense": 129,
+            "attaque_spe": 90,
+            "defense_spe": 72,
+            "vitesse": 108
+        },
+        "talents": [
+            "Justified"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Viridium": {
+        "id": 640,
+        "nom_api": "virizion",
+        "types": [
+            "Plante",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 91,
+            "attaque": 90,
+            "defense": 72,
+            "attaque_spe": 90,
+            "defense_spe": 129,
+            "vitesse": 108
+        },
+        "talents": [
+            "Justified"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Terrakium": {
+        "id": 639,
+        "nom_api": "terrakion",
+        "types": [
+            "Roche",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 91,
+            "attaque": 129,
+            "defense": 90,
+            "attaque_spe": 72,
+            "defense_spe": 90,
+            "vitesse": 108
+        },
+        "talents": [
+            "Justified"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Câblifère": {
+        "id": 796,
+        "nom_api": "xurkitree",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 83,
+            "attaque": 89,
+            "defense": 71,
+            "attaque_spe": 173,
+            "defense_spe": 71,
+            "vitesse": 83
+        },
+        "talents": [
+            "Beast boost"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Katagami": {
+        "id": 798,
+        "nom_api": "kartana",
+        "types": [
+            "Plante",
+            "Acier"
+        ],
+        "stats": {
+            "hp": 59,
+            "attaque": 181,
+            "defense": 131,
+            "attaque_spe": 59,
+            "defense_spe": 31,
+            "vitesse": 109
+        },
+        "talents": [
+            "Beast boost"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Pêchaminus": {
+        "id": 1025,
+        "nom_api": "pecharunt",
+        "types": [
+            "Poison",
+            "Spectre"
+        ],
+        "stats": {
+            "hp": 88,
+            "attaque": 88,
+            "defense": 160,
+            "attaque_spe": 88,
+            "defense_spe": 88,
+            "vitesse": 88
+        },
+        "talents": [
+            "Poison puppeteer"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Artikodin": {
+        "id": 144,
+        "nom_api": "articuno",
+        "types": [
+            "Glace",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 85,
+            "defense": 100,
+            "attaque_spe": 95,
+            "defense_spe": 125,
+            "vitesse": 85
+        },
+        "talents": [
+            "Pressure",
+            "Snow cloak"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Sulfura": {
+        "id": 146,
+        "nom_api": "moltres",
+        "types": [
+            "Feu",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 100,
+            "defense": 90,
+            "attaque_spe": 125,
+            "defense_spe": 85,
+            "vitesse": 90
+        },
+        "talents": [
+            "Pressure",
+            "Flame body"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Électhor": {
+        "id": 145,
+        "nom_api": "zapdos",
+        "types": [
+            "Electrik",
+            "Vol"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 90,
+            "defense": 85,
+            "attaque_spe": 125,
+            "defense_spe": 90,
+            "vitesse": 100
+        },
+        "talents": [
+            "Pressure",
+            "Static"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Suicune": {
+        "id": 245,
+        "nom_api": "suicune",
+        "types": [
+            "Eau"
+        ],
+        "stats": {
+            "hp": 100,
+            "attaque": 75,
+            "defense": 115,
+            "attaque_spe": 90,
+            "defense_spe": 115,
+            "vitesse": 85
+        },
+        "talents": [
+            "Pressure",
+            "Inner focus"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Entei": {
+        "id": 244,
+        "nom_api": "entei",
+        "types": [
+            "Feu"
+        ],
+        "stats": {
+            "hp": 115,
+            "attaque": 115,
+            "defense": 85,
+            "attaque_spe": 90,
+            "defense_spe": 75,
+            "vitesse": 100
+        },
+        "talents": [
+            "Pressure",
+            "Inner focus"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Raikou": {
+        "id": 243,
+        "nom_api": "raikou",
+        "types": [
+            "Electrik"
+        ],
+        "stats": {
+            "hp": 90,
+            "attaque": 85,
+            "defense": 75,
+            "attaque_spe": 115,
+            "defense_spe": 100,
+            "vitesse": 115
+        },
+        "talents": [
+            "Pressure",
+            "Inner focus"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Mouscoto": {
+        "id": 794,
+        "nom_api": "buzzwole",
+        "types": [
+            "Insecte",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 107,
+            "attaque": 139,
+            "defense": 139,
+            "attaque_spe": 53,
+            "defense_spe": 53,
+            "vitesse": 79
+        },
+        "talents": [
+            "Beast boost"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Cancrelove": {
+        "id": 795,
+        "nom_api": "pheromosa",
+        "types": [
+            "Insecte",
+            "Combat"
+        ],
+        "stats": {
+            "hp": 71,
+            "attaque": 137,
+            "defense": 37,
+            "attaque_spe": 137,
+            "defense_spe": 37,
+            "vitesse": 151
+        },
+        "talents": [
+            "Beast boost"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Tokorico": {
+        "id": 785,
+        "nom_api": "tapu-koko",
+        "types": [
+            "Electrik",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 115,
+            "defense": 85,
+            "attaque_spe": 95,
+            "defense_spe": 75,
+            "vitesse": 130
+        },
+        "talents": [
+            "Electric surge",
+            "Telepathy"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Tokopiyon": {
+        "id": 786,
+        "nom_api": "tapu-lele",
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 85,
+            "defense": 75,
+            "attaque_spe": 130,
+            "defense_spe": 115,
+            "vitesse": 95
+        },
+        "talents": [
+            "Psychic surge",
+            "Telepathy"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Tokotoro": {
+        "id": 787,
+        "nom_api": "tapu-bulu",
+        "types": [
+            "Plante",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 130,
+            "defense": 115,
+            "attaque_spe": 85,
+            "defense_spe": 95,
+            "vitesse": 75
+        },
+        "talents": [
+            "Grassy surge",
+            "Telepathy"
+        ],
+        "generation": "Semi-Legendaires"
+    },
+    "Tokopisco": {
+        "id": 788,
+        "nom_api": "tapu-fini",
+        "types": [
+            "Eau",
+            "Fée"
+        ],
+        "stats": {
+            "hp": 70,
+            "attaque": 75,
+            "defense": 115,
+            "attaque_spe": 95,
+            "defense_spe": 130,
+            "vitesse": 85
+        },
+        "talents": [
+            "Misty surge",
+            "Telepathy"
+        ],
+        "generation": "Semi-Legendaires"
+    }
+}
