@@ -1,73 +1,58 @@
-class PokemonNature:
-    def __init__(self):
-        # Structure : { "Nom": (Stat Boostée, Stat Réduite) }
-        # None signifie que la nature est neutre.
-        self.natures_data = {
-            "Assuré": ("Defense", "Attaque"),
-            "Brave": ("Attaque", "Vitesse"),
-            "Calme": ("Defense_Spe", "Attaque"),
-            "Docile": (None, None),  # Neutre
-            "Foufou": ("Attaque_Spe", "Defense_Spe"),
-            "Gentil": ("Defense_Spe", "Defense"),
-            "Hardi": (None, None),  # Neutre
-            "Jovial": ("Vitesse", "Attaque_Spe"),
-            "Lâche": ("Defense", "Defense_Spe"),
-            "Malin": ("Defense", "Attaque_Spe"),
-            "Malpoli": ("Defense_Spe", "Vitesse"),
-            "Modeste": ("Attaque_Spe", "Attaque"),
-            "Naïf": ("Vitesse", "Defense_Spe"),
-            "Presse": ("Vitesse", "Defense"),
-            "Prudent": ("Defense_Spe", "Attaque_Spe"),
-            "Pudique": (None, None),  # Neutre
-            "Relax": ("Defense", "Vitesse"),
-            "Rigide": ("Attaque", "Attaque_Spe"),
-            "Sérieux": (None, None),  # Neutre
-            "Solo": ("Attaque", "Defense"),
-            "Timide": ("Vitesse", "Attaque"),
-            "Bizarre": (None, None),  # Neutre
-            "Discret": ("Attaque_Spe", "Vitesse"),
-            "Docile": (None, None),   # Neutre
-            "Mauvais": ("Attaque", "Defense_Spe")
-        }
+class NatureEngine: # On renomme pour correspondre aux imports du moteur
+    # On met les données en variable de classe (statique) pour y accéder facilement
+    DATA = {
+        "Assuré": ("Defense", "Attaque"),
+        "Brave": ("Attaque", "Vitesse"),
+        "Calme": ("Defense_Spe", "Attaque"),
+        "Docile": (None, None),
+        "Foufou": ("Attaque_Spe", "Defense_Spe"),
+        "Gentil": ("Defense_Spe", "Defense"),
+        "Hardi": (None, None),
+        "Jovial": ("Vitesse", "Attaque_Spe"),
+        "Lâche": ("Defense", "Defense_Spe"),
+        "Malin": ("Defense", "Attaque_Spe"),
+        "Malpoli": ("Defense_Spe", "Vitesse"),
+        "Modeste": ("Attaque_Spe", "Attaque"),
+        "Naïf": ("Vitesse", "Defense_Spe"),
+        "Presse": ("Vitesse", "Defense"),
+        "Prudent": ("Defense_Spe", "Attaque_Spe"),
+        "Pudique": (None, None),
+        "Relax": ("Defense", "Vitesse"),
+        "Rigide": ("Attaque", "Attaque_Spe"),
+        "Sérieux": (None, None),
+        "Solo": ("Attaque", "Defense"),
+        "Timide": ("Vitesse", "Attaque"),
+        "Bizarre": (None, None),
+        "Discret": ("Attaque_Spe", "Vitesse"),
+        "Mauvais": ("Attaque", "Defense_Spe")
+    }
 
-    def get_multiplier(self, nature_name, stat_name):
-        """
-        Retourne le multiplicateur pour une stat donnée selon la nature.
-        Ex: Rigide pour l'Attaque retournera 1.1
-        """
-        if nature_name not in self.natures_data:
+    @staticmethod
+    def get_multiplier(nature_name, stat_name):
+        """Retourne le multiplicateur (1.1, 0.9 ou 1.0)."""
+        if nature_name not in NatureEngine.DATA:
             return 1.0
         
-        boost, nerf = self.natures_data[nature_name]
+        boost, nerf = NatureEngine.DATA[nature_name]
         
-        if stat_name == boost:
-            return 1.1
-        elif stat_name == nerf:
-            return 0.9
-        else:
-            return 1.0
+        # On normalise en minuscule pour éviter les erreurs de frappe
+        s_name = stat_name.capitalize()
+        if s_name == boost: return 1.1
+        if s_name == nerf: return 0.9
+        return 1.0
 
-    def get_nature_info(self, nature_name):
-        """Affiche les détails d'une nature"""
-        if nature_name not in self.natures_data:
-            return "Nature inconnue."
+    @staticmethod
+    def apply_nature_to_stats(nature_name, stats):
+        """
+        Applique la nature à un dictionnaire de stats complet.
+        Utilisé par le CombatEngine.
+        """
+        new_stats = stats.copy()
+        for s in new_stats:
+            # On mappe les noms anglais/français si nécessaire
+            mapping = {"attaque": "Attaque", "defense": "Defense", "vitesse": "Vitesse", 
+                       "attaque_spe": "Attaque_Spe", "defense_spe": "Defense_Spe"}
             
-        boost, nerf = self.natures_data[nature_name]
-        if boost is None:
-            return f"Nature {nature_name} : Neutre (aucun bonus/malus)."
-        else:
-            return f"Nature {nature_name} : +10% {boost}, -10% {nerf}."
-
-# --- EXEMPLE D'UTILISATION ---
-if __name__ == "__main__":
-    nature_manager = PokemonNature()
-    
-    # Test 1 : Nature Rigide
-    print(nature_manager.get_nature_info("Rigide"))
-    
-    # Test 2 : Récupérer un multiplicateur précis
-    multiplicateur = nature_manager.get_multiplier("Rigide", "Attaque")
-    print(f"Multiplicateur Attaque pour 'Rigide' : x{multiplicateur}")
-    
-    # Test 3 : Nature neutre
-    print(nature_manager.get_nature_info("Hardi"))
+            ref_name = mapping.get(s.lower(), s.capitalize())
+            new_stats[s] = int(new_stats[s] * NatureEngine.get_multiplier(nature_name, ref_name))
+        return new_stats

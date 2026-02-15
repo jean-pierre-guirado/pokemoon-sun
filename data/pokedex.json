@@ -1,0 +1,254 @@
+[
+    {
+        "nom": "Bourrinos",
+        "type": "Sol",
+        "defense": 100,
+        "attaque": 125,
+        "pv": 100
+    },
+    {
+        "nom": "Blizzi",
+        "type": "Plante",
+        "defense": 50,
+        "attaque": 62,
+        "pv": 60
+    },
+    {
+        "nom": "Sovkipou",
+        "type": "Insecte",
+        "defense": 40,
+        "attaque": 35,
+        "pv": 25
+    },
+    {
+        "nom": "Furaiglon",
+        "type": "Normal",
+        "defense": 50,
+        "attaque": 83,
+        "pv": 70
+    },
+    {
+        "nom": "Matoufeu",
+        "type": "Feu",
+        "defense": 50,
+        "attaque": 85,
+        "pv": 65
+    },
+    {
+        "nom": "Pêchaminus",
+        "type": "Poison",
+        "defense": 160,
+        "attaque": 88,
+        "pv": 88
+    },
+    {
+        "nom": "Élecsprint",
+        "type": "Electrik",
+        "defense": 60,
+        "attaque": 75,
+        "pv": 70
+    },
+    {
+        "nom": "Gardevoir",
+        "type": "Psy",
+        "defense": 65,
+        "attaque": 65,
+        "pv": 68
+    },
+    {
+        "nom": "Chartor",
+        "type": "Feu",
+        "defense": 140,
+        "attaque": 85,
+        "pv": 70
+    },
+    {
+        "nom": "Tarsal",
+        "type": "Psy",
+        "defense": 25,
+        "attaque": 25,
+        "pv": 28
+    },
+    {
+        "nom": "Oniglali",
+        "type": "Glace",
+        "defense": 80,
+        "attaque": 80,
+        "pv": 80
+    },
+    {
+        "nom": "Ténéfix",
+        "type": "Ténèbres",
+        "defense": 75,
+        "attaque": 75,
+        "pv": 50
+    },
+    {
+        "nom": "Arcko",
+        "type": "Plante",
+        "defense": 35,
+        "attaque": 45,
+        "pv": 40
+    },
+    {
+        "nom": "Amphinobi",
+        "type": "Eau",
+        "defense": 67,
+        "attaque": 95,
+        "pv": 72
+    },
+    {
+        "nom": "Rayquaza",
+        "type": "Dragon",
+        "defense": 90,
+        "attaque": 150,
+        "pv": 105
+    },
+    {
+        "nom": "Sulfura",
+        "type": "Feu",
+        "defense": 90,
+        "attaque": 100,
+        "pv": 90
+    },
+    {
+        "nom": "Coxy",
+        "type": "Insecte",
+        "defense": 30,
+        "attaque": 20,
+        "pv": 40
+    },
+    {
+        "nom": "Regigigas",
+        "type": "Normal",
+        "defense": 110,
+        "attaque": 160,
+        "pv": 110
+    },
+    {
+        "nom": "Forgerette",
+        "type": "Fée",
+        "defense": 45,
+        "attaque": 45,
+        "pv": 50
+    },
+    {
+        "nom": "Zorua",
+        "type": "Normal",
+        "defense": 40,
+        "attaque": 60,
+        "pv": 35
+    },
+    {
+        "nom": "Magirêve",
+        "type": "Spectre",
+        "defense": 60,
+        "attaque": 60,
+        "pv": 60
+    },
+    {
+        "nom": "Trioxhydre",
+        "type": "Ténèbres",
+        "defense": 90,
+        "attaque": 105,
+        "pv": 92
+    },
+    {
+        "nom": "Magby",
+        "type": "Feu",
+        "defense": 37,
+        "attaque": 75,
+        "pv": 45
+    },
+    {
+        "nom": "Coxyclaque",
+        "type": "Insecte",
+        "defense": 50,
+        "attaque": 35,
+        "pv": 55
+    },
+    {
+        "nom": "Pifeuil",
+        "type": "Plante",
+        "defense": 40,
+        "attaque": 70,
+        "pv": 70
+    },
+    {
+        "nom": "Vrombi",
+        "type": "Acier",
+        "defense": 63,
+        "attaque": 70,
+        "pv": 45
+    },
+    {
+        "nom": "Zébibron",
+        "type": "Electrik",
+        "defense": 32,
+        "attaque": 60,
+        "pv": 45
+    },
+    {
+        "nom": "Ouvrifier",
+        "type": "Combat",
+        "defense": 85,
+        "attaque": 105,
+        "pv": 85
+    },
+    {
+        "nom": "Armaldo",
+        "type": "Roche",
+        "defense": 100,
+        "attaque": 125,
+        "pv": 75
+    },
+    {
+        "nom": "Galifeu",
+        "type": "Feu",
+        "defense": 60,
+        "attaque": 85,
+        "pv": 60
+    },
+    {
+        "nom": "Baggiguane",
+        "type": "Ténèbres",
+        "defense": 70,
+        "attaque": 75,
+        "pv": 50
+    },
+    {
+        "nom": "Verpom",
+        "type": "Plante",
+        "defense": 80,
+        "attaque": 40,
+        "pv": 40
+    },
+    {
+        "nom": "Kecleon",
+        "type": "Normal",
+        "defense": 70,
+        "attaque": 90,
+        "pv": 60
+    },
+    {
+        "nom": "Suicune",
+        "type": "Eau",
+        "defense": 115,
+        "attaque": 75,
+        "pv": 100
+    },
+    {
+        "nom": "Blindalys",
+        "type": "Insecte",
+        "defense": 55,
+        "attaque": 35,
+        "pv": 50
+    },
+    {
+        "nom": "Magmar",
+        "type": "Feu",
+        "defense": 57,
+        "attaque": 95,
+        "pv": 65
+    }
+]
