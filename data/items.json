@@ -1,0 +1,238 @@
+{
+    "Ball": [
+        {
+            "id": "poke-ball",
+            "nom": "Poké Ball",
+            "prix": 200,
+            "desc": "Ball de base.",
+            "image": "poke-ball.png"
+        },
+        {
+            "id": "great-ball",
+            "nom": "Super Ball",
+            "prix": 600,
+            "desc": "Efficace (x1.5).",
+            "image": "great-ball.png"
+        },
+        {
+            "id": "ultra-ball",
+            "nom": "Hyper Ball",
+            "prix": 1200,
+            "desc": "Très efficace (x2).",
+            "image": "ultra-ball.png"
+        },
+        {
+            "id": "master-ball",
+            "nom": "Master Ball",
+            "prix": 0,
+            "desc": "Capture garantie.",
+            "image": "master-ball.png"
+        },
+        {
+            "id": "premier-ball",
+            "nom": "Honor Ball",
+            "prix": 200,
+            "desc": "Ball commémorative.",
+            "image": "premier-ball.png"
+        },
+        {
+            "id": "luxury-ball",
+            "nom": "Luxe Ball",
+            "prix": 1000,
+            "desc": "Rend le Pokémon amical.",
+            "image": "luxury-ball.png"
+        },
+        {
+            "id": "quick-ball",
+            "nom": "Rapide Ball",
+            "prix": 1000,
+            "desc": "Efficace au début du combat.",
+            "image": "quick-ball.png"
+        },
+        {
+            "id": "timer-ball",
+            "nom": "Chrono Ball",
+            "prix": 1000,
+            "desc": "Efficace si le combat dure.",
+            "image": "timer-ball.png"
+        },
+        {
+            "id": "net-ball",
+            "nom": "Filet Ball",
+            "prix": 1000,
+            "desc": "Efficace sur Eau/Insecte.",
+            "image": "net-ball.png"
+        },
+        {
+            "id": "dusk-ball",
+            "nom": "Sombre Ball",
+            "prix": 1000,
+            "desc": "Efficace de nuit ou grotte.",
+            "image": "dusk-ball.png"
+        }
+    ],
+    "Soin": [
+        {
+            "id": "potion",
+            "nom": "Potion",
+            "prix": 300,
+            "desc": "Restaure 20 PV.",
+            "image": "potion.png"
+        },
+        {
+            "id": "super-potion",
+            "nom": "Super Potion",
+            "prix": 700,
+            "desc": "Restaure 50 PV.",
+            "image": "super-potion.png"
+        },
+        {
+            "id": "hyper-potion",
+            "nom": "Hyper Potion",
+            "prix": 1200,
+            "desc": "Restaure 200 PV.",
+            "image": "hyper-potion.png"
+        },
+        {
+            "id": "max-potion",
+            "nom": "Max Potion",
+            "prix": 2500,
+            "desc": "Restaure tous les PV.",
+            "image": "max-potion.png"
+        },
+        {
+            "id": "revive",
+            "nom": "Rappel",
+            "prix": 1500,
+            "desc": "Réanime un Pokémon (50% PV).",
+            "image": "revive.png"
+        },
+        {
+            "id": "max-revive",
+            "nom": "Rappel Max",
+            "prix": 3000,
+            "desc": "Réanime (100% PV).",
+            "image": "max-revive.png"
+        },
+        {
+            "id": "full-restore",
+            "nom": "Guérison",
+            "prix": 3000,
+            "desc": "Soigne tout (PV + Statut).",
+            "image": "full-restore.png"
+        }
+    ],
+    "Rare": [
+        {
+            "id": "rare-candy",
+            "nom": "Super Bonbon",
+            "prix": 4800,
+            "desc": "Fait monter d'un niveau.",
+            "image": "rare-candy.png"
+        }
+    ],
+    "Boost": [
+        {
+            "id": "x-attack",
+            "nom": "Attaque +",
+            "prix": 500,
+            "desc": "Boost l'Attaque en combat.",
+            "image": "x-attack.png"
+        },
+        {
+            "id": "x-defense",
+            "nom": "Défense +",
+            "prix": 500,
+            "desc": "Boost la Défense en combat.",
+            "image": "x-defense.png"
+        },
+        {
+            "id": "x-speed",
+            "nom": "Vitesse +",
+            "prix": 500,
+            "desc": "Boost la Vitesse en combat.",
+            "image": "x-speed.png"
+        },
+        {
+            "id": "x-sp-atk",
+            "nom": "Atk Spé +",
+            "prix": 500,
+            "desc": "Boost l'Atk Spé en combat.",
+            "image": "x-sp-atk.png"
+        },
+        {
+            "id": "x-sp-def",
+            "nom": "Déf Spé +",
+            "prix": 500,
+            "desc": "Boost la Déf Spé en combat.",
+            "image": "x-sp-def.png"
+        }
+    ],
+    "Vente": [
+        {
+            "id": "nugget",
+            "nom": "Pépite",
+            "prix": 5000,
+            "desc": "Se vend très cher.",
+            "image": "nugget.png"
+        },
+        {
+            "id": "pearl",
+            "nom": "Perle",
+            "prix": 1000,
+            "desc": "Se vend cher.",
+            "image": "pearl.png"
+        },
+        {
+            "id": "big-nugget",
+            "nom": "Maxi Pépite",
+            "prix": 10000,
+            "desc": "Se vend extrêmement cher.",
+            "image": "big-nugget.png"
+        },
+        {
+            "id": "stardust",
+            "nom": "Poussière Étoile",
+            "prix": 1500,
+            "desc": "Un joli sable brillant.",
+            "image": "stardust.png"
+        }
+    ],
+    "Strat": [
+        {
+            "id": "leftovers",
+            "nom": "Restes",
+            "prix": 4000,
+            "desc": "Restaure des PV à chaque tour.",
+            "image": "leftovers.png"
+        },
+        {
+            "id": "life-orb",
+            "nom": "Orbe Vie",
+            "prix": 4000,
+            "desc": "Boost dégâts mais blesse le porteur.",
+            "image": "life-orb.png"
+        },
+        {
+            "id": "choice-band",
+            "nom": "Bandeau Choix",
+            "prix": 4000,
+            "desc": "Boost Attaque mais bloque 1 capacité.",
+            "image": "choice-band.png"
+        },
+        {
+            "id": "focus-sash",
+            "nom": "Ceinture Force",
+            "prix": 4000,
+            "desc": "Empêche le K.O en 1 coup.",
+            "image": "focus-sash.png"
+        },
+        {
+            "id": "rocky-helmet",
+            "nom": "Casque Brut",
+            "prix": 4000,
+            "desc": "Blesse ceux qui vous touchent.",
+            "image": "rocky-helmet.png"
+        }
+    ]
+}

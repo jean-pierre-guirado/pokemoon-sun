@@ -1,255 +1,356 @@
 import arcade
-import json
 import os
+import json
 import random
-import sys
 import unicodedata
 
 # --- CONFIGURATION DES CHEMINS ---
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
+BASE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DATA_PATH = os.path.join(BASE_PATH, "data")
+SPRITE_PATH = os.path.join(BASE_PATH, "asset", "sprite")
+DRESSEUR_JSON = os.path.join(DATA_PATH, "dresseur_config.json")
+CAPA_JSON = os.path.join(DATA_PATH, "capacite_list.json")
 
-try:
-    from core.table_type import TypeChart
-    from core.nature import NatureEngine
-    from core.combat import CombatEngine
-    from core.exp import ExperienceEngine
-    from core.level import LevelEngine
-    print("✓ Modules core chargés avec succès !")
-except ImportError as e:
-    print(f"✗ Erreur d'importation : {e}")
-    sys.exit()
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "Poke Fantasy - Pure White Edition"
 
-DATA_PATH = os.path.join(ROOT_DIR, "data")
-SPRITE_PATH = os.path.join(ROOT_DIR, "asset", "sprite")
-TYPE_ICON_PATH = os.path.join(ROOT_DIR, "asset", "types")
+def normaliser(txt):
+    return "".join([c for c in unicodedata.normalize('NFD', txt) if unicodedata.category(c) != 'Mn']).lower().strip()
 
-def normaliser(nom):
-    nom = str(nom).lower().strip()
-    return "".join(c for c in unicodedata.normalize('NFD', nom) if unicodedata.category(c) != 'Mn')
+# --- CLASSES ISSUES DU MODELE PYGAME ---
+
+class Pokemon:
+    def __init__(self, data, db_capas):
+        self.nom = data.get("nom", "Inconnu")
+        self.niveau = data.get("niveau", 5)
+        self.hp_base = data.get("hp_base", 100 + (self.niveau * 5))
+        self.hp = data.get("hp_actuel", self.hp_base)
+        self.xp = data.get("xp", 0)
+        self.xp_max = self.niveau * 100
+        self.stats = data.get("stats", {"attaque": 50 + self.niveau, "defense": 50 + self.niveau})
+        self.capacites_noms = data.get("capacites", [])
+        self.moves_obj = []
+        
+        for c in self.capacites_noms:
+            m = next((m for m in db_capas if normaliser(m["nom_attaque"]) == normaliser(c)), None)
+            self.moves_obj.append(m if m else {"nom_attaque": c, "puissance": 40})
+
+    def gain_xp(self, montant):
+        self.xp += montant
+        leveled_up = False
+        while self.xp >= self.xp_max:
+            self.xp -= self.xp_max
+            self.niveau += 1
+            self.xp_max = self.niveau * 100
+            self.hp_base += 10
+            self.hp = self.hp_base
+            leveled_up = True
+        return leveled_up
+
+    def to_dict(self):
+        return {
+            "nom": self.nom, "niveau": self.niveau, "hp_base": self.hp_base,
+            "hp_actuel": self.hp, "xp": self.xp, "stats": self.stats,
+            "capacites": self.capacites_noms
+        }
+
+class ExperienceEngine:
+    @staticmethod
+    def calculer_xp_gagne(ennemi):
+        return ennemi.niveau * random.randint(15, 25)
+
+class CombatEngine:
+    @staticmethod
+    def calculer_degats(attaquant, defenseur, move_data):
+        pui = move_data.get("puissance", 40) or 40
+        atk = attaquant.stats.get("attaque", 50)
+        dfs = defenseur.stats.get("defense", 50)
+        dmg = int((attaquant.niveau * 0.4 + 2) * pui * (atk/dfs) / 50 + 2)
+        return max(1, dmg)
+
+class ItemEngine:
+    @staticmethod
+    def utiliser_objet(item_nom, pokemon):
+        nom = item_nom.lower().strip()
+        
+        if "bonbon" in nom or "rare-candy" in nom:
+            pokemon.gain_xp(pokemon.xp_max)
+            return True, f"Niveau Super ! {pokemon.nom} est Niv. {pokemon.niveau} !"
+
+        if "potion" in nom:
+            if pokemon.hp <= 0: return False, f"{pokemon.nom} est KO !"
+            if pokemon.hp >= pokemon.hp_base: return False, "Deja full PV !"
+            soin = 200 if "hyper" in nom else 50 if "super" in nom else 20
+            if "max" in nom: soin = pokemon.hp_base
+            old = pokemon.hp
+            pokemon.hp = min(pokemon.hp_base, pokemon.hp + soin)
+            return True, f"{pokemon.nom} soigne de {int(pokemon.hp - old)} PV."
+            
+        elif "rappel" in nom or "revive" in nom:
+            if pokemon.hp <= 0:
+                pokemon.hp = pokemon.hp_base // 2
+                if "max" in nom: pokemon.hp = pokemon.hp_base
+                return True, f"{pokemon.nom} est reanime !"
+            return False, f"{pokemon.nom} n'est pas KO !"
+            
+        elif "restore" in nom or "guerison" in nom:
+            pokemon.hp = pokemon.hp_base
+            return True, f"PV restaures pour {pokemon.nom}."
+            
+        return False, "Aucun effet."
+
+    @staticmethod
+    def tenter_capture(ball_nom, ennemi):
+        nom = ball_nom.lower().strip()
+        if "master" in nom: return True
+        taux_pv = (ennemi.hp / ennemi.hp_base)
+        chance = 0.3
+        if "hyper" in nom or "ultra" in nom: chance = 0.6
+        elif "super" in nom or "great" in nom: chance = 0.4
+        chance += (1.0 - taux_pv) * 0.3
+        return random.random() < chance
+
+# --- ENGINE PRINCIPAL ARCADE ---
 
 class PokeFantasyGame(arcade.Window):
     def __init__(self):
-        super().__init__(800, 600, "Poke Fantasy - Version Finale")
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+        # BACKGROUND BLANC ET PURE
         arcade.set_background_color(arcade.color.WHITE)
         
-        # Chargement des bases de données
-        with open(os.path.join(DATA_PATH, "pokemon_data.json"), 'r', encoding='utf-8') as f:
-            self.pokedex = json.load(f)
-        with open(os.path.join(DATA_PATH, "capacite_list.json"), 'r', encoding='utf-8') as f:
-            self.all_moves = json.load(f)
-            
-        self.player_sprite_list = arcade.SpriteList()
-        self.enemy_sprite_list = arcade.SpriteList()
-        self.setup_combat()
-
-    def piocher_moves(self, nom_pokemon):
-        nom_cible = normaliser(nom_pokemon)
-        pool = [m for m in self.all_moves if normaliser(m.get('pokemon', '')) == nom_cible]
-        if not pool:
-            pool = [{"nom_attaque": "Charge", "puissance": 40, "type": "Normal", "precision": 100}]
-        return random.sample(pool, min(len(pool), 4))
-
-    def calculer_stat_niveau(self, base, niveau, est_hp=False):
-        if est_hp:
-            return int(((base * 2) * niveau / 100) + niveau + 10)
-        return int(((base * 2) * niveau / 100) + 5)
-
-    def creer_entite_combat(self, nom):
-        data = self.pokedex[nom]
-        niveau = random.randint(15, 25) 
-        stats_raw = data.get('stats', data)
-        base_hp = stats_raw.get('hp') or stats_raw.get('pv') or 50
+        self.etat = "PRINCIPAL"
+        self.index_sel = 0
+        self.message = ""
+        self.item_en_cours = None
+        self.ui_text = arcade.Text("", 50, 100, arcade.color.BLACK, 20)
         
-        hp_max = self.calculer_stat_niveau(base_hp, niveau, True)
-        exp_actuelle = LevelEngine.exp_pour_niveau(niveau, "moyen")
-        exp_suivante = LevelEngine.exp_pour_niveau(niveau + 1, "moyen")
+        self.charger_donnees()
+        self.generer_ennemi_aleatoire()
+        self.charger_sprites()
 
-        p = {
-            "nom": nom,
-            "types": data.get('types', ["Normal"]),
-            "niveau": niveau,
-            "stats_finales": {
-                "attaque": self.calculer_stat_niveau(stats_raw.get('attaque', 50), niveau),
-                "defense": self.calculer_stat_niveau(stats_raw.get('defense', 50), niveau)
-            },
-            "max_hp": hp_max,
-            "pv_actuels": hp_max,
-            "exp": exp_actuelle,
-            "exp_max": exp_suivante,
-            "exp_min": exp_actuelle, # Palier de base
-            "capacites": self.piocher_moves(nom),
-            "generation": str(data.get('generation', '1'))
+    def charger_donnees(self):
+        with open(DRESSEUR_JSON, 'r', encoding='utf-8') as f:
+            self.data_full = json.load(f)
+        with open(CAPA_JSON, 'r', encoding='utf-8') as f:
+            self.db_capas = json.load(f)
+        
+        self.equipe = [Pokemon(p, self.db_capas) for p in self.data_full.get("equipe", [])]
+        self.active_p = self.equipe[0]
+        
+        self.inventaire = []
+        inv = self.data_full.get("inventaire", {})
+        for cat in inv:
+            for n, q in inv[cat].items():
+                if q > 0: self.inventaire.append({"nom": n, "qty": q, "cat": cat})
+
+    def sauvegarder_donnees(self):
+        self.data_full["equipe"] = [p.to_dict() for p in self.equipe]
+        new_inv = {"potions": {}, "balls": {}}
+        for it in self.inventaire:
+            cat = it["cat"]
+            if cat not in new_inv: new_inv[cat] = {}
+            new_inv[cat][it["nom"]] = it["qty"]
+        self.data_full["inventaire"] = new_inv
+        with open(DRESSEUR_JSON, 'w', encoding='utf-8') as f:
+            json.dump(self.data_full, f, indent=4, ensure_ascii=False)
+
+    def charger_sprites(self):
+        self.tex_joueur = self._get_tex(self.active_p.nom, "dos")
+        self.tex_ennemi = self._get_tex(self.ennemi.nom, "face")
+
+    def _get_tex(self, nom, mode):
+        target = normaliser(nom)
+        for root, _, files in os.walk(SPRITE_PATH):
+            for f in files:
+                if target in normaliser(f) and mode in normaliser(f):
+                    return arcade.load_texture(os.path.join(root, f))
+        return arcade.make_soft_square_texture(200, arcade.color.GRAY)
+
+    def generer_ennemi_aleatoire(self):
+        possibles = []
+        for root, _, files in os.walk(SPRITE_PATH):
+            for f in files:
+                if "_face" in f.lower(): 
+                    nom_net = f.split("_face")[0].replace("_", " ")
+                    if nom_net not in possibles: possibles.append(nom_net)
+        nom = random.choice(possibles) if possibles else "Pikachu"
+        lvl = max(1, self.active_p.niveau + random.randint(-1, 2))
+        moves_pool = random.sample(self.db_capas, min(4, len(self.db_capas)))
+        data_ennemi = {
+            "nom": nom.capitalize(), "niveau": lvl,
+            "hp_base": 80+(lvl*3), "hp_actuel": 80+(lvl*3),
+            "stats": {"attaque": 40+lvl, "defense": 40+lvl},
+            "capacites": [m["nom_attaque"] for m in moves_pool]
         }
-        return p
-
-    def charger_sprite(self, nom, vue, x, y, scale):
-        gen_initiale = str(self.pokedex[nom].get('generation', '1'))
-        filename = f"{nom.capitalize()}_{vue}.png"
-        
-        # Test du chemin direct
-        path = os.path.join(SPRITE_PATH, gen_initiale, filename)
-        if os.path.exists(path):
-            return arcade.Sprite(path, scale=scale, center_x=x, center_y=y)
-            
-        # Recherche récursive dans les autres dossiers de génération
-        for g in range(1, 10):
-            alt_path = os.path.join(SPRITE_PATH, str(g), filename)
-            if os.path.exists(alt_path):
-                return arcade.Sprite(alt_path, scale=scale, center_x=x, center_y=y)
-        
-        # Fallback si rien n'est trouvé
-        print(f"⚠ Sprite introuvable : {filename}")
-        return arcade.SpriteSolidColor(64, 64, arcade.color.GRAY, center_x=x, center_y=y)
-
-    def setup_combat(self):
-        self.player_sprite_list.clear()
-        self.enemy_sprite_list.clear()
-        
-        n_j, n_a = random.sample(list(self.pokedex.keys()), 2)
-        self.p1_data = self.creer_entite_combat(n_j)
-        self.p2_data = self.creer_entite_combat(n_a)
-        
-        self.combat_logic = CombatEngine(self.p1_data, self.p2_data)
-        
-        self.sprite_joueur = self.charger_sprite(n_j, "dos", 220, 220, 2.8)
-        self.sprite_ennemi = self.charger_sprite(n_a, "face", 580, 420, 2.2)
-        
-        self.player_sprite_list.append(self.sprite_joueur)
-        self.enemy_sprite_list.append(self.sprite_ennemi)
-        
-        self.logs = [f"Un {n_a} sauvage apparaît !"]
-        self.menu_ouvert = False
-        self.tour_joueur = True
-        self.fini = False
-
-    def draw_ui(self, x, y, data, is_player=False):
-        # UI Joueur au-dessus du sprite, UI Ennemi normale
-        base_y = y + 160 if is_player else y
-        
-        # 1. Logo du Type
-        try:
-            t_name = data['types'][0].capitalize()
-            if t_name == "Electrik": t_name = "Électrik"
-            icon_path = os.path.join(TYPE_ICON_PATH, f"{t_name}.png")
-            if os.path.exists(icon_path):
-                icon = arcade.load_texture(icon_path)
-                arcade.draw_texture_rectangle(x - 10, base_y + 30, 32, 14, icon)
-        except: pass
-
-        # 2. Nom et Niveau
-        arcade.draw_text(f"{data['nom'].upper()}  Nv.{data['niveau']}", x + 20, base_y + 24, arcade.color.BLACK, 11, bold=True)
-        
-        # 3. Barre de PV
-        arcade.draw_rect_filled(arcade.rect.XYWH(x + 100, base_y + 5, 200, 12), arcade.color.BLACK_OLIVE)
-        ratio_pv = max(0, data['pv_actuels'] / data['max_hp'])
-        col_pv = arcade.color.APPLE_GREEN if ratio_pv > 0.5 else (arcade.color.GOLD if ratio_pv > 0.2 else arcade.color.RED)
-        if ratio_pv > 0:
-            arcade.draw_rect_filled(arcade.rect.XYWH(x + (100 * ratio_pv), base_y + 5, 200 * ratio_pv, 8), col_pv)
-
-        # 4. Barre d'EXP et PV texte (Joueur seulement)
-        if is_player:
-            arcade.draw_rect_filled(arcade.rect.XYWH(x + 100, base_y - 8, 200, 6), arcade.color.DARK_SLATE_GRAY)
-            # Calcul ratio EXP
-            exp_range = data['exp_max'] - data['exp_min']
-            ratio_exp = min(1.0, (data['exp'] - data['exp_min']) / exp_range) if exp_range > 0 else 0
-            
-            arcade.draw_rect_filled(arcade.rect.XYWH(x + (100 * ratio_exp), base_y - 8, 200 * ratio_exp, 4), arcade.color.AZURE)
-            arcade.draw_text(f"{int(data['pv_actuels'])}/{data['max_hp']} PV", x + 130, base_y - 25, arcade.color.BLACK, 9)
-
-    def draw_attack_menu(self):
-        for i, atk in enumerate(self.p1_data['capacites']):
-            px, py = (140 + (i % 2) * 350), (100 - (i // 2) * 45)
-            # Logo type attaque
-            try:
-                t_atk = atk.get('type', 'Normal').capitalize()
-                if t_atk == "Electrik": t_atk = "Électrik"
-                icon_path = os.path.join(TYPE_ICON_PATH, f"{t_atk}.png")
-                if os.path.exists(icon_path):
-                    tex = arcade.load_texture(icon_path)
-                    arcade.draw_texture_rectangle(px - 45, py + 8, 32, 14, tex)
-            except: pass
-            arcade.draw_text(atk['nom_attaque'].upper(), px, py, arcade.color.BLACK, 13, bold=True)
+        self.ennemi = Pokemon(data_ennemi, self.db_capas)
 
     def on_draw(self):
         self.clear()
-        self.player_sprite_list.draw()
-        self.enemy_sprite_list.draw()
-
-        self.draw_ui(480, 500, self.p2_data, is_player=False)
-        self.draw_ui(120, 200, self.p1_data, is_player=True)
-
-        # Boite de dialogue
-        arcade.draw_rect_filled(arcade.rect.XYWH(400, 80, 750, 130), arcade.color.WHITE_SMOKE)
-        arcade.draw_rect_outline(arcade.rect.XYWH(400, 80, 750, 130), arcade.color.BLACK, 3)
-        
-        if self.fini:
-            arcade.draw_text(self.logs[-1], 400, 90, arcade.color.DARK_RED, 16, anchor_x="center", bold=True)
-            arcade.draw_text("Cliquez pour recommencer", 400, 50, arcade.color.GRAY, 10, anchor_x="center")
-        elif self.menu_ouvert:
-            self.draw_attack_menu()
-        else:
-            for i, msg in enumerate(self.logs[-2:]):
-                color = arcade.color.BLACK
-                if "super efficace" in msg.lower(): color = arcade.color.RED_ORANGE
-                elif "critique" in msg.lower(): color = arcade.color.CRIMSON
-                elif "échoué" in msg.lower() or "n'affecte pas" in msg.lower(): color = arcade.color.SLATE_GRAY
-                arcade.draw_text(msg, 70, 115 - i * 55, color, 15, bold=(i==1))
-
-    def on_mouse_press(self, x, y, button, modifiers):
-        if self.fini:
-            self.setup_combat()
+        if self.etat == "GAME_OVER":
+            arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.RED, 40, anchor_x="center")
             return
-        if self.tour_joueur:
-            if not self.menu_ouvert:
-                self.menu_ouvert = True
+
+        if self.active_p.hp > 0:
+            arcade.draw_texture_rect(self.tex_joueur, arcade.LBWH(100, 200, 250, 250))
+        arcade.draw_texture_rect(self.tex_ennemi, arcade.LBWH(450, 320, 250, 250))
+
+        # Zone Message
+        arcade.draw_lbwh_rectangle_filled(0, 0, 800, 200, arcade.color.WHITE)
+        arcade.draw_lbwh_rectangle_outline(0, 0, 800, 200, arcade.color.BLACK, 5)
+
+        self.draw_status_bar(50, 500, self.active_p, show_xp=True)
+        self.draw_status_bar(450, 500, self.ennemi, show_xp=False)
+        self.render_menu()
+
+    def draw_status_bar(self, x, y, p, show_xp=False):
+        arcade.draw_text(f"{p.nom} Lv.{p.niveau}", x, y+25, arcade.color.BLACK, 14, bold=True)
+        arcade.draw_lbwh_rectangle_outline(x, y+5, 200, 12, arcade.color.BLACK, 1) # Outline pour fond blanc
+        arcade.draw_lbwh_rectangle_filled(x, y+5, 200, 12, arcade.color.GRAY)
+        hp_ratio = max(0, p.hp / p.hp_base)
+        hp_clr = arcade.color.GREEN if hp_ratio > 0.5 else arcade.color.RED
+        arcade.draw_lbwh_rectangle_filled(x, y+5, 200 * hp_ratio, 12, hp_clr)
+        
+        if show_xp:
+            arcade.draw_lbwh_rectangle_outline(x, y-5, 200, 6, arcade.color.BLACK, 1)
+            arcade.draw_lbwh_rectangle_filled(x, y-5, 200, 6, arcade.color.DARK_GRAY)
+            xp_ratio = max(0, p.xp / p.xp_max)
+            arcade.draw_lbwh_rectangle_filled(x, y-5, 200 * xp_ratio, 6, arcade.color.SKY_BLUE)
+
+    def draw_selector(self, x, y, width=180, height=40):
+        arcade.draw_lbwh_rectangle_outline(x - 10, y - 5, width, height, arcade.color.RED, 3)
+
+    def render_menu(self):
+        if self.etat == "PRINCIPAL":
+            opts = ["ATTAQUE", "SAC", "POKEMON", "FUITE"]
+            for i, o in enumerate(opts):
+                tx, ty = 150+(i%2)*400, 140-(i//2)*70
+                if i == self.index_sel: self.draw_selector(tx, ty, 200, 45)
+                arcade.draw_text(o, tx, ty, arcade.color.BLACK, 22, bold=True)
+        elif self.etat == "ATTAQUE":
+            for i, m in enumerate(self.active_p.moves_obj):
+                tx, ty = 100+(i%2)*400, 140-(i//2)*70
+                if i == self.index_sel: self.draw_selector(tx, ty, 300, 40)
+                arcade.draw_text(m["nom_attaque"].upper(), tx, ty, arcade.color.BLACK, 18)
+        elif self.etat in ["EQUIPE", "CHOIX_SOIN"]:
+            for i, p in enumerate(self.equipe):
+                tx, ty = 80+(i%2)*400, 140-(i//2)*60
+                if i == self.index_sel: self.draw_selector(tx, ty, 350, 35)
+                ko_txt = " [KO]" if p.hp <= 0 else ""
+                txt_clr = arcade.color.RED if p.hp <= 0 else arcade.color.BLACK
+                arcade.draw_text(f"{p.nom} {int(p.hp)}/{p.hp_base} {ko_txt}", tx, ty, txt_clr, 14)
+        elif self.etat == "SAC":
+            visible = self.inventaire[self.index_sel//4*4 : self.index_sel//4*4+4]
+            for i, it in enumerate(visible):
+                tx, ty = 100+(i%2)*400, 140-(i//2)*60
+                if i == self.index_sel % 4: self.draw_selector(tx, ty, 300, 35)
+                arcade.draw_text(f"{it['nom']} x{it['qty']}", tx, ty, arcade.color.BLACK, 16)
+        elif self.etat.startswith("MESSAGE"):
+            self.ui_text.text = self.message
+            self.ui_text.draw()
+
+    def on_key_press(self, key, modifiers):
+        if self.etat == "GAME_OVER": return
+        if key == arcade.key.X:
+            if self.etat == "CHOIX_SOIN": self.etat = "SAC"; return
+            if not (self.etat == "EQUIPE" and self.active_p.hp <= 0):
+                self.etat = "PRINCIPAL"; self.index_sel = 0; return
+
+        nb_max = 4
+        if self.etat == "SAC": nb_max = len(self.inventaire)
+        elif self.etat in ["EQUIPE", "CHOIX_SOIN"]: nb_max = len(self.equipe)
+
+        if nb_max > 0:
+            if key == arcade.key.RIGHT: self.index_sel = (self.index_sel + 1) % nb_max
+            elif key == arcade.key.LEFT: self.index_sel = (self.index_sel - 1) % nb_max
+            elif key == arcade.key.UP: self.index_sel = (self.index_sel - 2) % nb_max
+            elif key == arcade.key.DOWN: self.index_sel = (self.index_sel + 2) % nb_max
+
+        if key in [arcade.key.ENTER, arcade.key.SPACE]:
+            self.valider_selection()
+
+    def valider_selection(self):
+        if self.etat == "PRINCIPAL":
+            if self.index_sel == 0: self.etat = "ATTAQUE"
+            elif self.index_sel == 1: self.etat = "SAC"
+            elif self.index_sel == 2: self.etat = "EQUIPE"
+            elif self.index_sel == 3: self.message = "Fuite reussie !"; self.etat = "MESSAGE_V"
+            self.index_sel = 0
+        
+        elif self.etat == "ATTAQUE":
+            if self.index_sel < len(self.active_p.moves_obj):
+                m = self.active_p.moves_obj[self.index_sel]
+                dmg = CombatEngine.calculer_degats(self.active_p, self.ennemi, m)
+                self.ennemi.hp = max(0, self.ennemi.hp - dmg)
+                self.message = f"{self.active_p.nom} lance {m['nom_attaque']} !"; self.etat = "MESSAGE_J"
+        
+        elif self.etat == "SAC":
+            if self.index_sel < len(self.inventaire):
+                self.item_en_cours = self.inventaire[self.index_sel]
+                if "ball" in self.item_en_cours["nom"].lower():
+                    self.item_en_cours["qty"] -= 1
+                    if ItemEngine.tenter_capture(self.item_en_cours["nom"], self.ennemi):
+                        self.equipe.append(self.ennemi)
+                        self.sauvegarder_donnees()
+                        self.message = f"{self.ennemi.nom} capture ! XP gagne !"; self.attribuer_xp()
+                    else: 
+                        self.message = f"La {self.item_en_cours['nom']} a echoue !"; self.etat = "MESSAGE_J"
+                else: 
+                    self.etat = "CHOIX_SOIN"
+                    self.index_sel = 0
+        
+        elif self.etat == "CHOIX_SOIN":
+            cible = self.equipe[self.index_sel]
+            ok, msg = ItemEngine.utiliser_objet(self.item_en_cours["nom"], cible)
+            if ok:
+                self.item_en_cours["qty"] -= 1
+                if self.item_en_cours["qty"] <= 0:
+                    self.inventaire.remove(self.item_en_cours)
+                self.sauvegarder_donnees()
+                self.message = msg
+                self.etat = "MESSAGE_V"
             else:
-                idx = 0 if x < 400 and y > 80 else 1 if x >= 400 and y > 80 else 2 if x < 400 else 3
-                if idx < len(self.p1_data['capacites']):
-                    self.attaquer(idx)
-
-    def attaquer(self, idx):
-        atk = self.p1_data['capacites'][idx]
-        dmg, mult, crit, miss = self.combat_logic.calculer_degats(self.p1_data, self.p2_data, atk)
+                self.message = msg
+                self.etat = "MESSAGE_J"
         
-        self.logs = [f"{self.p1_data['nom']} utilise {atk['nom_attaque']} !"]
+        elif self.etat == "EQUIPE":
+            s = self.equipe[self.index_sel]
+            if s.hp > 0:
+                self.active_p = s; self.charger_sprites()
+                self.message = f"Go {s.nom} !"; self.etat = "MESSAGE_J"
         
-        if miss:
-            self.logs.append("L'attaque a échoué !")
+        elif self.etat == "MESSAGE_J":
+            if self.ennemi.hp <= 0: 
+                self.message = f"{self.ennemi.nom} est KO !"; self.attribuer_xp()
+            else:
+                m = random.choice(self.ennemi.moves_obj)
+                dmg = CombatEngine.calculer_degats(self.ennemi, self.active_p, m)
+                self.active_p.hp = max(0, self.active_p.hp - dmg)
+                self.sauvegarder_donnees()
+                self.message = f"{self.ennemi.nom} attaque !"; self.etat = "MESSAGE_E"
+        
+        elif self.etat == "MESSAGE_E":
+            if self.active_p.hp <= 0:
+                if all(p.hp <= 0 for p in self.equipe): self.etat = "GAME_OVER"
+                else: self.message = "Pokemon KO ! Changez !"; self.etat = "EQUIPE"
+            else: self.etat = "PRINCIPAL"
+        
+        elif self.etat == "MESSAGE_V":
+            if self.ennemi.hp <= 0:
+                self.generer_ennemi_aleatoire()
+                self.charger_sprites()
+            self.etat = "PRINCIPAL"
+            self.index_sel = 0
+
+    def attribuer_xp(self):
+        xp_gain = ExperienceEngine.calculer_xp_gagne(self.ennemi)
+        lvl_up = self.active_p.gain_xp(xp_gain)
+        self.sauvegarder_donnees()
+        if lvl_up:
+            self.message += f" +{xp_gain} XP. LEVEL UP ! (Niv.{self.active_p.niveau})"
         else:
-            self.p2_data['pv_actuels'] = max(0, self.p2_data['pv_actuels'] - dmg)
-            if crit: self.logs.append("COUP CRITIQUE !")
-            eff_msg = TypeChart.get_effectiveness_message(mult)
-            if eff_msg: self.logs.append(eff_msg)
-
-        self.menu_ouvert = False
-        self.tour_joueur = False
-        if self.p2_data['pv_actuels'] <= 0:
-            arcade.schedule(self.clore_combat, 1.0)
-        else:
-            arcade.schedule(self.ia_tour, 1.2)
-
-    def ia_tour(self, dt):
-        arcade.unschedule(self.ia_tour)
-        if self.fini: return
-        atk = random.choice(self.p2_data['capacites'])
-        dmg, mult, crit, miss = self.combat_logic.calculer_degats(self.p2_data, self.p1_data, atk)
-        self.p1_data['pv_actuels'] = max(0, self.p1_data['pv_actuels'] - dmg)
-        self.logs = [f"{self.p2_data['nom']} sauvage utilise {atk['nom_attaque']} !"]
-        if miss: self.logs.append("Mais elle échoue !")
-        elif crit: self.logs.append("Coup critique !")
-        eff_msg = TypeChart.get_effectiveness_message(mult)
-        if eff_msg: self.logs.append(eff_msg)
-        self.tour_joueur = True
-
-    def clore_combat(self, dt):
-        arcade.unschedule(self.clore_combat)
-        gain, monte = LevelEngine.appliquer_gain_et_check(self.p1_data, self.p2_data)
-        self.logs.append(f"Gagné ! +{gain} EXP.")
-        if monte:
-            self.logs.append(f"LEVEL UP ! {self.p1_data['nom']} passe Niv.{self.p1_data['niveau']} !")
-        self.fini = True
+            self.message += f" +{xp_gain} XP."
+        self.etat = "MESSAGE_V"
 
 if __name__ == "__main__":
     game = PokeFantasyGame()

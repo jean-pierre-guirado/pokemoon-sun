@@ -1,0 +1,79 @@
+{
+    "nom_dresseur": "Prout",
+    "equipe": [
+        {
+            "nom": "Oratoria",
+            "niveau": 52,
+            "hp_base": 175,
+            "hp_actuel": 175,
+            "xp": 0,
+            "stats": {
+                "attaque": 74,
+                "defense": 75,
+                "vitesse": 60
+            },
+            "capacites": [
+                "Laser glace",
+                "Pouvoir Lunaire",
+                "Psyko",
+                "Hydrocanon"
+            ]
+        },
+        {
+            "nom": "Aligatueur",
+            "niveau": 50,
+            "hp_base": 160,
+            "hp_actuel": 160,
+            "xp": 0,
+            "stats": {
+                "attaque": 105,
+                "defense": 100,
+                "vitesse": 78
+            },
+            "capacites": [
+                "Cascade",
+                "Mâchouille",
+                "Poing-Glace",
+                "Danse Lames"
+            ]
+        },
+        {
+            "nom": "Artikodin",
+            "niveau": 51,
+            "hp_base": 202,
+            "hp_actuel": 137,
+            "xp": 0,
+            "stats": {
+                "attaque": 85,
+                "defense": 100,
+                "vitesse": 85,
+                "attaque_spe": 95,
+                "defense_spe": 125
+            },
+            "capacites": [
+                "Laser glace",
+                "Lyophalisation",
+                "Vent Violent",
+                "Atterrissage"
+            ]
+        }
+    ],
+    "inventaire": {
+        "potions": {
+            "super-bonbon": 8,
+            "potion": 10,
+            "super-potion": 10,
+            "hyper-potion": 10,
+            "max-potion": 10,
+            "revive": 10,
+            "max-revive": 5,
+            "full-restore": 10
+        },
+        "balls": {
+            "poke-ball": 10,
+            "great-ball": 9,
+            "ultra-ball": 5,
+            "master-ball": 1
+        }
+    }
+}
