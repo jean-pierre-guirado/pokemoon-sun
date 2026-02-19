@@ -2,14 +2,6 @@ import json
 import math
 import os
 import random
-import sys
-
-# --- FIX DES CHEMINS (Ajouté pour résoudre ModuleNotFoundError) ---
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.abspath(os.path.join(current_dir, ".."))
-if parent_dir not in sys.path:
-    sys.path.insert(0, parent_dir)
-# ------------------------------------------------------------------
 
 import arcade
 
@@ -22,6 +14,9 @@ from core.engines import CombatEngine, ExperienceEngine, ItemEngine, LevelEngine
 from core.models import Pokemon
 from core.pokedex import PokedexManager
 from core.utils import normaliser
+from core.capture import CaptureEngine
+from core.turn_manager import TurnManager
+from core.nature import NatureEngine
 
 
 class PokeFantasyGame(arcade.Window):
@@ -52,6 +47,7 @@ class PokeFantasyGame(arcade.Window):
         self.tex_evo_new = None
 
         self.type_textures: dict = {}
+        self.tour_num = 1  # Compteur de tours (utilisé par CaptureEngine)
 
         self.charger_donnees()
         for p in self.equipe:
@@ -60,7 +56,7 @@ class PokeFantasyGame(arcade.Window):
         self.charger_sprites()
 
         try:
-            self.bgm         = arcade.load_sound(BATTLE_THEME_PATH)
+            self.bgm        = arcade.load_sound(BATTLE_THEME_PATH)
             self.bgm_player = arcade.play_sound(self.bgm, volume=0.5, loop=True)
         except Exception:
             self.bgm = None
@@ -96,9 +92,7 @@ class PokeFantasyGame(arcade.Window):
                     self.inventaire.append({"nom": n, "qty": q, "cat": cat})
 
     def sauvegarder_donnees(self):
-        # Modification effectuée pour corriger l'AttributeError
         self.data_full["equipe"] = [p.to_dict() for p in self.equipe]
-        
         new_inv = {"potions": {}, "balls": {}}
         for it in self.inventaire:
             cat = it["cat"]
@@ -106,7 +100,6 @@ class PokeFantasyGame(arcade.Window):
                 new_inv[cat] = {}
             new_inv[cat][it["nom"]] = it["qty"]
         self.data_full["inventaire"] = new_inv
-        
         with open(DRESSEUR_JSON, 'w', encoding='utf-8') as f:
             json.dump(self.data_full, f, indent=4, ensure_ascii=False)
 
@@ -169,6 +162,7 @@ class PokeFantasyGame(arcade.Window):
     # ------------------------------------------------------------------
 
     def generer_ennemi_aleatoire(self):
+        """Génère un ennemi aléatoire avec une nature et un set d'attaques cohérents."""
         possibles = []
         for root, _, files in os.walk(SPRITE_PATH):
             for f in files:
@@ -179,17 +173,77 @@ class PokeFantasyGame(arcade.Window):
 
         nom_choisi = random.choice(possibles) if possibles else "Pikachu"
         lvl        = max(1, self.active_p.niveau + random.randint(-1, 2))
-        moves_pool = random.sample(self.db_capas, min(4, len(self.db_capas)))
+
+        # Récupère les types du pokémon depuis la base de données
+        types_ennemi = ["Normal"]
+        for k, v in self.poke_data_map.items():
+            if normaliser(k) == normaliser(nom_choisi):
+                types_ennemi = v.get("types", ["Normal"])
+                break
+
+        # Choisit des attaques cohérentes avec les types du Pokémon
+        # Priorité aux capacités du même type (STAB), complétées par des capacités aléatoires
+        moves_stab = [
+            m for m in self.db_capas
+            if any(
+                normaliser(m.get("type", "")) in [normaliser(t), t.lower()]
+                for t in types_ennemi
+            ) and m.get("puissance")
+        ]
+        moves_autres = [
+            m for m in self.db_capas
+            if m not in moves_stab and m.get("puissance")
+        ]
+        moves_statut = [
+            m for m in self.db_capas
+            if not m.get("puissance") or m.get("categorie") == "Statut"
+        ]
+
+        # Compose le set : 2 STAB + 1 autre + 1 statut (si dispo), sinon complète aléatoirement
+        pool_stab   = random.sample(moves_stab, min(2, len(moves_stab)))
+        pool_autres = random.sample(moves_autres, min(1, len(moves_autres)))
+        pool_statut = random.sample(moves_statut, min(1, len(moves_statut)))
+        moves_pool  = pool_stab + pool_autres + pool_statut
+        # Complète à 4 si nécessaire
+        if len(moves_pool) < 4:
+            reste = [m for m in self.db_capas if m not in moves_pool]
+            moves_pool += random.sample(reste, min(4 - len(moves_pool), len(reste)))
+        moves_pool = moves_pool[:4]
+
+        # Nature aléatoire
+        nature_choisie = random.choice(list(NatureEngine.DATA.keys()))
+
+        # Stats de base depuis pokemon_data ou valeurs par défaut
+        stats_base = {"attaque": 40 + lvl, "defense": 40 + lvl, "vitesse": 40 + lvl,
+                      "attaque_spe": 40 + lvl, "defense_spe": 40 + lvl}
+        for k, v in self.poke_data_map.items():
+            if normaliser(k) == normaliser(nom_choisi):
+                raw = v.get("stats", {})
+                stats_base = {
+                    "attaque":      max(1, int(((2 * raw.get("attaque", 50)) * lvl / 100) + 5)),
+                    "defense":      max(1, int(((2 * raw.get("defense", 50)) * lvl / 100) + 5)),
+                    "vitesse":      max(1, int(((2 * raw.get("vitesse", 50)) * lvl / 100) + 5)),
+                    "attaque_spe":  max(1, int(((2 * raw.get("attaque_spe", 50)) * lvl / 100) + 5)),
+                    "defense_spe":  max(1, int(((2 * raw.get("defense_spe", 50)) * lvl / 100) + 5)),
+                }
+                break
+
+        # Applique la nature aux stats
+        stats_avec_nature = NatureEngine.apply_nature_to_stats(nature_choisie, stats_base)
+        hp_base = int(((2 * 60) * lvl / 100) + lvl + 10)
 
         data_ennemi = {
             "nom":       nom_choisi.capitalize(),
             "niveau":    lvl,
-            "hp_base":   80 + (lvl * 3),
-            "hp_actuel": 80 + (lvl * 3),
-            "stats":     {"attaque": 40 + lvl, "defense": 40 + lvl, "vitesse": 40 + lvl},
+            "nature":    nature_choisie,
+            "types":     types_ennemi,
+            "hp_base":   hp_base,
+            "hp_actuel": hp_base,
+            "stats":     stats_avec_nature,
             "capacites": [m["nom_attaque"] for m in moves_pool],
         }
-        self.ennemi = Pokemon(data_ennemi, self.db_capas, self.poke_data_map)
+        self.ennemi    = Pokemon(data_ennemi, self.db_capas, self.poke_data_map)
+        self.tour_num  = 1  # réinitialise le compteur de tours pour la capture
         PokedexManager.enregistrer(self.ennemi, capture=False)
 
     # ------------------------------------------------------------------
@@ -334,16 +388,35 @@ class PokeFantasyGame(arcade.Window):
             arcade.draw_rect_outline(arcade.rect.LBWH(x, y - 25, BARRE_WIDTH, 6), arcade.color.BLACK, 1)
 
     def draw_boost_overlay(self):
-        arcade.draw_rect_filled(arcade.rect.XYWH(400, 300, 600, 250), (255, 255, 255, 240))
-        arcade.draw_text(f"{self.active_p.nom}", 250, 390,
-                         arcade.color.BLUE, 14, bold=True, anchor_x="center")
-        y_off = 360
+        """Affiche les stages (boosts/debuffs) des deux Pokémon + leur nature."""
+        arcade.draw_rect_filled(arcade.rect.XYWH(400, 300, 780, 280), (20, 20, 20, 230))
+        arcade.draw_rect_outline(arcade.rect.XYWH(400, 300, 780, 280), arcade.color.GOLD, 2)
+        arcade.draw_text("[ V ] Fermer", 400, 425, arcade.color.GOLD, 11, anchor_x="center")
+
+        # --- Joueur (gauche) ---
+        arcade.draw_text(f"⚔ {self.active_p.nom} — Nature: {self.active_p.nature}",
+                         120, 400, arcade.color.CYAN, 12, bold=True, anchor_x="center")
+        y_j = 378
         for stat, val in self.active_p.stages.items():
-            color = (arcade.color.GREEN if val > 0
-                     else arcade.color.RED if val < 0
-                     else arcade.color.BLACK)
-            arcade.draw_text(f"{stat.capitalize()}: {val}", 150, y_off, color, 12)
-            y_off -= 25
+            color = arcade.color.LIGHT_GREEN if val > 0 else arcade.color.RED if val < 0 else arcade.color.LIGHT_GRAY
+            fleche = "▲" * abs(val) if val > 0 else "▼" * abs(val) if val < 0 else "—"
+            arcade.draw_text(f"{stat.replace('_',' ').capitalize():<14} {fleche:>6}",
+                             60, y_j, color, 11)
+            y_j -= 22
+
+        # --- Séparateur ---
+        arcade.draw_line(400, 175, 400, 425, arcade.color.GRAY, 1)
+
+        # --- Ennemi (droite) ---
+        arcade.draw_text(f"⚔ {self.ennemi.nom} — Nature: {self.ennemi.nature}",
+                         590, 400, arcade.color.ORANGE, 12, bold=True, anchor_x="center")
+        y_e = 378
+        for stat, val in self.ennemi.stages.items():
+            color = arcade.color.LIGHT_GREEN if val > 0 else arcade.color.RED if val < 0 else arcade.color.LIGHT_GRAY
+            fleche = "▲" * abs(val) if val > 0 else "▼" * abs(val) if val < 0 else "—"
+            arcade.draw_text(f"{stat.replace('_',' ').capitalize():<14} {fleche:>6}",
+                             440, y_e, color, 11)
+            y_e -= 22
 
     def draw_selector(self, x, y, width=180, height=40):
         arcade.draw_rect_outline(arcade.rect.LBWH(x - 10, y - 5, width, height), arcade.color.RED, 3)
@@ -439,31 +512,31 @@ class PokeFantasyGame(arcade.Window):
 
         elif self.etat == "ATTAQUE":
             m = self.active_p.moves_obj[self.index_sel]
-            dmg, mult, crit, miss, extra = CombatEngine.calculer_degats(self.active_p, self.ennemi, m)
-            self.ennemi.hp = max(0, self.ennemi.hp - dmg)
-            res_status     = StatusEngine.gerer_fin_de_tour(self.active_p)
-            self.message   = f"{self.active_p.nom} lance {m['nom_attaque']} !\n{extra}\n{res_status or ''}".strip()
-            self.etat       = "MESSAGE_J"
+            # Phase joueur via TurnManager
+            msg_joueur = TurnManager.executer_attaque(self.active_p, self.ennemi, m)
+            # Effets de fin de tour côté joueur
+            msg_eot_j  = TurnManager.appliquer_effets_fin_de_tour(self.active_p)
+            self.message = f"{msg_joueur}\n{msg_eot_j}".strip()
+            self.tour_num = getattr(self, 'tour_num', 1) + 1
+            self.etat = "MESSAGE_J"
 
         elif self.etat == "SAC":
-            if self.index_sel < len(self.inventaire):
-                self.item_en_cours = self.inventaire[self.index_sel]
-                if "ball" in self.item_en_cours["nom"].lower():
-                    self.tex_ball_anim = self._get_ball_tex(self.item_en_cours["nom"])
-                    self.ball_x, self.ball_y, self.ball_active = 225, 325, True
-                    self.etat    = "ANIM_BALL"
-                    self.message = f"Lancement de {self.item_en_cours['nom']}..."
-                else:
-                    self.etat      = "CHOIX_SOIN"
-                    self.index_sel = 0
+            self.item_en_cours = self.inventaire[self.index_sel]
+            if "ball" in self.item_en_cours["nom"].lower():
+                self.tex_ball_anim = self._get_ball_tex(self.item_en_cours["nom"])
+                self.ball_x, self.ball_y, self.ball_active = 225, 325, True
+                self.etat    = "ANIM_BALL"
+                self.message = f"Lancement de {self.item_en_cours['nom']}..."
+            else:
+                self.etat      = "CHOIX_SOIN"
+                self.index_sel = 0
 
         elif self.etat == "CHOIX_SOIN":
             ok, msg = ItemEngine.utiliser_objet(self.item_en_cours["nom"], self.equipe[self.index_sel])
             if ok:
                 self.item_en_cours["qty"] -= 1
                 if self.item_en_cours["qty"] <= 0:
-                    if self.item_en_cours in self.inventaire:
-                        self.inventaire.remove(self.item_en_cours)
+                    self.inventaire.remove(self.item_en_cours)
                 self.sauvegarder_donnees()
                 self.message = msg
                 self.etat    = "MESSAGE_V"
@@ -484,12 +557,12 @@ class PokeFantasyGame(arcade.Window):
                 self.message = f"{self.ennemi.nom} est KO !"
                 self.attribuer_xp()
             else:
-                m = random.choice(self.ennemi.moves_obj)
-                dmg, mult, crit, miss, extra = CombatEngine.calculer_degats(self.ennemi, self.active_p, m)
-                self.active_p.hp = max(0, self.active_p.hp - dmg)
-                res_s            = StatusEngine.gerer_fin_de_tour(self.ennemi)
-                self.message     = f"{self.ennemi.nom} utilise {m['nom_attaque']} !\n{extra}\n{res_s or ''}".strip()
-                self.etat        = "MESSAGE_E"
+                # Riposte de l'ennemi via TurnManager
+                m_ennemi   = random.choice(self.ennemi.moves_obj)
+                msg_ennemi = TurnManager.executer_attaque(self.ennemi, self.active_p, m_ennemi)
+                msg_eot_e  = TurnManager.appliquer_effets_fin_de_tour(self.ennemi)
+                self.message = f"{msg_ennemi}\n{msg_eot_e}".strip()
+                self.etat    = "MESSAGE_E"
 
         elif self.etat == "MESSAGE_E":
             if self.active_p.hp <= 0:
@@ -521,26 +594,25 @@ class PokeFantasyGame(arcade.Window):
     # ------------------------------------------------------------------
 
     def finaliser_capture(self):
-        if ItemEngine.tenter_capture(self.item_en_cours["nom"], self.ennemi):
-            self.item_en_cours["qty"] -= 1
-            if self.item_en_cours["qty"] <= 0:
-                if self.item_en_cours in self.inventaire:
-                    self.inventaire.remove(self.item_en_cours)
-            
+        self.item_en_cours["qty"] -= 1
+        if self.item_en_cours["qty"] <= 0 and self.item_en_cours in self.inventaire:
+            self.inventaire.remove(self.item_en_cours)
+
+        tour = getattr(self, 'tour_num', 1)
+        succes, msg_capture = CaptureEngine.tenter_capture(
+            self.item_en_cours["nom"], self.ennemi, tour=tour
+        )
+
+        if succes:
             self.equipe.append(self.ennemi)
             PokedexManager.enregistrer(self.ennemi, capture=True)
             self.sauvegarder_donnees()
-            self.message = f"Succès ! {self.ennemi.nom} capturé !"
+            self.message = msg_capture
             self.generer_ennemi_aleatoire()
             self.charger_sprites()
             self.etat = "MESSAGE_V"
         else:
-            self.item_en_cours["qty"] -= 1
-            if self.item_en_cours["qty"] <= 0:
-                if self.item_en_cours in self.inventaire:
-                    self.inventaire.remove(self.item_en_cours)
-            
-            self.message = f"Zut ! {self.ennemi.nom} s'est libéré !"
+            self.message = msg_capture
             self.etat    = "MESSAGE_J"
 
     def attribuer_xp(self):

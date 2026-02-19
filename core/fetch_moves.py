@@ -2,6 +2,8 @@ import os
 import requests
 import json
 import time
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # --- CONFIGURATION ---
 BASE_PATH = r"C:\Users\horus\OneDrive\Desktop\poke fantasy\data"
@@ -13,93 +15,123 @@ class MoveScraper:
     def __init__(self, input_file=INPUT_JSON, output_file=OUTPUT_JSON):
         self.input_file = input_file
         self.output_file = output_file
-        self.move_cache = {}  # Pour éviter de télécharger 50 fois la même attaque
+        self.move_cache = {}
+        self.session = requests.Session()
+        retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+        self.session.mount('https://', HTTPAdapter(max_retries=retries))
 
     def get_move_details(self, url):
-        """Récupère les infos d'une attaque (Nom FR, Puissance, Type)"""
         if url in self.move_cache:
             return self.move_cache[url]
 
         try:
-            res = requests.get(url, timeout=5)
-            if res.status_code != 200:
-                return None
+            res = self.session.get(url, timeout=10)
+            if res.status_code != 200: return None
             
             data = res.json()
-            power = data.get('power')
-
-            # On ne garde que les attaques qui font des dégâts (> 10)
-            if power and power > 10:
-                nom_fr = next((n['name'] for n in data['names'] if n['language']['name'] == 'fr'), data['name'])
-                move_info = {
-                    "nom_attaque": nom_fr,
-                    "puissance": power,
-                    "type": data['type']['name'].capitalize(),
-                    "precision": data.get('accuracy'),
-                    "pp": data.get('pp')
-                }
-                self.move_cache[url] = move_info
-                return move_info
+            nom_fr = next((n['name'] for n in data['names'] if n['language']['name'] == 'fr'), data['name'])
             
-            self.move_cache[url] = None # Cache pour les attaques non-offensives
-            return None
+            cat_api = data.get('damage_class', {}).get('name', 'status')
+            categorie = "Statut" if cat_api == "status" else ("Spécial" if cat_api == "special" else "Physique")
+            
+            effet_data = self._analyser_effet_complexe(data)
+
+            # --- LOGIQUE D'ASSOCIATION DES IMAGES ---
+            # On récupère le nom anglais technique (ex: 'water', 'fire', 'electric')
+            # C'est ce nom qui permet de faire le lien avec tes fichiers PNG
+            type_raw = data['type']['name'].lower()
+            
+            # Correction spécifique pour correspondre à tes fichiers "electrick.png" si nécessaire
+            if type_raw == "electric":
+                type_final = "electrick"
+            else:
+                type_final = type_raw
+
+            move_info = {
+                "nom_attaque": nom_fr,
+                "puissance": data.get('power'),
+                "type": type_final, # Stocké en minuscule pour le mapping image
+                "precision": data.get('accuracy'),
+                "pp": data.get('pp'),
+                "categorie": categorie,
+                "effet": effet_data["type_effet"],
+                "stat_touchee": effet_data["stat"],
+                "valeur_stat": effet_data["valeur"],
+                "chance_effet": effet_data["chance"]
+            }
+            
+            self.move_cache[url] = move_info
+            return move_info
+            
         except Exception as e:
-            print(f"Erreur API Move: {e}")
+            print(f"  ! Erreur sur l'attaque ({url.split('/')[-2]}) : {e}")
             return None
+
+    def _analyser_effet_complexe(self, data):
+        res = {"type_effet": "DAMAGE", "stat": None, "valeur": 0, "chance": 100}
+        meta = data.get('meta', {})
+        if not meta: return res
+        
+        # 1. Statuts
+        ailment = meta.get('ailment', {}).get('name', 'none')
+        status_map = {
+            'paralysis': "PARALYZE", 'burn': "BURN", 'poison': "POISON", 
+            'toxic': "TOXIC", 'sleep': "SLEEP", 'freeze': "FREEZE"
+        }
+        
+        if ailment in status_map:
+            res["type_effet"] = status_map[ailment]
+            res["chance"] = meta.get('ailment_chance', 100) or 100
+
+        # 2. Stats (Boosts/Debuffs)
+        stats_changes = data.get('stat_changes', [])
+        if stats_changes:
+            change = stats_changes[0]
+            res["valeur"] = change['change']
+            s_map = {"special-attack": "attaque_spe", "special-defense": "defense_spe", 
+                     "attack": "attaque", "defense": "defense", "speed": "vitesse"}
+            res["stat"] = s_map.get(change['stat']['name'], change['stat']['name'])
+            
+            # Logique : Si valeur positive -> Boost lanceur, sinon Debuff ennemi
+            if res["valeur"] > 0:
+                res["type_effet"] = "BOOST_SELF"
+            else:
+                res["type_effet"] = "DEBUFF_ENEMY"
+            
+            res["chance"] = meta.get('stat_chance', 100) or 100
+
+        if meta.get('category', {}).get('name') == 'healing':
+            res["type_effet"] = "HEAL_SELF"
+
+        return res
 
     def run(self):
-        if not os.path.exists(self.input_file):
-            print(f"Erreur : {self.input_file} introuvable !")
-            return
+        print("--- Démarrage de l'extraction ---")
+        if not os.path.exists(self.input_file): return
 
         with open(self.input_file, 'r', encoding='utf-8') as f:
             pokedex = json.load(f)
 
         all_moves_final = []
-        total_pkmn = len(pokedex)
-        
-        print(f"🚀 Scan des capacités pour {total_pkmn} Pokémon...")
-
-        for nom_fr, infos in pokedex.items():
+        for idx, (nom_fr, infos) in enumerate(pokedex.items(), 1):
             api_name = infos.get("nom_api")
             if not api_name: continue
-
-            print(f"-> Extraction : {nom_fr}...")
+            print(f"[{idx}] Extraction : {nom_fr}...")
             try:
-                r = requests.get(f"{POKE_API_URL}{api_name}", timeout=5)
+                r = self.session.get(f"{POKE_API_URL}{api_name}", timeout=10)
                 if r.status_code != 200: continue
-                
                 pk_data = r.json()
-                
                 for m_entry in pk_data['moves']:
-                    # On récupère le détail de l'attaque
-                    move_url = m_entry['move']['url']
-                    move_details = self.get_move_details(move_url)
-                    
-                    if move_details:
-                        # On crée une entrée liée à ce Pokémon
-                        move_entry = {
-                            "pokemon": nom_fr,
-                            "nom_attaque": move_details["nom_attaque"],
-                            "puissance": move_details["puissance"],
-                            "type": move_details["type"],
-                            "precision": move_details["precision"],
-                            "pp": move_details["pp"]
-                        }
-                        all_moves_final.append(move_entry)
-                        
-                    # Petite pause pour ne pas surcharger l'API
-                    time.sleep(0.02)
+                    move_details = self.get_move_details(m_entry['move']['url'])
+                    if move_details and move_details not in all_moves_final:
+                        all_moves_final.append(move_details)
+                time.sleep(0.05)
+            except: continue
 
-            except Exception as e:
-                print(f" ! Erreur sur {nom_fr} : {e}")
-
-        # Sauvegarde
         os.makedirs(os.path.dirname(self.output_file), exist_ok=True)
         with open(self.output_file, 'w', encoding='utf-8') as f:
             json.dump(all_moves_final, f, ensure_ascii=False, indent=4)
-        
-        print(f"\n✅ Terminé ! {len(all_moves_final)} capacités sauvegardées dans {self.output_file}")
+        print("--- Terminé ! ---")
 
 if __name__ == "__main__":
     scraper = MoveScraper()

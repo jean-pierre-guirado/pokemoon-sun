@@ -1,0 +1,516 @@
+{
+    "bulbizarre": {
+        "cible": "Herbizarre",
+        "methode": "level",
+        "valeur": 16
+    },
+    "herbizarre": {
+        "cible": "Florizarre",
+        "methode": "level",
+        "valeur": 32
+    },
+    "salameche": {
+        "cible": "Reptincel",
+        "methode": "level",
+        "valeur": 16
+    },
+    "reptincel": {
+        "cible": "Dracaufeu",
+        "methode": "level",
+        "valeur": 36
+    },
+    "carapuce": {
+        "cible": "Carabaffe",
+        "methode": "level",
+        "valeur": 16
+    },
+    "carabaffe": {
+        "cible": "Tortank",
+        "methode": "level",
+        "valeur": 36
+    },
+    "germignon": {
+        "cible": "Macronium",
+        "methode": "level",
+        "valeur": 16
+    },
+    "macronium": {
+        "cible": "Meganium",
+        "methode": "level",
+        "valeur": 32
+    },
+    "hericendre": {
+        "cible": "Feurisson",
+        "methode": "level",
+        "valeur": 14
+    },
+    "feurisson": {
+        "cible": "Typhlosion",
+        "methode": "level",
+        "valeur": 36
+    },
+    "kaiminus": {
+        "cible": "Crocrodil",
+        "methode": "level",
+        "valeur": 18
+    },
+    "crocrodil": {
+        "cible": "Aligatua",
+        "methode": "level",
+        "valeur": 30
+    },
+    "arcko": {
+        "cible": "Massko",
+        "methode": "level",
+        "valeur": 16
+    },
+    "massko": {
+        "cible": "Jungko",
+        "methode": "level",
+        "valeur": 36
+    },
+    "poussifeu": {
+        "cible": "Galifeu",
+        "methode": "level",
+        "valeur": 16
+    },
+    "galifeu": {
+        "cible": "Brasegali",
+        "methode": "level",
+        "valeur": 36
+    },
+    "gobou": {
+        "cible": "Flobio",
+        "methode": "level",
+        "valeur": 16
+    },
+    "flobio": {
+        "cible": "Laggron",
+        "methode": "level",
+        "valeur": 36
+    },
+    "tortipouss": {
+        "cible": "Boskara",
+        "methode": "level",
+        "valeur": 18
+    },
+    "boskara": {
+        "cible": "Torterra",
+        "methode": "level",
+        "valeur": 32
+    },
+    "ouisticram": {
+        "cible": "Chimpenfeu",
+        "methode": "level",
+        "valeur": 14
+    },
+    "chimpenfeu": {
+        "cible": "Simiabraz",
+        "methode": "level",
+        "valeur": 36
+    },
+    "tiplouf": {
+        "cible": "Prinplouf",
+        "methode": "level",
+        "valeur": 16
+    },
+    "prinplouf": {
+        "cible": "Pingoleon",
+        "methode": "level",
+        "valeur": 36
+    },
+    "vipelierre": {
+        "cible": "Lianaja",
+        "methode": "level",
+        "valeur": 17
+    },
+    "lianaja": {
+        "cible": "Majaspic",
+        "methode": "level",
+        "valeur": 36
+    },
+    "gruikui": {
+        "cible": "Grotichon",
+        "methode": "level",
+        "valeur": 17
+    },
+    "grotichon": {
+        "cible": "Roitiflam",
+        "methode": "level",
+        "valeur": 36
+    },
+    "moustillon": {
+        "cible": "Mateloutre",
+        "methode": "level",
+        "valeur": 17
+    },
+    "mateloutre": {
+        "cible": "Clamiral",
+        "methode": "level",
+        "valeur": 36
+    },
+    "marisson": {
+        "cible": "Boguerane",
+        "methode": "level",
+        "valeur": 16
+    },
+    "boguerane": {
+        "cible": "Blindepique",
+        "methode": "level",
+        "valeur": 36
+    },
+    "feunnec": {
+        "cible": "Roussil",
+        "methode": "level",
+        "valeur": 16
+    },
+    "roussil": {
+        "cible": "Goupelin",
+        "methode": "level",
+        "valeur": 36
+    },
+    "grenousse": {
+        "cible": "Croaporal",
+        "methode": "level",
+        "valeur": 16
+    },
+    "croaporal": {
+        "cible": "Amphinobi",
+        "methode": "level",
+        "valeur": 36
+    },
+    "brindibou": {
+        "cible": "Effleche",
+        "methode": "level",
+        "valeur": 17
+    },
+    "effleche": {
+        "cible": "Archeduc",
+        "methode": "level",
+        "valeur": 34
+    },
+    "flamiaou": {
+        "cible": "Matoufeu",
+        "methode": "level",
+        "valeur": 17
+    },
+    "matoufeu": {
+        "cible": "Felinferno",
+        "methode": "level",
+        "valeur": 34
+    },
+    "otaquin": {
+        "cible": "Otarlette",
+        "methode": "level",
+        "valeur": 17
+    },
+    "otarlette": {
+        "cible": "Oratoria",
+        "methode": "level",
+        "valeur": 34
+    },
+    "ouistempo": {
+        "cible": "Badaboum",
+        "methode": "level",
+        "valeur": 16
+    },
+    "badaboum": {
+        "cible": "Gorythmic",
+        "methode": "level",
+        "valeur": 35
+    },
+    "flambino": {
+        "cible": "Lapyro",
+        "methode": "level",
+        "valeur": 16
+    },
+    "lapyro": {
+        "cible": "Pyrobut",
+        "methode": "level",
+        "valeur": 35
+    },
+    "larmeleon": {
+        "cible": "Arrozard",
+        "methode": "level",
+        "valeur": 16
+    },
+    "arrozard": {
+        "cible": "Lezargus",
+        "methode": "level",
+        "valeur": 35
+    },
+    "poussacha": {
+        "cible": "Matourny",
+        "methode": "level",
+        "valeur": 16
+    },
+    "matourny": {
+        "cible": "Miascarade",
+        "methode": "level",
+        "valeur": 36
+    },
+    "chochodile": {
+        "cible": "Crocogril",
+        "methode": "level",
+        "valeur": 16
+    },
+    "crocogril": {
+        "cible": "Flamegot",
+        "methode": "level",
+        "valeur": 36
+    },
+    "coiffeton": {
+        "cible": "Canarbello",
+        "methode": "level",
+        "valeur": 16
+    },
+    "canarbello": {
+        "cible": "Palmaval",
+        "methode": "level",
+        "valeur": 36
+    },
+    "tarsal": {
+        "cible": "Kirlia",
+        "methode": "level",
+        "valeur": 20
+    },
+    "kirlia": [
+        {
+            "cible": "Gardevoir",
+            "methode": "level",
+            "valeur": 30
+        },
+        {
+            "cible": "Gallame",
+            "methode": "item",
+            "valeur": "Pierre Aube"
+        }
+    ],
+    "scalpion": {
+        "cible": "Scalproie",
+        "methode": "level",
+        "valeur": 52
+    },
+    "draby": {
+        "cible": "Drackhaus",
+        "methode": "level",
+        "valeur": 30
+    },
+    "drackhaus": {
+        "cible": "Drattak",
+        "methode": "level",
+        "valeur": 50
+    },
+    "griknot": {
+        "cible": "Carmache",
+        "methode": "level",
+        "valeur": 24
+    },
+    "carmache": {
+        "cible": "Carchacrok",
+        "methode": "level",
+        "valeur": 48
+    },
+    "solochi": {
+        "cible": "Diamat",
+        "methode": "level",
+        "valeur": 50
+    },
+    "diamat": {
+        "cible": "Trioxhydre",
+        "methode": "level",
+        "valeur": 64
+    },
+    "fantyrm": {
+        "cible": "Dispareptil",
+        "methode": "level",
+        "valeur": 50
+    },
+    "dispareptil": {
+        "cible": "Lanssorien",
+        "methode": "level",
+        "valeur": 60
+    },
+    "frigodo": {
+        "cible": "Cryodo",
+        "methode": "level",
+        "valeur": 35
+    },
+    "cryodo": {
+        "cible": "Glaivodo",
+        "methode": "level",
+        "valeur": 54
+    },
+    "coupenotte": {
+        "cible": "Incisache",
+        "methode": "level",
+        "valeur": 38
+    },
+    "incisache": {
+        "cible": "Tranchodon",
+        "methode": "level",
+        "valeur": 48
+    },
+    "chenipan": {
+        "cible": "Chrysacier",
+        "methode": "level",
+        "valeur": 7
+    },
+    "chrysacier": {
+        "cible": "Papilusion",
+        "methode": "level",
+        "valeur": 10
+    },
+    "larvibule": {
+        "cible": "Chrysapile",
+        "methode": "level",
+        "valeur": 20
+    },
+    "chrysapile": {
+        "cible": "Lucanon",
+        "methode": "item",
+        "valeur": "Pierre Foudre"
+    },
+    "pikachu": {
+        "cible": "Raichu",
+        "methode": "item",
+        "valeur": "Pierre Foudre"
+    },
+    "pichu": {
+        "cible": "Pikachu",
+        "methode": "happiness",
+        "valeur": 160
+    },
+    "magicarpe": {
+        "cible": "Leviator",
+        "methode": "level",
+        "valeur": 20
+    },
+    "goupix": {
+        "cible": "Feunard",
+        "methode": "item",
+        "valeur": "Pierre Feu"
+    },
+    "goupix-dalola": {
+        "cible": "Feunard-dalola",
+        "methode": "item",
+        "valeur": "Pierre Glace"
+    },
+    "sabelette": {
+        "cible": "Sablaireau",
+        "methode": "level",
+        "valeur": 22
+    },
+    "sabelette-dalola": {
+        "cible": "Sablaireau-dalola",
+        "methode": "item",
+        "valeur": "Pierre Glace"
+    },
+    "abra": {
+        "cible": "Kadabra",
+        "methode": "level",
+        "valeur": 16
+    },
+    "machoc": {
+        "cible": "Machopeur",
+        "methode": "level",
+        "valeur": 28
+    },
+    "ferosinge": {
+        "cible": "Colossinge",
+        "methode": "level",
+        "valeur": 28
+    },
+    "tadmorv": {
+        "cible": "Grotadmorv",
+        "methode": "level",
+        "valeur": 38
+    },
+    "axoloto": {
+        "cible": "Maraiste",
+        "methode": "level",
+        "valeur": 20
+    },
+    "axoloto-de-paldea": {
+        "cible": "Terriste",
+        "methode": "level",
+        "valeur": 20
+    },
+    "charbambin": [
+        {
+            "cible": "Carmadura",
+            "methode": "item",
+            "valeur": "Armure de la Fortune"
+        },
+        {
+            "cible": "Malvalame",
+            "methode": "item",
+            "valeur": "Armure de la Rancœur"
+        }
+    ],
+    "forgerette": {
+        "cible": "Forgelette",
+        "methode": "level",
+        "valeur": 24
+    },
+    "forgelette": {
+        "cible": "Forgelina",
+        "methode": "level",
+        "valeur": 38
+    },
+    "zorua-dhisui": {
+        "cible": "Zoroark-dhisui",
+        "methode": "level",
+        "valeur": 30
+    },
+    "funecire": {
+        "cible": "Melancolux",
+        "methode": "level",
+        "valeur": 41
+    },
+    "melancolux": {
+        "cible": "Lugulabre",
+        "methode": "item",
+        "valeur": "Pierre Nuit"
+    },
+    "minisange": {
+        "cible": "Bleuseille",
+        "methode": "level",
+        "valeur": 18
+    },
+    "bleuseille": {
+        "cible": "Corvaillus",
+        "methode": "level",
+        "valeur": 38
+    },
+    "grimalin": {
+        "cible": "Fourbelin",
+        "methode": "level",
+        "valeur": 32
+    },
+    "fourbelin": {
+        "cible": "Angoliath",
+        "methode": "level",
+        "valeur": 42
+    },
+    "racaillou": {
+        "cible": "Gravalanch",
+        "methode": "level",
+        "valeur": 25
+    },
+    "nodulithe": {
+        "cible": "Geolithe",
+        "methode": "level",
+        "valeur": 25
+    },
+    "galekid": {
+        "cible": "Galegon",
+        "methode": "level",
+        "valeur": 32
+    },
+    "galegon": {
+        "cible": "Galeking",
+        "methode": "level",
+        "valeur": 42
+    }
+}

@@ -2,78 +2,124 @@
     "nom_dresseur": "Prout",
     "equipe": [
         {
-            "nom": "Oratoria",
-            "niveau": 52,
-            "hp_base": 175,
-            "hp_actuel": 175,
-            "xp": 0,
+            "nom": "Félinferno Shiny",
+            "nature": "Hardi",
+            "niveau": 44,
+            "hp_base": 137,
+            "hp_actuel": 96,
+            "xp": 1978,
             "stats": {
-                "attaque": 74,
-                "defense": 75,
-                "vitesse": 60
+                "attaque": 106,
+                "defense": 84,
+                "vitesse": 57,
+                "attaque_spe": 15,
+                "defense_spe": 20
             },
+            "statut": "Brûlure",
+            "types": [
+                "Feu",
+                "Ténèbres"
+            ],
             "capacites": [
-                "Laser glace",
-                "Pouvoir Lunaire",
-                "Psyko",
-                "Hydrocanon"
-            ]
+                "Nitrocharge",
+                "Flammèche",
+                "Léchouille",
+                "Boutefeu"
+            ],
+            "compteur_toxic": 0,
+            "stages": {
+                "attaque": 0,
+                "defense": 0,
+                "attaque_spe": 0,
+                "defense_spe": 0,
+                "vitesse": 6
+            }
         },
         {
-            "nom": "Aligatueur",
-            "niveau": 50,
-            "hp_base": 160,
-            "hp_actuel": 160,
+            "nom": "Paume-de-fer",
+            "nature": "Lâche",
+            "niveau": 47,
+            "hp_base": 201,
+            "hp_actuel": 201,
             "xp": 0,
             "stats": {
-                "attaque": 105,
-                "defense": 100,
-                "vitesse": 78
+                "attaque": 136,
+                "defense": 106,
+                "vitesse": 52,
+                "attaque_spe": 51,
+                "defense_spe": 67
             },
+            "statut": null,
+            "types": [
+                "Combat",
+                "Electrik"
+            ],
             "capacites": [
-                "Cascade",
-                "Mâchouille",
-                "Poing-Glace",
-                "Danse Lames"
-            ]
+                "Danse du Feu",
+                "Draco-Rage",
+                "Vent Mauvais",
+                "Mégacorne"
+            ],
+            "compteur_toxic": 0,
+            "stages": {
+                "attaque": 0,
+                "defense": 0,
+                "attaque_spe": 0,
+                "defense_spe": 0,
+                "vitesse": 0
+            }
         },
         {
-            "nom": "Artikodin",
-            "niveau": 51,
-            "hp_base": 202,
-            "hp_actuel": 137,
+            "nom": "Gromago",
+            "nature": "Docile",
+            "niveau": 44,
+            "hp_base": 106,
+            "hp_actuel": 81,
             "xp": 0,
             "stats": {
-                "attaque": 85,
-                "defense": 100,
-                "vitesse": 85,
-                "attaque_spe": 95,
-                "defense_spe": 125
+                "attaque": 57,
+                "defense": 88,
+                "vitesse": 78,
+                "attaque_spe": 122,
+                "defense_spe": 85
             },
+            "statut": null,
+            "types": [
+                "Acier",
+                "Spectre"
+            ],
             "capacites": [
-                "Laser glace",
-                "Lyophalisation",
-                "Vent Violent",
-                "Atterrissage"
-            ]
+                "Explo-Brume",
+                "Anti-Soin",
+                "Feu d’Enfer",
+                "Dard Mortel"
+            ],
+            "compteur_toxic": 0,
+            "stages": {
+                "attaque": 0,
+                "defense": 0,
+                "attaque_spe": 0,
+                "defense_spe": 0,
+                "vitesse": 0
+            }
         }
     ],
     "inventaire": {
         "potions": {
-            "super-bonbon": 8,
             "potion": 10,
-            "super-potion": 10,
+            "super-potion": 9,
             "hyper-potion": 10,
             "max-potion": 10,
             "revive": 10,
-            "max-revive": 5,
+            "max-revive": 8,
+            "super-bonbon": 4,
             "full-restore": 10
         },
         "balls": {
             "poke-ball": 10,
             "great-ball": 9,
-            "ultra-ball": 5,
-            "master-ball": 1
+            "ultra-ball": 10,
+            "master-ball": 3
         }
     }
 }

@@ -1,254 +1,382 @@
-[
-    {
-        "nom": "Bourrinos",
-        "type": "Sol",
-        "defense": 100,
-        "attaque": 125,
-        "pv": 100
+{
+    "pokemon_rencontres": [
+        {
+            "nom": "Flamiaou Shiny",
+            "hp_base": 45,
+            "attaque": 35,
+            "defense": 25,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Ectoplasma",
+            "hp_base": 137,
+            "attaque": 59,
+            "defense": 59,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Sorcilence",
+            "hp_base": 137,
+            "attaque": 59,
+            "defense": 59,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Floette",
+            "hp_base": 131,
+            "attaque": 57,
+            "defense": 57,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Matoufeu Shiny",
+            "hp_base": 51,
+            "attaque": 35,
+            "defense": 23,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Onix",
+            "hp_base": 131,
+            "attaque": 57,
+            "defense": 57,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Racaillou",
+            "hp_base": 137,
+            "attaque": 59,
+            "defense": 59,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Angoliath",
+            "hp_base": 140,
+            "attaque": 60,
+            "defense": 60,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Papilusion",
+            "hp_base": 158,
+            "attaque": 66,
+            "defense": 66,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Spiritomb",
+            "hp_base": 167,
+            "attaque": 69,
+            "defense": 69,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Drattak",
+            "hp_base": 191,
+            "attaque": 77,
+            "defense": 77,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Oniglali",
+            "hp_base": 203,
+            "attaque": 81,
+            "defense": 81,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Carabaffe",
+            "hp_base": 197,
+            "attaque": 79,
+            "defense": 79,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Félinferno Shiny",
+            "hp_base": 126,
+            "attaque": 97,
+            "defense": 77,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Tortipouss",
+            "hp_base": 203,
+            "stats": {
+                "attaque": 81,
+                "defense": 81,
+                "attaque_spe": 81,
+                "defense_spe": 81,
+                "vitesse": 81
+            },
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Rexillius",
+            "hp_base": 200,
+            "stats": {
+                "attaque": 80,
+                "defense": 80,
+                "attaque_spe": 80,
+                "defense_spe": 80,
+                "vitesse": 80
+            },
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Zoroark hisui",
+            "hp_base": 203,
+            "attaque": 81,
+            "defense": 81,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Wagomine",
+            "hp_base": 206,
+            "attaque": 82,
+            "defense": 82,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Gueriaigle",
+            "hp_base": 200,
+            "attaque": 80,
+            "defense": 80,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Flamiaou",
+            "hp_base": 126,
+            "attaque": 97,
+            "defense": 77,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Lilia",
+            "hp_base": 200,
+            "attaque": 80,
+            "defense": 80,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Matoufeu",
+            "hp_base": 104,
+            "attaque": 74,
+            "defense": 46,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Felinferno",
+            "hp_base": 128,
+            "attaque": 99,
+            "defense": 78,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Oratoria",
+            "hp_base": 209,
+            "attaque": 83,
+            "defense": 83,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Bibichut",
+            "hp_base": 209,
+            "attaque": 83,
+            "defense": 83,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Courrousinge",
+            "hp_base": 215,
+            "attaque": 85,
+            "defense": 85,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Chinchidou",
+            "hp_base": 209,
+            "attaque": 83,
+            "defense": 83,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Duralugon",
+            "hp_base": 212,
+            "attaque": 84,
+            "defense": 84,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Axoloto paldea",
+            "hp_base": 215,
+            "attaque": 85,
+            "defense": 85,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Nounourson",
+            "hp_base": 209,
+            "attaque": 83,
+            "defense": 83,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Leveinard",
+            "hp_base": 212,
+            "attaque": 84,
+            "defense": 84,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Nodulithe",
+            "hp_base": 212,
+            "attaque": 84,
+            "defense": 84,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Feurisson",
+            "hp_base": 209,
+            "attaque": 83,
+            "defense": 83,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Paume-de-fer",
+            "hp_base": 111,
+            "attaque": 133,
+            "defense": 114,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Raichu",
+            "hp_base": 109,
+            "attaque": 86,
+            "defense": 48,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Héricendre",
+            "hp_base": 104,
+            "attaque": 44,
+            "defense": 41,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Moustillon",
+            "hp_base": 104,
+            "attaque": 57,
+            "defense": 43,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Darumarond",
+            "hp_base": 111,
+            "attaque": 87,
+            "defense": 50,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Gromago",
+            "hp_base": 106,
+            "attaque": 57,
+            "defense": 88,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Regirock",
+            "hp_base": 106,
+            "attaque": 93,
+            "defense": 181,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        }
+    ],
+    "Grainipiot": {
+        "vu": true,
+        "capture": false
     },
-    {
-        "nom": "Blizzi",
-        "type": "Plante",
-        "defense": 50,
-        "attaque": 62,
-        "pv": 60
-    },
-    {
-        "nom": "Sovkipou",
-        "type": "Insecte",
-        "defense": 40,
-        "attaque": 35,
-        "pv": 25
-    },
-    {
-        "nom": "Furaiglon",
-        "type": "Normal",
-        "defense": 50,
-        "attaque": 83,
-        "pv": 70
-    },
-    {
-        "nom": "Matoufeu",
-        "type": "Feu",
-        "defense": 50,
-        "attaque": 85,
-        "pv": 65
-    },
-    {
-        "nom": "Pêchaminus",
-        "type": "Poison",
-        "defense": 160,
-        "attaque": 88,
-        "pv": 88
-    },
-    {
-        "nom": "Élecsprint",
-        "type": "Electrik",
-        "defense": 60,
-        "attaque": 75,
-        "pv": 70
-    },
-    {
-        "nom": "Gardevoir",
-        "type": "Psy",
-        "defense": 65,
-        "attaque": 65,
-        "pv": 68
-    },
-    {
-        "nom": "Chartor",
-        "type": "Feu",
-        "defense": 140,
-        "attaque": 85,
-        "pv": 70
-    },
-    {
-        "nom": "Tarsal",
-        "type": "Psy",
-        "defense": 25,
-        "attaque": 25,
-        "pv": 28
-    },
-    {
-        "nom": "Oniglali",
-        "type": "Glace",
-        "defense": 80,
-        "attaque": 80,
-        "pv": 80
-    },
-    {
-        "nom": "Ténéfix",
-        "type": "Ténèbres",
-        "defense": 75,
-        "attaque": 75,
-        "pv": 50
-    },
-    {
-        "nom": "Arcko",
-        "type": "Plante",
-        "defense": 35,
-        "attaque": 45,
-        "pv": 40
-    },
-    {
-        "nom": "Amphinobi",
-        "type": "Eau",
-        "defense": 67,
-        "attaque": 95,
-        "pv": 72
-    },
-    {
-        "nom": "Rayquaza",
-        "type": "Dragon",
-        "defense": 90,
-        "attaque": 150,
-        "pv": 105
-    },
-    {
-        "nom": "Sulfura",
-        "type": "Feu",
-        "defense": 90,
-        "attaque": 100,
-        "pv": 90
-    },
-    {
-        "nom": "Coxy",
-        "type": "Insecte",
-        "defense": 30,
-        "attaque": 20,
-        "pv": 40
-    },
-    {
-        "nom": "Regigigas",
-        "type": "Normal",
-        "defense": 110,
-        "attaque": 160,
-        "pv": 110
-    },
-    {
-        "nom": "Forgerette",
-        "type": "Fée",
-        "defense": 45,
-        "attaque": 45,
-        "pv": 50
-    },
-    {
-        "nom": "Zorua",
-        "type": "Normal",
-        "defense": 40,
-        "attaque": 60,
-        "pv": 35
-    },
-    {
-        "nom": "Magirêve",
-        "type": "Spectre",
-        "defense": 60,
-        "attaque": 60,
-        "pv": 60
-    },
-    {
-        "nom": "Trioxhydre",
-        "type": "Ténèbres",
-        "defense": 90,
-        "attaque": 105,
-        "pv": 92
-    },
-    {
-        "nom": "Magby",
-        "type": "Feu",
-        "defense": 37,
-        "attaque": 75,
-        "pv": 45
-    },
-    {
-        "nom": "Coxyclaque",
-        "type": "Insecte",
-        "defense": 50,
-        "attaque": 35,
-        "pv": 55
-    },
-    {
-        "nom": "Pifeuil",
-        "type": "Plante",
-        "defense": 40,
-        "attaque": 70,
-        "pv": 70
-    },
-    {
-        "nom": "Vrombi",
-        "type": "Acier",
-        "defense": 63,
-        "attaque": 70,
-        "pv": 45
-    },
-    {
-        "nom": "Zébibron",
-        "type": "Electrik",
-        "defense": 32,
-        "attaque": 60,
-        "pv": 45
-    },
-    {
-        "nom": "Ouvrifier",
-        "type": "Combat",
-        "defense": 85,
-        "attaque": 105,
-        "pv": 85
-    },
-    {
-        "nom": "Armaldo",
-        "type": "Roche",
-        "defense": 100,
-        "attaque": 125,
-        "pv": 75
-    },
-    {
-        "nom": "Galifeu",
-        "type": "Feu",
-        "defense": 60,
-        "attaque": 85,
-        "pv": 60
-    },
-    {
-        "nom": "Baggiguane",
-        "type": "Ténèbres",
-        "defense": 70,
-        "attaque": 75,
-        "pv": 50
-    },
-    {
-        "nom": "Verpom",
-        "type": "Plante",
-        "defense": 80,
-        "attaque": 40,
-        "pv": 40
-    },
-    {
-        "nom": "Kecleon",
-        "type": "Normal",
-        "defense": 70,
-        "attaque": 90,
-        "pv": 60
-    },
-    {
-        "nom": "Suicune",
-        "type": "Eau",
-        "defense": 115,
-        "attaque": 75,
-        "pv": 100
-    },
-    {
-        "nom": "Blindalys",
-        "type": "Insecte",
-        "defense": 55,
-        "attaque": 35,
-        "pv": 50
-    },
-    {
-        "nom": "Magmar",
-        "type": "Feu",
-        "defense": 57,
-        "attaque": 95,
-        "pv": 65
+    "Sucreine": {
+        "vu": true,
+        "capture": false
     }
-]
+}
