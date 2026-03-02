@@ -10,8 +10,11 @@ if BASE_PATH not in sys.path:
     sys.path.append(BASE_PATH)
 
 # Chemins relatifs (plus besoin de C:\Users\...)
-DATA_PATH = os.path.join(BASE_PATH, "data")
+DATA_PATH  = os.path.join(BASE_PATH, "data")
 ASSET_PATH = os.path.join(BASE_PATH, "asset")
+SAVES_PATH = os.path.join(BASE_PATH, "saves")
+
+os.makedirs(SAVES_PATH, exist_ok=True)
 
 SPRITE_PATH = os.path.join(ASSET_PATH, "sprite")
 TYPE_ICON_PATH = os.path.join(ASSET_PATH, "types")
@@ -38,6 +41,5 @@ STATUS_DATA = {
     "Paralysie": {"label": "PAR", "color": (255, 215, 0)},
     "Poison":    {"label": "PSN", "color": (160, 32, 240)},
     "Sommeil":   {"label": "SLP", "color": (255, 105, 180)},
-    "Gelé":      {"label": "FRZ", "color": (0, 255, 255)},
-    "Toxique":   {"label": "TOX", "color": (160, 32, 240)},
+    "Gelé":      {"label": "FRZ", "color": (0, 255, 255)}
 }

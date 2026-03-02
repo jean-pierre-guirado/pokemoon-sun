@@ -29,28 +29,40 @@ class MoveScraper:
             if res.status_code != 200: return None
             
             data = res.json()
-            nom_fr = next((n['name'] for n in data['names'] if n['language']['name'] == 'fr'), data['name'])
+            if not data: return None
+
+            # --- FILTRES D'EXCLUSION (Météo et Champs) ---
+            move_name = data.get('name', '')
+            
+            # Sécurité sur meta
+            meta = data.get('meta')
+            meta_category = meta.get('category', {}).get('name', '') if meta else ''
+            
+            exclusions = [
+                'rain-dance', 'sunny-day', 'sandstorm', 'hail', 'snowscape',
+                'electric-terrain', 'grassy-terrain', 'misty-terrain', 'psychic-terrain',
+                'weather-ball', 'solar-beam', 'solar-blade', 'aurora-veil', 'morning-sun', 'synthesis', 'moonlight'
+            ]
+            
+            excluded_categories = ['weather', 'field-effects']
+
+            if any(excl in move_name for excl in exclusions) or meta_category in excluded_categories:
+                return None
+
+            nom_fr = next((n['name'] for n in data.get('names', []) if n['language']['name'] == 'fr'), data.get('name'))
             
             cat_api = data.get('damage_class', {}).get('name', 'status')
             categorie = "Statut" if cat_api == "status" else ("Spécial" if cat_api == "special" else "Physique")
             
             effet_data = self._analyser_effet_complexe(data)
 
-            # --- LOGIQUE D'ASSOCIATION DES IMAGES ---
-            # On récupère le nom anglais technique (ex: 'water', 'fire', 'electric')
-            # C'est ce nom qui permet de faire le lien avec tes fichiers PNG
-            type_raw = data['type']['name'].lower()
-            
-            # Correction spécifique pour correspondre à tes fichiers "electrick.png" si nécessaire
-            if type_raw == "electric":
-                type_final = "electrick"
-            else:
-                type_final = type_raw
+            type_raw = data.get('type', {}).get('name', 'normal').lower()
+            type_final = "electrick" if type_raw == "electric" else type_raw
 
             move_info = {
                 "nom_attaque": nom_fr,
                 "puissance": data.get('power'),
-                "type": type_final, # Stocké en minuscule pour le mapping image
+                "type": type_final,
                 "precision": data.get('accuracy'),
                 "pp": data.get('pp'),
                 "categorie": categorie,
@@ -64,16 +76,19 @@ class MoveScraper:
             return move_info
             
         except Exception as e:
+            # On affiche l'erreur mais on ne bloque pas le script
             print(f"  ! Erreur sur l'attaque ({url.split('/')[-2]}) : {e}")
             return None
 
     def _analyser_effet_complexe(self, data):
         res = {"type_effet": "DAMAGE", "stat": None, "valeur": 0, "chance": 100}
-        meta = data.get('meta', {})
+        meta = data.get('meta')
         if not meta: return res
         
         # 1. Statuts
-        ailment = meta.get('ailment', {}).get('name', 'none')
+        ailment_data = meta.get('ailment')
+        ailment = ailment_data.get('name', 'none') if ailment_data else 'none'
+        
         status_map = {
             'paralysis': "PARALYZE", 'burn': "BURN", 'poison': "POISON", 
             'toxic': "TOXIC", 'sleep': "SLEEP", 'freeze': "FREEZE"
@@ -87,12 +102,12 @@ class MoveScraper:
         stats_changes = data.get('stat_changes', [])
         if stats_changes:
             change = stats_changes[0]
-            res["valeur"] = change['change']
+            res["valeur"] = change.get('change', 0)
             s_map = {"special-attack": "attaque_spe", "special-defense": "defense_spe", 
                      "attack": "attaque", "defense": "defense", "speed": "vitesse"}
-            res["stat"] = s_map.get(change['stat']['name'], change['stat']['name'])
+            stat_name = change.get('stat', {}).get('name', '')
+            res["stat"] = s_map.get(stat_name, stat_name)
             
-            # Logique : Si valeur positive -> Boost lanceur, sinon Debuff ennemi
             if res["valeur"] > 0:
                 res["type_effet"] = "BOOST_SELF"
             else:
@@ -107,12 +122,17 @@ class MoveScraper:
 
     def run(self):
         print("--- Démarrage de l'extraction ---")
-        if not os.path.exists(self.input_file): return
+        if not os.path.exists(self.input_file):
+            print(f"Fichier d'entrée introuvable : {self.input_file}")
+            return
 
         with open(self.input_file, 'r', encoding='utf-8') as f:
             pokedex = json.load(f)
 
         all_moves_final = []
+        # On utilise une liste de noms pour éviter les doublons d'attaques
+        seen_moves_names = set()
+
         for idx, (nom_fr, infos) in enumerate(pokedex.items(), 1):
             api_name = infos.get("nom_api")
             if not api_name: continue
@@ -121,17 +141,23 @@ class MoveScraper:
                 r = self.session.get(f"{POKE_API_URL}{api_name}", timeout=10)
                 if r.status_code != 200: continue
                 pk_data = r.json()
-                for m_entry in pk_data['moves']:
+                
+                for m_entry in pk_data.get('moves', []):
                     move_details = self.get_move_details(m_entry['move']['url'])
-                    if move_details and move_details not in all_moves_final:
+                    
+                    if move_details and move_details['nom_attaque'] not in seen_moves_names:
                         all_moves_final.append(move_details)
+                        seen_moves_names.add(move_details['nom_attaque'])
+                
                 time.sleep(0.05)
-            except: continue
+            except Exception as e:
+                print(f"Erreur sur Pokemon {nom_fr}: {e}")
+                continue
 
         os.makedirs(os.path.dirname(self.output_file), exist_ok=True)
         with open(self.output_file, 'w', encoding='utf-8') as f:
             json.dump(all_moves_final, f, ensure_ascii=False, indent=4)
-        print("--- Terminé ! ---")
+        print(f"--- Terminé ! {len(all_moves_final)} attaques récupérées ---")
 
 if __name__ == "__main__":
     scraper = MoveScraper()

@@ -1,7 +1,7 @@
 {
     "nom_dresseur": "prout",
     "sexe": "fille",
-    "argent": 1061,
+    "argent": 1000,
     "stage": 1,
     "equipe": [
         {
@@ -9,8 +9,9 @@
             "nature": "Hardi",
             "niveau": 5,
             "hp_base": 19,
-            "hp_actuel": 15,
-            "xp": 34,
+            "hp_actuel": 19,
+            "xp": 0,
+            "shiny": false,
             "stats": {
                 "attaque": 10,
                 "defense": 9,
@@ -42,6 +43,5 @@
         "balls": {
             "poke-ball": 5
         }
-    },
-    "slot_num": 2
+    }
 }

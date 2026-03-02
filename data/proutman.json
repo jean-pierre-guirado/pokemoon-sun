@@ -1,18 +1,19 @@
 {
-    "nom_dresseur": "prout",
+    "nom_dresseur": "proutman",
     "sexe": "fille",
-    "argent": 1061,
-    "stage": 1,
+    "argent": 1000,
+    "stage": 99,
     "equipe": [
         {
-            "nom": "Grenousse",
-            "nature": "Hardi",
+            "nom": "Flamiaou",
+            "nature": "Pudique",
             "niveau": 5,
             "hp_base": 19,
-            "hp_actuel": 15,
-            "xp": 34,
+            "hp_actuel": 19,
+            "xp": 0,
+            "shiny": false,
             "stats": {
-                "attaque": 10,
+                "attaque": 11,
                 "defense": 9,
                 "vitesse": 12,
                 "attaque_spe": 11,
@@ -20,11 +21,11 @@
             },
             "statut": null,
             "types": [
-                "Eau"
+                "Feu"
             ],
             "capacites": [
-                "Charge",
-                "Pistolet à O",
+                "Griffe",
+                "Flammèche",
                 "Rugissement"
             ],
             "compteur_toxic": 0,
@@ -40,8 +41,7 @@
     "inventaire": {
         "potions": {},
         "balls": {
-            "poke-ball": 5
+            "master-ball": 5
         }
-    },
-    "slot_num": 2
+    }
 }

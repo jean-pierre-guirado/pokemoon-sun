@@ -369,6 +369,60 @@
             "vu": true,
             "possede": false,
             "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Grenousse",
+            "hp_base": 19,
+            "attaque": 10,
+            "defense": 9,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Charkos",
+            "hp_base": 14,
+            "attaque": 11,
+            "defense": 7,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Vorastérie",
+            "hp_base": 221,
+            "attaque": 106,
+            "defense": 124,
+            "vu": true,
+            "possede": true,
+            "description": "Capturé par le joueur."
+        },
+        {
+            "nom": "Metalosse Shiny",
+            "hp_base": 231,
+            "attaque": 257,
+            "defense": 226,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Charbi Shiny",
+            "hp_base": 13,
+            "attaque": 6,
+            "defense": 7,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
+        },
+        {
+            "nom": "Noacier Shiny",
+            "hp_base": 14,
+            "attaque": 8,
+            "defense": 11,
+            "vu": true,
+            "possede": false,
+            "description": "Vu dans la nature."
         }
     ],
     "Grainipiot": {

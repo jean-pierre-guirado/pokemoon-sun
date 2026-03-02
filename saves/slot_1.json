@@ -1,0 +1,81 @@
+{
+    "nom_dresseur": "d",
+    "sexe": "garçon",
+    "argent": 1000,
+    "stage": 100,
+    "equipe": [
+        {
+            "nom": "Flamiaou",
+            "nature": "Malpoli",
+            "niveau": 5,
+            "hp_base": 19,
+            "hp_actuel": 19,
+            "xp": 0,
+            "stats": {
+                "attaque": 11,
+                "defense": 9,
+                "vitesse": 12,
+                "attaque_spe": 11,
+                "defense_spe": 9
+            },
+            "statut": null,
+            "types": [
+                "Feu"
+            ],
+            "capacites": [
+                "Griffe",
+                "Flammèche",
+                "Rugissement"
+            ],
+            "compteur_toxic": 0,
+            "stages": {
+                "attaque": 0,
+                "defense": 0,
+                "attaque_spe": 0,
+                "defense_spe": 0,
+                "vitesse": 0
+            }
+        },
+        {
+            "nom": "Vorastérie",
+            "nature": "Malpoli",
+            "niveau": 96,
+            "hp_base": 221,
+            "hp_actuel": 221,
+            "xp": 0,
+            "stats": {
+                "attaque": 106,
+                "defense": 124,
+                "vitesse": 81,
+                "attaque_spe": 87,
+                "defense_spe": 104
+            },
+            "statut": null,
+            "types": [
+                "Poison",
+                "Eau"
+            ],
+            "capacites": [
+                "Détricanon",
+                "Chaîne Malsaine",
+                "Poing Feu",
+                "Rengorgement"
+            ],
+            "compteur_toxic": 0,
+            "stages": {
+                "attaque": 0,
+                "defense": 0,
+                "attaque_spe": 0,
+                "defense_spe": 0,
+                "vitesse": 0
+            }
+        }
+    ],
+    "inventaire": {
+        "potions": {},
+        "balls": {
+            "master-ball": 4
+        }
+    },
+    "slot_num": 1
+}
